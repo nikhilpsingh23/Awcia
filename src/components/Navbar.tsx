@@ -157,15 +157,32 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <Link 
               to="/about" 
-              className="text-aicwa-darkGray hover:text-aicwa-orange transition-colors"
+              className={cn(
+                "hover:text-aicwa-orange transition-colors",
+                scrolled ? "text-aicwa-darkGray" : "text-white"
+              )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About Us
             </Link>
+
+            <Link 
+              to="/getinvolved" 
+              className={cn(
+                "hover:text-aicwa-orange transition-colors",
+                scrolled ? "text-aicwa-darkGray" : "text-white"
+              )}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Get Involved
+            </Link>
             
             <button 
               onClick={() => setIsImpactOpen(!isImpactOpen)}
-              className="flex items-center text-aicwa-darkGray hover:text-aicwa-orange transition-colors"
+              className={cn(
+                "flex items-center hover:text-aicwa-orange transition-colors",
+                scrolled ? "text-aicwa-darkGray" : "text-white"
+              )}
             >
               Area of Impact <ChevronDown size={16} className="ml-1" />
             </button>
@@ -174,44 +191,38 @@ const Navbar = () => {
               "pl-4 space-y-2 overflow-hidden transition-all duration-300 ease-in-out",
               isImpactOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
             )}>
-              <Link 
-                to="/impact/about"
-                className="block text-sm text-aicwa-darkGray"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About Us
-              </Link>
+              {/* Update dropdown items */}
               <Link 
                 to="/impact/health"
-                className="block text-sm text-aicwa-darkGray"
+                className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Health
               </Link>
               <Link 
                 to="/impact/education"
-                className="block text-sm text-aicwa-darkGray"
+                className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Education
               </Link>
               <Link 
                 to="/impact/child-welfare"
-                className="block text-sm text-aicwa-darkGray"
+                className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Child Welfare
               </Link>
               <Link 
                 to="/impact/old-age"
-                className="block text-sm text-aicwa-darkGray"
+                className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Old Age Support
               </Link>
               <Link 
                 to="/impact/humanity"
-                className="block text-sm text-aicwa-darkGray"
+                className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Humanity Awareness
@@ -220,7 +231,10 @@ const Navbar = () => {
             
             <Link 
               to="/gallery" 
-              className="text-aicwa-darkGray hover:text-aicwa-orange transition-colors"
+              className={cn(
+                "hover:text-aicwa-orange transition-colors",
+                scrolled ? "text-aicwa-darkGray" : "text-white"
+              )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Gallery
@@ -228,7 +242,10 @@ const Navbar = () => {
             
             <Link 
               to="/story" 
-              className="text-aicwa-darkGray hover:text-aicwa-orange transition-colors"
+              className={cn(
+                "hover:text-aicwa-orange transition-colors",
+                scrolled ? "text-aicwa-darkGray" : "text-white"
+              )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Story
