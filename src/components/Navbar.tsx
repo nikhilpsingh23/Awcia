@@ -50,7 +50,7 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Link to="/about" className={cn(
+            <Link to="/getinvolved" className={cn(
               "hover:text-aicwa-orange transition-colors",
               scrolled ? "text-aicwa-darkGray" : "text-white"
             )}>

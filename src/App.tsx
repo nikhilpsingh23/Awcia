@@ -10,6 +10,7 @@ import ImpactDetails from "./pages/ImpactDetails";
 import Gallery from "./pages/Gallery";
 import Story from "./pages/Story";
 import NotFound from "./pages/NotFound";
+import GetInvolved from './pages/GetInvolved';
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/impact/:category" element={<ImpactDetails />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/story" element={<Story />} />
+          <Route path="/getinvolved" element={<GetInvolved />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
