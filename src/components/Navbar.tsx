@@ -73,13 +73,7 @@ const Navbar = () => {
                 "absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 ease-in-out",
                 isImpactOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
               )}>
-                <Link 
-                  to="/impact/about"
-                  className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
-                  onClick={() => setIsImpactOpen(false)}
-                >
-                  About Us
-                </Link>
+                
                 <Link 
                   to="/impact/health"
                   className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
