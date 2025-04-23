@@ -18,7 +18,9 @@ import AreaOfImpact from '@/components/areaofimpact';
 import DonateSection from '@/components/donateSection';
 import JoinUs from '@/components/joinus';
 import AboutUs from '@/components/aboutUs';
-import Program from '@/components/program';
+import DonationComponent from '@/components/donate';
+import SupportersCarousel from '@/components/ourSupporter';
+
 
 const Index = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
@@ -118,95 +120,38 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section 
-        id="hero-section"
-        className="relative min-h-screen flex items-center justify-center"
-      >
-        <Swiper
-          modules={[Pagination, Navigation, Autoplay]}
-          spaceBetween={0}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          navigation
-          autoplay={{ delay: 5000 }}
-          className="absolute inset-0"
-        >
-          <SwiperSlide>
-            <div className="relative h-screen">
-              <img
-                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1920"
-                alt="Film industry workers"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/50"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center max-w-4xl mx-auto px-4">
-                  <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up">
-                    All Indian Cine Workers Association (AICWA)
-                  </h1>
-                  <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto fade-in-up animate-delay-200">
-                    A non-profit organization registered in Mumbai, founded by Suresh Shyamlal Gupta, working for the security and safety of cine workers and artists in the Indian film industry.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+      <section className="relative min-h-screen flex items-center justify-center text-white">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+      <img
+  src="images/hero.jpg"
+  alt="Smiling children"
+  className="w-full h-full object-cover"
+/>
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
 
-          <SwiperSlide>
-            <div className="relative h-screen">
-              <img
-                src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1920"
-                alt="Film production"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/50"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center max-w-4xl mx-auto px-4">
-                  <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up">
-                    Supporting Film Industry Workers
-                  </h2>
-                  <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto fade-in-up animate-delay-200">
-                    Providing a platform for resolution of grievances and working towards the betterment of workers and artists in the Indian film industry.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="relative h-screen">
-              <img
-                src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1920"
-                alt="Film industry"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/50"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center max-w-4xl mx-auto px-4">
-                  <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up">
-                    Government Affiliated
-                  </h2>
-                  <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto fade-in-up animate-delay-200">
-                    Proudly affiliated with the Government of Maharashtra, working to create positive change in the Indian film industry.
-                  </p>
-                  <Button 
-                    size="lg" 
-                    className="fade-in-up animate-delay-300"
-                    onClick={() => window.location.href = "#"}
-                  >
-                    Join Us Today
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </section>
+      {/* Hero Content */}
+      <div className="text-center px-6 max-w-4xl">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Empowering Lives. <br /> Spreading Humanity.
+        </h1>
+        <p className="text-lg md:text-xl mb-8 text-white/90">
+          AICWA is committed to serving all — from children to the elderly — through
+          health, education, and compassion.
+        </p>
+        <Link to="/donate">
+          <button className="bg-[#de7621] hover:bg-[#c65c0f] text-white px-6 py-3 rounded-lg font-semibold text-base transition">
+            Donate Now
+          </button>
+        </Link>
+      </div>
+    </section>
       
       {/* Areas of Impact */}
 
       <AreaOfImpact/>
-      <Program/>
+      <DonationComponent/>
       <DonateSection/>
       { /* <section className="py-20 px-4">
         <div className="container mx-auto">
@@ -272,6 +217,7 @@ const Index = () => {
       
       {/* Why Donate Section */}
       <JoinUs/>
+      <SupportersCarousel/>
       {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">

@@ -19,7 +19,7 @@ const DonateSection = () => {
   };
 
   return (
-    <section className="bg-[#E84C1C] py-8 sm:py-16">
+    <section className="bg-[#F05323] py-8 sm:py-16">
       <div className="container mx-auto px-4">
         {/* Featured Video Section */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
