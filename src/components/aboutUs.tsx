@@ -24,43 +24,56 @@ const AboutUs = () => {
           <div className="w-full lg:w-1/2">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-aicwa-orange">♥</span>
-              <span className="text-aicwa-orange font-medium">About US</span>
+              <span className="text-aicwa-orange font-medium">About AICWA</span>
             </div>
 
             <h2 className="text-4xl font-bold mb-6">
-              Helping Each Other can Make World Better
+              Leading the Revolution in Indian Film Industry Workers' Rights
             </h2>
 
-            <p className="text-gray-600 mb-8">
-              Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit The aspernatur aut odit aut fugit, sed quia consequuntur. Nonprofits around the world apply and join us to access more funding.
+            <p className="text-gray-600 mb-6">
+              All Indian Cine Workers Association (AICWA) is an Organized Non-Government workers union 
+              for the Indian Film Industry. We made a revolution by organizing a meeting with the labor 
+              ministry and forming a government committee where AICWA represents workers and artists.
             </p>
 
             <div className="flex items-center gap-6 mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-aicwa-orange rounded-full flex items-center justify-center">
-                  <img src="/icons/team.svg" alt="Team icon" className="w-6 h-6" />
+                  <img src="/icons/team.svg" alt="Leadership icon" className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Start Helping Team</h4>
-                  <p className="text-sm text-gray-500">There are many variations of solve</p>
+                  <h4 className="font-semibold">Industry Leadership</h4>
+                  <p className="text-sm text-gray-500">Committee Member of Labor, Energy & Industries</p>
                 </div>
               </div>
-              <div className="flex -space-x-3">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64" alt="Team member" className="w-10 h-10 rounded-full border-2 border-white" />
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64" alt="Team member" className="w-10 h-10 rounded-full border-2 border-white" />
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=64" alt="Team member" className="w-10 h-10 rounded-full border-2 border-white" />
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64" alt="Team member" className="w-10 h-10 rounded-full border-2 border-white" />
-              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm mb-8">
+              <h3 className="font-semibold mb-2">Key Achievements:</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-aicwa-orange mt-1">•</span>
+                  <span>Leading association for film industry workers' betterment</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-aicwa-orange mt-1">•</span>
+                  <span>Government committee membership representing workers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-aicwa-orange mt-1">•</span>
+                  <span>Active role in national film industry policies</span>
+                </li>
+              </ul>
             </div>
 
             <div className="flex flex-wrap gap-4">
               <button className="px-6 py-3 bg-aicwa-orange text-white rounded-full hover:bg-aicwa-orange/90 transition-colors">
-                Explore More
+                Learn More
               </button>
               <a href="tel:+912345678990" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:border-aicwa-orange transition-colors group">
                 <Phone className="text-aicwa-orange" />
-                <span className="group-hover:text-aicwa-orange">Call Any Time</span>
-                <span className="font-semibold group-hover:text-aicwa-orange">+91 2345 678 990</span>
+                <span className="font-semibold group-hover:text-aicwa-orange">Contact Us</span>
               </a>
             </div>
           </div>

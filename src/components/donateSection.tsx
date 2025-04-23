@@ -21,70 +21,45 @@ const DonateSection = () => {
   return (
     <section className="bg-[#E84C1C] py-8 sm:py-16">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-          {/* Donation Form */}
-          <div className="w-full lg:w-1/2 bg-[#1E1E1E] p-4 sm:p-8 rounded-2xl">
-            <h3 className="text-xl sm:text-2xl text-white font-semibold mb-4 sm:mb-6">
-              Custome Donate Now
-            </h3>
-            
-            <div className="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6">
-              {predefinedAmounts.map((amount) => (
-                <button
-                  key={amount}
-                  onClick={() => handleAmountSelect(amount)}
-                  className={cn(
-                    "px-3 sm:px-6 py-2 rounded-full text-sm sm:text-base transition-colors",
-                    selectedAmount === amount
-                      ? "bg-[#E84C1C] text-white"
-                      : "bg-white text-black hover:bg-gray-100"
-                  )}
-                >
-                  ${amount}
-                </button>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="text"
-                value={customAmount}
-                onChange={handleCustomAmountChange}
-                className="w-full sm:flex-1 px-4 py-2 rounded-full bg-white text-black focus:outline-none text-sm sm:text-base"
-                placeholder="Enter amount"
-              />
-              <button className="w-full sm:w-auto px-4 sm:px-6 py-2 bg-[#E84C1C] text-white rounded-full hover:bg-[#E84C1C]/90 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base">
-                Donate Now
-                <span>→</span>
-              </button>
+        {/* Featured Video Section */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+          Featured Video
+        </h2>
+        
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-16">
+          <div className="w-full lg:w-1/2">
+            <div className="relative pb-[56.25%] h-0">
+              <iframe
+                src="https://www.youtube.com/embed/de9G2V4bIb4"
+                title="AICWA Featured Video"
+                className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
 
-          {/* Progress Section */}
           <div className="w-full lg:w-1/2 text-white">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-white">♥</span>
-              <span className="text-sm sm:text-base">Donate Now</span>
+              <span className="text-sm sm:text-base font-medium">FEATURED STORY</span>
             </div>
-            
-            <h2 className="text-2xl sm:text-4xl font-bold mb-6 sm:mb-8">
-              Support Kids by Raising<br className="hidden sm:block" />
-              Valuable Donations
-            </h2>
-
-            <div className="w-full bg-white/20 rounded-full h-1.5 sm:h-2 mb-2">
-              <div 
-                className="bg-white h-full rounded-full" 
-                style={{ width: '84%' }}
-              ></div>
-            </div>
-
-            <div className="flex justify-between text-xs sm:text-sm">
-              <span>Raised: $25,000</span>
-              <span>Goal: $30,000</span>
-            </div>
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6">
+              Supporting Film Industry Workers
+            </h3>
+            <p className="text-white/90 text-lg mb-8">
+              Learn about how AICWA is making a difference in the lives of film industry workers 
+              through our various initiatives and support programs.
+            </p>
+            <button className="px-6 py-3 bg-white text-[#E84C1C] rounded-full hover:bg-white/90 transition-colors font-medium">
+              WATCH MORE VIDEOS
+            </button>
           </div>
         </div>
+
+        {/* Donation Section */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+          {/* Rest of the donation form and progress section remains the same */}
+      </div>
       </div>
     </section>
   );

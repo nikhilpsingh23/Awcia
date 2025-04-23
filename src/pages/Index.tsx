@@ -18,6 +18,7 @@ import AreaOfImpact from '@/components/areaofimpact';
 import DonateSection from '@/components/donateSection';
 import JoinUs from '@/components/joinus';
 import AboutUs from '@/components/aboutUs';
+import Program from '@/components/program';
 
 const Index = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
@@ -121,37 +122,93 @@ const Index = () => {
         id="hero-section"
         className="relative min-h-screen flex items-center justify-center"
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920"
-            alt="Children smiling"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
-        </div>
-        <div className="relative text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up">
-            Making a difference in the lives of those who need it most
-          </h1>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto fade-in-up animate-delay-200">
-            AICWA works tirelessly to improve health, education, child welfare, 
-            and elderly support across India.
-          </p>
-          <Button 
-            size="lg" 
-            className="fade-in-up animate-delay-300"
-            onClick={() => window.location.href = "#"}
-          >
-            Donate Now
-          </Button>
-        </div>
+        <Swiper
+          modules={[Pagination, Navigation, Autoplay]}
+          spaceBetween={0}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          navigation
+          autoplay={{ delay: 5000 }}
+          className="absolute inset-0"
+        >
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1920"
+                alt="Film industry workers"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center max-w-4xl mx-auto px-4">
+                  <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up">
+                    All Indian Cine Workers Association (AICWA)
+                  </h1>
+                  <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto fade-in-up animate-delay-200">
+                    A non-profit organization registered in Mumbai, founded by Suresh Shyamlal Gupta, working for the security and safety of cine workers and artists in the Indian film industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img
+                src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1920"
+                alt="Film production"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center max-w-4xl mx-auto px-4">
+                  <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up">
+                    Supporting Film Industry Workers
+                  </h2>
+                  <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto fade-in-up animate-delay-200">
+                    Providing a platform for resolution of grievances and working towards the betterment of workers and artists in the Indian film industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img
+                src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1920"
+                alt="Film industry"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center max-w-4xl mx-auto px-4">
+                  <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up">
+                    Government Affiliated
+                  </h2>
+                  <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto fade-in-up animate-delay-200">
+                    Proudly affiliated with the Government of Maharashtra, working to create positive change in the Indian film industry.
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="fade-in-up animate-delay-300"
+                    onClick={() => window.location.href = "#"}
+                  >
+                    Join Us Today
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
       
       {/* Areas of Impact */}
 
       <AreaOfImpact/>
+      <Program/>
       <DonateSection/>
-      <section className="py-20 px-4">
+      { /* <section className="py-20 px-4">
         <div className="container mx-auto">
           <SectionTitle
             title="Areas of Impact"
@@ -174,7 +231,7 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* About Section with Parallax */}
       <AboutUs/>
