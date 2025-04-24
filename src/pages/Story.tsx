@@ -5,6 +5,7 @@ import PageHeader from '@/components/PageHeader';
 import SectionTitle from '@/components/SectionTitle';
 import StoryCard from '@/components/StoryCard';
 import Button from '@/components/Button';
+import { Play, Calendar, MapPin } from 'lucide-react';
 
 const Story = () => {
   const featuredStories = [
@@ -64,7 +65,63 @@ const Story = () => {
         subtitle="Real voices, real change - hear from the communities we serve"
         imageSrc="https://images.unsplash.com/photo-1560523159-4a9692d222f9?auto=format&fit=crop&w=1920"
       />
-      
+
+      {/* Video Stories Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto">
+          <SectionTitle
+            title="Video Stories"
+            subtitle="Watch the impact of our work through the eyes of our beneficiaries"
+            centered
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            {[
+              {
+                title: "A New Beginning",
+                description: "Watch how education transformed Priya's life",
+                thumbnail: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800",
+                duration: "4:30"
+              },
+              {
+                title: "Healthcare for All",
+                description: "Our medical camps reaching remote villages",
+                thumbnail: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800",
+                duration: "3:45"
+              },
+              {
+                title: "Elder Care Initiative",
+                description: "Supporting our senior citizens with dignity",
+                thumbnail: "https://images.unsplash.com/photo-1581579438747-104c53e81198?auto=format&fit=crop&w=800",
+                duration: "5:15"
+              }
+            ].map((video, index) => (
+              <div key={index} className="relative group cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src={video.thumbnail} 
+                    alt={video.title}
+                    className="w-full h-[250px] object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all rounded-lg" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Play className="w-6 h-6 text-aicwa-orange ml-1" />
+                    </div>
+                  </div>
+                  <span className="absolute bottom-4 right-4 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
+                    {video.duration}
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold mt-4">{video.title}</h3>
+                <p className="text-aicwa-gray">{video.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Stories Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <SectionTitle
@@ -144,8 +201,93 @@ const Story = () => {
           </div>
         </div>
       </section>
-      
+
+      {/* Story Timeline Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto">
+          <SectionTitle
+            title="Journey Through Time"
+            subtitle="Key moments in our mission to create lasting change"
+            centered
+          />
+          
+          <div className="max-w-4xl mx-auto mt-12">
+            {[
+              {
+                year: "2008",
+                title: "Where it all began",
+                description: "First literacy program launched in rural Bihar",
+                image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800"
+              },
+              {
+                year: "2012",
+                title: "Expanding Horizons",
+                description: "Healthcare initiatives reach 50 villages",
+                image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800"
+              },
+              {
+                year: "2015",
+                title: "Major Milestone",
+                description: "10,000 children supported through education programs",
+                image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800"
+              }
+            ].map((event, index) => (
+              <div key={index} className="flex flex-col md:flex-row gap-8 mb-12">
+                <div className="w-full md:w-1/3">
+                  <div className="flex items-center gap-4">
+                    <Calendar className="text-aicwa-orange" size={24} />
+                    <span className="text-2xl font-bold">{event.year}</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mt-4">{event.title}</h3>
+                  <p className="text-aicwa-gray mt-2">{event.description}</p>
+                </div>
+                <div className="w-full md:w-2/3">
+                  <img 
+                    src={event.image} 
+                    alt={event.title}
+                    className="w-full h-[300px] object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Map Section */}
       <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto">
+          <SectionTitle
+            title="Stories Across India"
+            subtitle="Explore our impact across different regions"
+            centered
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {[
+              { region: "North India", stories: 156, image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800" },
+              { region: "South India", stories: 203, image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800" },
+              { region: "East India", stories: 178, image: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=800" },
+              { region: "West India", stories: 167, image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800" }
+            ].map((region, index) => (
+              <div key={index} className="relative group cursor-pointer overflow-hidden rounded-lg">
+                <img 
+                  src={region.image} 
+                  alt={region.region}
+                  className="w-full h-[200px] object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+                  <MapPin className="w-8 h-8 mb-2" />
+                  <h3 className="text-xl font-semibold">{region.region}</h3>
+                  <p>{region.stories} Stories</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="flex flex-col md:flex-row items-center gap-8">

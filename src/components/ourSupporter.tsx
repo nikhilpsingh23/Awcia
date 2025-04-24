@@ -8,32 +8,32 @@ import 'swiper/css/autoplay';
 const logos = [
   {
     name: 'Godrej',
-    src: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png',
+    src: 'https://www.godrej.com/assets/images/godrej-logo.png',
   },
   {
-    name: 'Godrej',
-    src: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png',
-  },
-  {
-    name: 'Godrej',
-    src: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png',
+    name: 'Tata Trust',
+    src: 'https://www.tatatrusts.org/images/Tata_Trusts_Logo.png',
   },
   {
     name: 'Azim Premji Foundation',
-    src: 'https://upload.wikimedia.org/wikipedia/en/1/11/Azim_Premji_Philanthropic_Initiatives_logo.png',
+    src: 'https://azimpremjifoundation.org/sites/default/files/apf-logo.png',
   },
   {
     name: 'United Way',
-    src: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/United_Way_Logo.svg/2560px-United_Way_Logo.svg.png',
+    src: 'https://www.unitedway.org/assets/img/logo.png',
   },
   {
     name: 'Hindustan Unilever',
-    src: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Hindustan_Unilever_Logo.svg/2560px-Hindustan_Unilever_Logo.svg.png',
+    src: 'https://www.hul.co.in/Images/hul-logo_tcm1255-459077_w160.png',
   },
   {
-    name: 'Pramiti',
-    src: 'https://pramitifoundation.org/images/logo.png',
+    name: 'Bill & Melinda Gates Foundation',
+    src: 'https://www.gatesfoundation.org/-/media/gfo/4_resources/logo.png',
   },
+  {
+    name: 'Reliance Foundation',
+    src: 'https://www.reliancefoundation.org/sites/all/themes/reliancefoundation/images/logo.png',
+  }
 ];
 
 export default function SupportersCarousel() {

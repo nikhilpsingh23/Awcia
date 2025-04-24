@@ -89,7 +89,7 @@ const ImpactDetails = () => {
         </>
       ),
       icon: <Heart className="text-aicwa-orange" size={24} />,
-      coverImage: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920',
+      coverImage: 'https://media.istockphoto.com/id/1158716425/photo/baby-gets-heart-rate-checked-by-pediatrician-at-medical-appointment.jpg?s=612x612&w=0&k=20&c=JuFVbeh5I-u5xO-AtqNT2ezpg_xPUMgx2ZvKhMlRMNs=',
       stats: [
         { figure: '200+', description: 'Health camps conducted' },
         { figure: '50,000+', description: 'Patients treated' },
@@ -218,7 +218,7 @@ const ImpactDetails = () => {
         </>
       ),
       icon: <UserRound className="text-aicwa-orange" size={24} />,
-      coverImage: 'https://images.unsplash.com/photo-1464863979621-258859e62245?auto=format&fit=crop&w=1920',
+      coverImage: 'https://media.istockphoto.com/id/2156555376/photo/female-caregiver-and-senior-woman-with-walker-on-walk-in-nature-nurse-and-elderly-woman.jpg?s=612x612&w=0&k=20&c=0AXArahrYWNymGXkYw8qGeekBI7BWQ6_QJolIoFqXQ0=',
       stats: [
         { figure: '15,000+', description: 'Elderly individuals supported' },
         { figure: '50+', description: 'Elder care centers established' },
@@ -310,6 +310,144 @@ const ImpactDetails = () => {
                 {currentCategory.longDescription}
               </div>
               
+              {/* New Image Gallery Section */}
+              <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                {category === 'health' && (
+                  <>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800"
+                        alt="Mobile Health Camp"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Mobile Health Camps</h4>
+                        <p className="text-gray-200 text-sm">Bringing healthcare to remote communities</p>
+                      </div>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://media.istockphoto.com/id/1468267123/photo/adult-woman-chemotherapy-patient-finishing-treatment-with-a-ceremonial-bell-ring.webp?a=1&b=1&s=612x612&w=0&k=20&c=8PiwfBcwrq5oXPJL7bOurY3mzsHk-nn1R-T1SXljmRc="
+                        alt="Medical Consultation"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Medical Consultations</h4>
+                        <p className="text-gray-200 text-sm">Expert care for all</p>
+                      </div>
+                    </div>
+                  </>
+                )}
+                
+                {category === 'education' && (
+                  <>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800"
+                        alt="Classroom Learning"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Quality Education</h4>
+                        <p className="text-gray-200 text-sm">Empowering through knowledge</p>
+                      </div>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800"
+                        alt="Digital Learning"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Digital Education</h4>
+                        <p className="text-gray-200 text-sm">Modern learning tools</p>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {category === 'child-welfare' && (
+                  <>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800"
+                        alt="Child Education"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Child Education</h4>
+                        <p className="text-gray-200 text-sm">Building bright futures</p>
+                      </div>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=800"
+                        alt="Child Care"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Child Care Programs</h4>
+                        <p className="text-gray-200 text-sm">Nurturing young lives</p>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {category === 'old-age' && (
+                  <>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://media.istockphoto.com/id/1389973541/photo/volunteers-packing-at-a-local-food-bank.webp?a=1&b=1&s=612x612&w=0&k=20&c=ch86_IEEOzJa8yleOMN9YuDh82zkHHd-QqALmESGIqs="
+                        alt="Elder Care"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Elder Care Services</h4>
+                        <p className="text-gray-200 text-sm">Dignified aging support</p>
+                      </div>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://media.istockphoto.com/id/2156555376/photo/female-caregiver-and-senior-woman-with-walker-on-walk-in-nature-nurse-and-elderly-woman.jpg?s=612x612&w=0&k=20&c=0AXArahrYWNymGXkYw8qGeekBI7BWQ6_QJolIoFqXQ0="
+                        alt="Social Activities"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Social Activities</h4>
+                        <p className="text-gray-200 text-sm">Active community engagement</p>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {category === 'humanity' && (
+                  <>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=800"
+                        alt="Community Awareness"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Community Awareness</h4>
+                        <p className="text-gray-200 text-sm">Spreading knowledge and compassion</p>
+                      </div>
+                    </div>
+                    <div className="relative group overflow-hidden rounded-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800"
+                        alt="Youth Empowerment"
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                        <h4 className="text-white font-semibold">Youth Empowerment</h4>
+                        <p className="text-gray-200 text-sm">Building future leaders</p>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+
               <SectionTitle
                 title="Our Programs"
                 subtitle="How we make a difference in this area"

@@ -36,8 +36,19 @@ const GetInvolved = () => {
       <Navbar />
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-aicwa-orange text-white py-20">
-          <div className="container mx-auto px-4">
+        <div className="relative text-white py-20">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&w=1920"
+              alt="Get Involved"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50" /> {/* Dark overlay */}
+          </div>
+          
+          {/* Content */}
+          <div className="container mx-auto px-4 relative z-10">
             <h1 className="text-5xl font-bold mb-6">Get Involved</h1>
             <p className="text-xl max-w-2xl">
               Join us in making a difference. There are many ways you can contribute to our mission of creating positive change.
