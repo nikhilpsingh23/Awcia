@@ -125,7 +125,7 @@ const Footer = () => {
         <hr className="border-gray-200 my-8" />
         
         <div className="text-center text-aicwa-gray-200">
-          <p>&copy; {new Date().getFullYear()} AICWA. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AICWA. Development By CodeKrafters</p>
         </div>
       </div>
     </footer>
