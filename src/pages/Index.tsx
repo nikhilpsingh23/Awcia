@@ -134,11 +134,11 @@ const Index = () => {
       {/* Hero Content */}
       <div className="text-center px-6 max-w-4xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Empowering Lives. <br /> Spreading Humanity.
+          Empowering Film Industry Workers. <br /> Building Better Lives.
         </h1>
         <p className="text-lg md:text-xl mb-8 text-white/90">
-          AICWA is committed to serving all — from children to the elderly — through
-          health, education, and compassion.
+          Supporting Bollywood and regional film industry workers through healthcare, education, 
+          housing, and financial assistance to ensure dignity and security for every artist and technician.
         </p>
         <Link to="/donate">
           <button className="bg-[#de7621] hover:bg-[#c65c0f] text-white px-6 py-3 rounded-lg font-semibold text-base transition">

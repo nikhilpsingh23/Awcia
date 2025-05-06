@@ -42,25 +42,15 @@ const Donate = () => {
               
               <div className="prose prose-invert">
                 <p className="mb-6">
-                  Thank you for considering a donation to us! Your generosity helps to fund our
-                  programs and initiatives, which work to protect and preserve
-                  the environment and advance sustainable development.
+                  To empower and uplift workers, technicians, junior artists, and artists of the Indian film industry—Bollywood and regional—by providing access to healthcare, education, food, housing, and financial support. Our mission includes offering scholarships for higher studies, building training centers, and ensuring every cine worker and their family lives with dignity, security, and opportunity. We aim to support their holistic well-being through emergency aid, legal support, mental health services, and skill development initiatives.
                 </p>
                 
-                <p className="mb-6">
-                  Our donation portal is secure and easy to use. You can make a
-                  one-time donation or set up a recurring donation to support
-                  our efforts on an ongoing basis. All donations are tax-
-                  deductible and we accept multiple payment methods,
-                  including credit cards and UPI.
-                </p>
-                
-                <p>
-                  Your donation will make a real difference in the world.
-                  Whether you give small or large amount, every contribution
-                  helps to advance our mission and make a positive impact on
-                  the planet. Thank you for your support.
-                </p>
+                <div className="my-8">
+                  <h3 className="text-xl font-semibold mb-4">Vision of AICWA Foundation</h3>
+                  <p>
+                    To build a fair, organized, and supportive ecosystem for Indian film industry workers where no artist or technician is left behind. We envision a future where workers have access to charity hospitals, quality education, low-cost housing, affordable theaters, skill training centers, and recognition through award and fashion events. By bridging critical gaps and promoting unity, our vision is to transform the lives of cine workers and strengthen the foundation of India's creative industries.
+                  </p>
+                </div>
               </div>
 
               <div className="mt-8">
