@@ -522,7 +522,7 @@ const ImpactDetails = () => {
                 </div>
                 
                 <div className="mt-6">
-                  <Button className="w-full">Support This Cause</Button>
+                  <Button onClick={() => window.location.href = '/donate'} className="w-full">Support This Cause</Button>
                 </div>
               </div>
               

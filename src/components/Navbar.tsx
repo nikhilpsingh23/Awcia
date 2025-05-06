@@ -126,7 +126,14 @@ const Navbar = () => {
               Story
             </Link>
             
-            <Link to="#" className="px-4 py-2 bg-aicwa-orange text-white rounded-md hover:bg-opacity-90 transition-colors">
+            <Link to="/contact" className={cn(
+              "hover:text-aicwa-orange transition-colors",
+              scrolled ? "text-aicwa-darkGray" : "text-white"
+            )}>
+              Contact Us
+            </Link>
+            
+            <Link to="/donate" className="px-4 py-2 bg-aicwa-orange text-white rounded-md hover:bg-opacity-90 transition-colors">
               Donate
             </Link>
           </div>
@@ -250,15 +257,26 @@ const Navbar = () => {
             >
               Story
             </Link>
-            
+
             <Link 
-              to="#" 
-              className="px-4 py-2 bg-aicwa-orange text-white rounded-md hover:bg-opacity-90 transition-colors inline-block w-fit"
+              to="/contact" 
+              className={cn(
+                "hover:text-aicwa-orange transition-colors",
+                scrolled ? "text-aicwa-darkGray" : "text-white"
+              )}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Donate
+              Contact Us
             </Link>
-          </div>
+              
+              <Link 
+                to="/donate" 
+                className="px-4 py-2 bg-aicwa-orange text-white rounded-md hover:bg-opacity-90 transition-colors inline-block w-fit"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Donate
+              </Link>
+            </div>
         </div>
       </div>
     </nav>

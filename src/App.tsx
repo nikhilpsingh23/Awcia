@@ -11,6 +11,8 @@ import Gallery from "./pages/Gallery";
 import Story from "./pages/Story";
 import NotFound from "./pages/NotFound";
 import GetInvolved from './pages/GetInvolved';
+import Contact from "./pages/Contact";
+import Donate from "./pages/Donate";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/story" element={<Story />} />
           <Route path="/getinvolved" element={<GetInvolved />} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/donate" element={<Donate/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,23 +9,26 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-bold mb-4">AICWA</h3>
+            <h3 className="text-xl font-bold mb-4 flex items-center">
+              <img src="/logo.jpg" alt="AICWA Logo" className="h-8 w-8 mr-2" />
+              AICWA
+            </h3>
             <p className="text-aicwa-gray-200 mb-4">
               AICWA is dedicated to making a positive impact in health, education, 
               child welfare, old age support, and humanity awareness through 
               community-driven initiatives.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
+              <a href="https://www.facebook.com/aicwafoundation" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
+              <a href="https://www.instagram.com/aicwafoundation/" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
+              <a href="https://x.com/i/flow/login?redirect_after_login=%2FAICWAFoundation" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
+              <a href="https://www.linkedin.com/company/aicwafoundation/" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -83,7 +86,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
+                <Link to="/donate" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
                   Donate
                 </Link>
               </li>
@@ -109,13 +112,20 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <address className="not-italic text-aicwa-gray-200 space-y-2">
-              <p>123 Main Street</p>
-              <p>New Delhi, 110001</p>
+              <p>5, Sunheights Building</p>
+              <p>Near Shyamlal Sohanlal Gupta Chowk</p>
+              <p>JVLR, Powai, Mumbai - 400076</p>
               <p>India</p>
               <p className="flex items-center mt-2">
                 <Mail size={16} className="mr-2" /> 
-                <a href="mailto:info@aicwa.org" className="hover:text-aicwa-orange transition-colors">
-                  info@aicwa.org
+                <a href="mailto:aicwafoundation@gmail.com" className="hover:text-aicwa-orange transition-colors">
+                  aicwafoundation@gmail.com
+                </a>
+              </p>
+              <p className="flex items-center mt-2">
+                <Phone size={16} className="mr-2" /> 
+                <a href="tel:+919820982115" className="hover:text-aicwa-orange transition-colors">
+                  +91 9820982115
                 </a>
               </p>
             </address>

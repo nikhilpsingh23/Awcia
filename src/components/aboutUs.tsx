@@ -71,8 +71,8 @@ const AboutUs = () => {
               <button className="px-6 py-3 bg-aicwa-orange text-white rounded-full hover:bg-aicwa-orange/90 transition-colors">
                 Learn More
               </button>
-              <a href="tel:+912345678990" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:border-aicwa-orange transition-colors group">
-                <Phone className="text-aicwa-orange" />
+              <a href="/contact" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:border-aicwa-orange transition-colors group">
+                <Phone className="text-aicwa-orange" /> 
                 <span className="font-semibold group-hover:text-aicwa-orange">Contact Us</span>
               </a>
             </div>
