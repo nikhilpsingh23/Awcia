@@ -23,8 +23,8 @@ const AboutUs = () => {
           {/* Content Section */}
           <div className="w-full lg:w-1/2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-aicwa-orange">♥</span>
-              <span className="text-aicwa-orange font-medium">About AICWA</span>
+              <span className="text-yellow-500">♥</span>
+              <span className="text-yellow-500 font-medium">About AICWA</span>
             </div>
 
             <h2 className="text-4xl font-bold mb-6">
@@ -39,7 +39,7 @@ const AboutUs = () => {
 
             <div className="flex items-center gap-6 mb-8">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-aicwa-orange rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
                   <img src="/icons/team.svg" alt="Leadership icon" className="w-6 h-6" />
                 </div>
                 <div>
@@ -68,12 +68,12 @@ const AboutUs = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-aicwa-orange text-white rounded-full hover:bg-aicwa-orange/90 transition-colors">
+              <button className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full hover:bg-aicwa-orange/90 transition-colors">
                 Learn More
               </button>
               <a href="/contact" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:border-aicwa-orange transition-colors group">
-                <Phone className="text-aicwa-orange" /> 
-                <span className="font-semibold group-hover:text-aicwa-orange">Contact Us</span>
+                <Phone className="text-yellow-500" /> 
+                <span className="font-semibold group-hover:text-yellow-500">Contact Us</span>
               </a>
             </div>
           </div>

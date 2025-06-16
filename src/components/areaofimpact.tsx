@@ -100,7 +100,7 @@ const AreaOfImpact = () => {
               className={cn(
                 "px-6 py-2 rounded-full whitespace-nowrap transition-colors",
                 activeTab === area.id
-                  ? "bg-aicwa-orange text-white"
+                  ? "bg-yellow-500 hover:bg-yellow-600 text-white"
                   : "border border-gray-300 text-gray-700 hover:bg-gray-50"
               )}
             >
@@ -148,7 +148,7 @@ const AreaOfImpact = () => {
         <div className="text-center mt-12">
           <a 
             href="/impact" 
-            className="text-aicwa-orange hover:text-aicwa-orange/90 font-semibold flex items-center justify-center gap-2"
+            className="text-yellow-500 hover:text-aicwa-orange/90 font-semibold flex items-center justify-center gap-2"
           >
             EXPLORE OUR IMPACT
             <span className="text-xl">→</span>

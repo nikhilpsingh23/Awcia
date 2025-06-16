@@ -133,9 +133,11 @@ const Navbar = () => {
               Contact Us
             </Link>
             
-            <Link to="/donate" className="px-4 py-2 bg-aicwa-orange text-white rounded-md hover:bg-opacity-90 transition-colors">
-              Donate
-            </Link>
+            <Link to="/donate">
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-sm text-lg font-medium transition-colors">
+            Donate
+          </button>
+        </Link>
           </div>
           
           {/* Mobile Menu Button */}

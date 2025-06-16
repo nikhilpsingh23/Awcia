@@ -22,7 +22,7 @@ const JoinUs = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Image Section */}
           <div className="w-full lg:w-1/2">
-            <div className="rounded-3xl overflow-hidden border-4 border-aicwa-orange">
+            <div className="rounded-3xl overflow-hidden border-4 border-yellow-500">
               <img
                 src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200"
                 alt="Volunteer team"
@@ -34,8 +34,8 @@ const JoinUs = () => {
           {/* Content Section */}
           <div className="w-full lg:w-1/2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-aicwa-orange">♥</span>
-              <span className="text-aicwa-orange font-medium">Join us</span>
+              <span className="text-yellow-500">♥</span>
+              <span className="text-text-yellow-500 font-medium">Join us</span>
             </div>
 
             <h2 className="text-4xl font-bold mb-6">
