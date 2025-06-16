@@ -120,33 +120,33 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center text-white">
+      <section className="relative min-h-screen flex items-center justify-start text-white">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
       <img
-  src="images/hero.jpg"
-  alt="Smiling children"
+  src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Make sure to add this image to your public/images folder
+  alt="Child portrait"
   className="w-full h-full object-cover"
 />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Hero Content */}
-      <div className="text-center px-6 max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Empowering Film Industry Workers. <br /> Building Better Lives.
+      <div className="px-6 max-w-2xl ml-8 md:ml-16 lg:ml-24">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">
+          Donate.
         </h1>
-        <p className="text-lg md:text-xl mb-8 text-white/90">
-          Supporting Bollywood and regional film industry workers through healthcare, education, 
-          housing, and financial assistance to ensure dignity and security for every artist and technician.
-        </p>
+        <h2 className="text-3xl md:text-5xl font-light mb-6">
+          Help people<br />
+          around the World.
+        </h2>
         <Link to="/donate">
-          <button className="bg-[#de7621] hover:bg-[#c65c0f] text-white px-6 py-3 rounded-lg font-semibold text-base transition">
-            Donate Now
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-sm text-lg font-medium transition-colors">
+            Donate
           </button>
         </Link>
       </div>
-    </section>
+      </section>
       
       {/* Areas of Impact */}
 
