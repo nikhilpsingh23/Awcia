@@ -217,7 +217,7 @@ const Index = () => {
       
       {/* Why Donate Section */}
       <JoinUs/>
-      <SupportersCarousel/>
+      {/*<SupportersCarousel/>*/}
       {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-start">
