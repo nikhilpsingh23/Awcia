@@ -66,7 +66,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				aicwa: {
-					orange: '#de7621',
+					orange: '#deaf2c',
 					light: '#F6F6F7',
 					gray: '#8E9196',
 					darkGray: '#333333',

@@ -215,3 +215,12 @@
     transform: scale(1);
   }
 }
+
+.mt-screen {
+  margin-top: 100vh;
+}
+
+/* Optional: Add smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

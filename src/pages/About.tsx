@@ -85,23 +85,23 @@ const About = () => {
                 
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-start">
-                    <CheckCircle className="text-aicwa-orange mr-2 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
                     <span>Provided educational support to over 50,000 children</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="text-aicwa-orange mr-2 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
                     <span>Conducted health camps serving more than 100,000 individuals</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="text-aicwa-orange mr-2 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
                     <span>Established support networks for 15,000 elderly individuals</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="text-aicwa-orange mr-2 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
                     <span>Implemented child welfare programs in 500+ communities</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="text-aicwa-orange mr-2 mt-1 flex-shrink-0" size={18} />
+                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
                     <span>Trained 10,000+ volunteers in community development</span>
                   </li>
                 </ul>
@@ -199,7 +199,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-gray-50 p-8 rounded-lg">
               <div className="flex items-center gap-3 mb-4">
-                <Target className="text-aicwa-orange" size={24} />
+                <Target className="text-yellow-500" size={24} />
                 <h3 className="text-2xl font-bold text-aicwa-darkGray">Our Vision</h3>
               </div>
               <p className="text-aicwa-gray">
@@ -209,7 +209,7 @@ const About = () => {
             
             <div className="bg-gray-50 p-8 rounded-lg">
               <div className="flex items-center gap-3 mb-4">
-                <Globe className="text-aicwa-orange" size={24} />
+                <Globe className="text-yellow-500" size={24} />
                 <h3 className="text-2xl font-bold text-aicwa-darkGray">Our Mission</h3>
               </div>
               <p className="text-aicwa-gray">
@@ -231,25 +231,25 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             <div className="bg-white p-6 rounded-lg text-center">
-              <Award className="text-aicwa-orange mx-auto mb-4" size={40} />
+              <Award className="text-yellow-500 mx-auto mb-4" size={40} />
               <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">15+ Years</h4>
               <p className="text-aicwa-gray">Of Dedicated Service</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg text-center">
-              <Users className="text-aicwa-orange mx-auto mb-4" size={40} />
+              <Users className="text-yellow-500 mx-auto mb-4" size={40} />
               <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">100,000+</h4>
               <p className="text-aicwa-gray">Lives Impacted</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg text-center">
-              <Globe className="text-aicwa-orange mx-auto mb-4" size={40} />
+              <Globe className="text-yellow-500 mx-auto mb-4" size={40} />
               <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">500+</h4>
               <p className="text-aicwa-gray">Communities Served</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg text-center">
-              <Award className="text-aicwa-orange mx-auto mb-4" size={40} />
+              <Award className="text-yellow-500 mx-auto mb-4" size={40} />
               <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">25+</h4>
               <p className="text-aicwa-gray">National Awards</p>
             </div>

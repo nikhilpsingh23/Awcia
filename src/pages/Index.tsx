@@ -116,44 +116,47 @@ const Index = () => {
   ];
   
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-start text-white">
-      {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
-      <img
-  src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Make sure to add this image to your public/images folder
-  alt="Child portrait"
-  className="w-full h-full object-cover"
-/>
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+      {/* Hero Section - Fixed */}
+      <section className="fixed inset-0 flex items-center justify-start text-white">
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-10">
+          <img
+            src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Child portrait"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
-      {/* Hero Content */}
-      <div className="px-6 max-w-2xl ml-8 md:ml-16 lg:ml-24">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">
-          Donate.
-        </h1>
-        <h2 className="text-3xl md:text-5xl font-light mb-6">
-          Help people<br />
-          around the World.
-        </h2>
-        <Link to="/donate">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-sm text-lg font-medium transition-colors">
-            Donate
-          </button>
-        </Link>
-      </div>
+        {/* Hero Content */}
+        <div className="px-6 max-w-2xl ml-8 md:ml-16 lg:ml-24">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            Donate.
+          </h1>
+          <h2 className="text-3xl md:text-5xl font-light mb-6">
+            Help people<br />
+            around the World.
+          </h2>
+          <Link to="/donate">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-sm text-lg font-medium transition-colors">
+              Donate
+            </button>
+          </Link>
+        </div>
       </section>
       
-      {/* Areas of Impact */}
-
-      <AreaOfImpact/>
-      <DonationComponent/>
-      <DonateSection/>
-      { /* <section className="py-20 px-4">
+      {/* Scrollable Content Container */}
+      <div className="relative mt-screen">
+        {/* Areas of Impact */}
+        <div className="bg-white relative z-10">
+          <AreaOfImpact/>
+          <DonationComponent/>
+          <DonateSection/>
+          
+          { /* <section className="py-20 px-4">
         <div className="container mx-auto">
           <SectionTitle
             title="Areas of Impact"
@@ -336,7 +339,10 @@ const Index = () => {
       
       <Footer />
     </div>
+    </div>
+    </div>
   );
 };
 
 export default Index;
+
