@@ -1,144 +1,104 @@
-
-import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { BsTelephone } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-300 text-aicwa-darkGray pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* About Column */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 flex items-center">
-              <img src="/logo.jpg" alt="AICWA Logo" className="h-8 w-8 mr-2" />
-              AICWA
-            </h3>
-            <p className="text-aicwa-gray-200 mb-4">
-              AICWA is dedicated to making a positive impact in health, education, 
-              child welfare, old age support, and humanity awareness through 
-              community-driven initiatives.
-            </p>
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com/aicwafoundation" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="https://www.instagram.com/aicwafoundation/" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="https://x.com/i/flow/login?redirect_after_login=%2FAICWAFoundation" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="https://www.linkedin.com/company/aicwafoundation/" className="text-aicwa-gray hover:text-aicwa-orange transition-colors">
-                <Linkedin size={20} />
-              </a>
+    <>
+      {/* Top Action Buttons */}
+      
+
+      {/* Main Footer */}
+      <footer className="bg-[#F9B84D] py-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+          {/* Contact Bar */}
+          <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-8">
+            <img src="/images/logo.png" alt="Aicwa Foundation" className="h-16 md:h-20" />
+
+            <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+              <div className="flex items-center gap-2">
+                <BsTelephone className="text-xl" />
+                <div>
+                  <p className="font-bold text-sm">CALL US NOW</p>
+                  <p className="text-sm">011-41410075/76</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <MdEmail className="text-xl" />
+                <div>
+                  <p className="font-bold text-sm">SEND AN EMAIL</p>
+                  <p className="text-sm">contact@s.org</p>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-bold text-sm mb-2">CONNECT WITH US</p>
+                <div className="flex justify-center sm:justify-start gap-3">
+                  <FaFacebook className="hover:text-gray-700 cursor-pointer" />
+                  <FaInstagram className="hover:text-gray-700 cursor-pointer" />
+                  <FaLinkedin className="hover:text-gray-700 cursor-pointer" />
+                  <FaTwitter className="hover:text-gray-700 cursor-pointer" />
+                  <FaYoutube className="hover:text-gray-700 cursor-pointer" />
+                </div>
+              </div>
             </div>
           </div>
-          
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/about" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/impact/health" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Health
-                </Link>
-              </li>
-              <li>
-                <Link to="/impact/education" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Education
-                </Link>
-              </li>
-              <li>
-                <Link to="/impact/child-welfare" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Child Welfare
-                </Link>
-              </li>
-              <li>
-                <Link to="/impact/old-age" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Old Age Support
-                </Link>
-              </li>
-              <li>
-                <Link to="/impact/humanity" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Humanity Awareness
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-          {/* More Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">More</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/gallery" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link to="/story" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Story
-                </Link>
-              </li>
-              <li>
-                <Link to="/donate" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Donate
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Volunteer
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-aicwa-gray-200 hover:text-aicwa-orange transition-colors">
-                  Terms & Conditions
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-          {/* Contact */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-            <address className="not-italic text-aicwa-gray-200 space-y-2">
-              <p>5, Sunheights Building</p>
-              <p>Near Shyamlal Sohanlal Gupta Chowk</p>
-              <p>JVLR, Powai, Mumbai - 400076</p>
-              <p>India</p>
-              <p className="flex items-center mt-2">
-                <Mail size={16} className="mr-2" /> 
-                <a href="mailto:aicwafoundation@gmail.com" className="hover:text-aicwa-orange transition-colors">
-                  aicwafoundation@gmail.com
-                </a>
+
+          {/* Footer Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 text-sm">
+            {/* About Section */}
+            <div className="md:col-span-4">
+              <p>
+                AICWA is dedicated to making a positive impact in health, education, child welfare, old age support, and humanity awareness through community-driven initiatives.
               </p>
-              <p className="flex items-center mt-2">
-                <Phone size={16} className="mr-2" /> 
-                <a href="tel:+919820982115" className="hover:text-aicwa-orange transition-colors">
-                  +91 9820982115
-                </a>
-              </p>
-            </address>
+            </div>
+
+            {/* Quick Links */}
+            <div className="md:col-span-3">
+              <h3 className="font-bold mb-4">QUICK LINKS</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="hover:underline">Health</a></li>
+                <li><a href="#" className="hover:underline">Education</a></li>
+                <li><a href="#" className="hover:underline">Rural Transformation</a></li>
+                <li><a href="#" className="hover:underline">Women Empowerment</a></li>
+                <li><a href="#" className="hover:underline">Art, culture and heritage</a></li>
+              </ul>
+            </div>
+
+            {/* Additional Links */}
+            <div className="md:col-span-2">
+              <ul className="space-y-2 mt-6 md:mt-10">
+                <li><a href="#" className="hover:underline">About Us</a></li>
+                <li><a href="#" className="hover:underline">Get Involved</a></li>
+                <li><a href="#" className="hover:underline">Gallery</a></li>
+              </ul>
+            </div>
+
+            {/* Newsletter */}
+            <div className="md:col-span-3">
+              <h3 className="font-bold mb-4">GET UPDATES</h3>
+              <p className="mb-4">Keep up with the latest news of our charity organization.</p>
+              <div className="space-y-3">
+                <input
+                  type="email"
+                  placeholder="Enter email address"
+                  className="w-full px-4 py-2 bg-[#C99B42] placeholder-black text-sm"
+                />
+                <button className="bg-black text-white px-5 py-2 text-sm hover:bg-gray-800 w-full sm:w-auto">
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <hr className="border-gray-200 my-8" />
-        
-        <div className="text-center text-aicwa-gray-200">
-          <p>&copy; {new Date().getFullYear()} AICWA. Development By CodeKrafters</p>
-        </div>
+      </footer>
+
+      {/* Copyright */}
+      <div className="bg-gray-700 text-white py-3 text-center text-xs sm:text-sm">
+        © 2025 AICWA Foundation. All Rights Reserved | CK
       </div>
-    </footer>
+    </>
   );
 };
 

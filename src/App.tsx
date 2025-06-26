@@ -10,13 +10,15 @@ import ImpactDetails from "./pages/ImpactDetails";
 import Gallery from "./pages/Gallery";
 import Story from "./pages/Story";
 import NotFound from "./pages/NotFound";
-import GetInvolved from './pages/GetInvolved';
+import GetInvolved from './pages/Volunteer';
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+  <>
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -37,6 +39,8 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+  <WhatsAppButton/>
+  </>
 );
 
 export default App;

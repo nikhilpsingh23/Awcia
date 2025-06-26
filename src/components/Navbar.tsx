@@ -1,13 +1,19 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import gsap from 'gsap';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isImpactOpen, setIsImpactOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  // Refs for menu items
+  const menuItemsRef = useRef([]);
+  const donateButtonRef = useRef(null);
+  const mobileMenuButtonRef = useRef(null);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -23,38 +29,136 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
+  // Hover animations for all menu items
+  useEffect(() => {
+    const menuItems = menuItemsRef.current;
+    const donateBtn = donateButtonRef.current;
+    const mobileBtn = mobileMenuButtonRef.current;
+
+    const createHoverAnimation = (element) => {
+      if (!element) return null;
+
+      const timeline = gsap.timeline({ paused: true });
+      
+      if (element === donateBtn) {
+        // Special animation for donate button
+        timeline.to(element, {
+          scale: 1.05,
+          backgroundColor: '#eab308', // yellow-600
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      } else if (element === mobileBtn) {
+        // Animation for mobile menu button
+        timeline.to(element, {
+          scale: 1.1,
+          rotation: 180,
+          duration: 0.3,
+          ease: 'back.out(1.7)'
+        });
+      } else {
+        // Animation for regular menu items
+        timeline.to(element, {
+          y: -2,
+          scale: 1.05,
+          duration: 0.2,
+          ease: 'power1.out'
+        });
+      }
+
+      return timeline;
+    };
+
+    const animations = [];
+
+    // Setup animations for all menu items
+    menuItems.forEach((item) => {
+      if (item) {
+        const anim = createHoverAnimation(item);
+        if (anim) {
+          const handleEnter = () => anim.play();
+          const handleLeave = () => anim.reverse();
+          
+          item.addEventListener('mouseenter', handleEnter);
+          item.addEventListener('mouseleave', handleLeave);
+          
+          animations.push({ element: item, enter: handleEnter, leave: handleLeave });
+        }
+      }
+    });
+
+    // Setup animation for donate button
+    if (donateBtn) {
+      const anim = createHoverAnimation(donateBtn);
+      if (anim) {
+        const handleEnter = () => anim.play();
+        const handleLeave = () => anim.reverse();
+        
+        donateBtn.addEventListener('mouseenter', handleEnter);
+        donateBtn.addEventListener('mouseleave', handleLeave);
+        
+        animations.push({ element: donateBtn, enter: handleEnter, leave: handleLeave });
+      }
+    }
+
+    // Setup animation for mobile menu button
+    if (mobileBtn) {
+      const anim = createHoverAnimation(mobileBtn);
+      if (anim) {
+        const handleEnter = () => anim.play();
+        const handleLeave = () => anim.reverse();
+        
+        mobileBtn.addEventListener('mouseenter', handleEnter);
+        mobileBtn.addEventListener('mouseleave', handleLeave);
+        
+        animations.push({ element: mobileBtn, enter: handleEnter, leave: handleLeave });
+      }
+    }
+
+    // Cleanup
+    return () => {
+      animations.forEach(({ element, enter, leave }) => {
+        if (element) {
+          element.removeEventListener('mouseenter', enter);
+          element.removeEventListener('mouseleave', leave);
+        }
+      });
+    };
+  }, []);
+
   return (
-    <nav 
-      className={cn(
-        'fixed w-full z-50 transition-all duration-300 ease-in-out',
-        scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      )}
-    >
+    <nav className={cn(
+      'fixed w-full z-50 transition-all duration-300 ease-in-out',
+      scrolled ? 'bg-[#e6e6e6] shadow-md py-2' : 'bg-transparent py-4'
+    )}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link to="/" className={cn(
             "text-2xl font-bold",
             scrolled ? "text-aicwa-darkGray" : "text-white"
           )}>
-            AICWA
+           <img src="/images/logo.png" alt="Aicwa Foundation" className="h-16 md:h-14" />
           </Link>
           
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/about" className={cn(
-              "hover:text-aicwa-orange transition-colors",
-              scrolled ? "text-aicwa-darkGray" : "text-white"
-            )}>
+            <Link 
+              ref={el => menuItemsRef.current[0] = el}
+              to="/about" 
+              className={cn(
+                "hover:text-aicwa-orange transition-colors",
+                scrolled ? "text-aicwa-darkGray" : "text-white"
+              )}
+            >
               About Us
             </Link>
 
+            {/* Add refs to all menu items */}
             <Link to="/getinvolved" className={cn(
               "hover:text-aicwa-orange transition-colors",
               scrolled ? "text-aicwa-darkGray" : "text-white"
             )}>
-              Get Involved
+              Volunteer
             </Link>
             
             {/* Area of Impact Dropdown */}
@@ -119,12 +223,12 @@ const Navbar = () => {
               Gallery
             </Link>
             
-            <Link to="/story" className={cn(
+            {/*<Link to="/story" className={cn(
               "hover:text-aicwa-orange transition-colors",
               scrolled ? "text-aicwa-darkGray" : "text-white"
             )}>
               Story
-            </Link>
+            </Link> */}
             
             <Link to="/contact" className={cn(
               "hover:text-aicwa-orange transition-colors",
@@ -133,17 +237,25 @@ const Navbar = () => {
               Contact Us
             </Link>
             
-            <Link to="/donate">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-sm text-lg font-medium transition-colors">
-            Donate
-          </button>
-        </Link>
+             
+                
+                <Link to="/donate">
+                <button
+                ref={donateButtonRef}
+                  className="flex items-center bg-yellow-500 text-white px-2 py-2 rounded-full shadow-md border border-gray-200 transition duration-300 hover:shadow-lg"
+                >
+                  <span className="px-4 text-base font-medium">Donate Now</span>
+                  <span className="bg-[#0b2c48] text-white rounded-full p-2">
+                   <ArrowRight size={16} />
+                  </span>
+                </button>
+              </Link>
           </div>
           
-          {/* Mobile Menu Button */}
           <button 
+            ref={mobileMenuButtonRef}
             className={cn(
-              "md:hidden focus:outline-none",
+              "md:hidden focus:outline-none transition-transform duration-300",
               scrolled ? "text-aicwa-darkGray" : "text-white"
             )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

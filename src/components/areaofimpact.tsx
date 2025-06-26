@@ -22,8 +22,8 @@ const AreaOfImpact = () => {
       ]
     },
     {
-      id: 'education',
-      title: 'Education',
+      id: 'Rural',
+      title: 'Rural',
       description: 'Empowering communities through quality education, digital learning initiatives, and skill development programs. We focus on making education accessible to all, regardless of socioeconomic status.',
       imageSrc: 'https://media.istockphoto.com/id/1344964565/photo/teacher-distributing-healthy-meal-to-students-in-classroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=W9Y-eiZWCoA7xlSejkBGLPSt6wkj5iQGmvB5ahytH8M=',
       additionalImages: [
@@ -38,8 +38,8 @@ const AreaOfImpact = () => {
       ]
     },
     {
-      id: 'child',
-      title: 'Child Welfare',
+      id: 'Women Empowerment',
+      title: 'Women Empowerment',
       description: 'Supporting children through comprehensive welfare programs including education, nutrition, healthcare, and protection services. We ensure every child has the opportunity to thrive.',
       imageSrc: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200',
       additionalImages: [
@@ -54,8 +54,8 @@ const AreaOfImpact = () => {
       ]
     },
     {
-      id: 'oldage',
-      title: 'Old Age Support',
+      id: 'Art and Culture',
+      title: 'Art and Culture',
       description: 'Providing comprehensive care and support for the elderly through healthcare services, social activities, and community engagement programs that ensure dignity in their golden years.',
       imageSrc: 'https://media.istockphoto.com/id/621904232/photo/beautiful-cheerful-senior-woman-volunteers-at-food-bank.webp?a=1&b=1&s=612x612&w=0&k=20&c=9mbq6IImHqRQLRTMyufWTqJ_JeE06jwDcp-NMfrj1UM=',
       additionalImages: [
@@ -88,7 +88,7 @@ const AreaOfImpact = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-[#e6e6e6]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Our Areas of Impact</h2>
         
