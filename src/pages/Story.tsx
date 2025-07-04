@@ -270,7 +270,7 @@ const Story = () => {
               { region: "East India", stories: 178, image: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=800" },
               { region: "West India", stories: 167, image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800" }
             ].map((region, index) => (
-              <div key={index} className="relative group cursor-pointer overflow-hidden rounded-lg">
+              <div key={index} className="relative group cursor-pointer overflow-hidden rounded-full">
                 <img 
                   src={region.image} 
                   alt={region.region}

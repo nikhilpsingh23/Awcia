@@ -32,46 +32,63 @@ const WhatWeDoSection = () => {
   }, []);
 
   return (
-    <section className="what-we-do-section w-full bg-[#e6e6e6] py-16 md:py-24 px-4 md:px-10 lg:px-20">
-      <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center gap-12">
-        
-        {/* Left Side - Text Content */}
-        <div className="md:w-1/2 space-y-6">
-          <div className="quote-content text-gray-800">
-            <svg className="w-10 h-10 text-yellow-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-            </svg>
-            <p className="text-xl md:text-2xl lg:text-2xl font-light leading-relaxed">
-              I have seen the truth with my own eyes—children walking barefoot without food or books, young girls married off in desperation, families borrowing just to survive. Rural India isn't lacking in strength or spirit—it's lacking in opportunity. At AICWA Foundation, we are here to change that—one village, one family, one life at a time.
+    <section className="what-we-do-section w-full bg-[#fffaf4] py-16 md:py-24 px-4 md:px-10 lg:px-20 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto relative">
+        {/* Background Circle */}
+        <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-[#f89b36] rounded-full -z-10 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4" />
+
+        {/* Content Container */}
+        <div className="relative z-10 flex flex-col items-center text-center">
+          {/* Image */}
+          <div className="mb-8">
+            <img
+              src="/images/suresh.png"
+              alt="AICWA Leader"
+              className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-white shadow-lg"
+              loading="eager"
+            />
+          </div>
+
+          {/* Text Content */}
+          <div className="quote-content max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#821818] mb-4">
+              Follow Our Journey
+            </h2>
+            <p className="text-base md:text-lg text-gray-700 mb-6">
+              All Indian Cine Workers Association (AICWA) is the only association in Bollywood affiliated with Government of Maharashtra.
             </p>
-          </div>
 
-          <div className="quote-author border-l-4 border-yellow-500 pl-4 mt-4">
-            <p className="text-lg md:text-xl font-semibold text-gray-800">Suresh Shyamlal Gupta</p>
-            <p className="text-sm md:text-base text-gray-500">President, AICWA Foundation</p>
-          </div>
+            {/* Author Info */}
+            <div className="quote-author inline-block border-l-4 border-yellow-500 pl-4 mt-4 text-left">
+              <p className="text-lg md:text-xl font-semibold text-gray-800">Suresh Shyamlal Gupta</p>
+              <p className="text-sm md:text-base text-gray-500">President, AICWA Foundation</p>
+            </div>
 
-          <div className="pt-4">
-            <button
-              onClick={() => navigate('/about')}
-              className="px-8 py-3 bg-transparent border-2 border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-white transition-all duration-300"
-            >
-              Know More
-            </button>
-          </div>
-        </div>
+            {/* Social Icons */}
+            <div className="flex justify-center space-x-4 mt-8">
+              {['fb', 'yt', 'insta', 'in', 'tw'].map((icon, i) => (
+                <div
+                  key={i}
+                  className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center border hover:scale-105 transition"
+                >
+                  <img
+                    src={`/icons/${icon}.svg`}
+                    alt={`${icon} icon`}
+                    className="w-5 h-5"
+                  />
+                </div>
+              ))}
+            </div>
 
-        {/* Right Side - President Image with right+bottom border */}
-        <div className="md:w-1/2 relative rounded-xl overflow-hidden shadow-lg border-r-[6px] border-b-[6px] border-[#303C69]">
-          <img
-            src="/images/suresh.png"
-            alt="President"
-            className="w-80% h-80% object-cover"
-          />
-
-          {/* Top-right Tag */}
-          <div className="absolute top-4 right-4 bg-[#303C69] text-white px-4 py-1 rounded-full animate-bounce shadow-lg text-sm font-semibold">
-            PRESIDENT
+            {/* Know More Button */}
+            <div className="mt-8">
+              <button
+                onClick={() => navigate('/about')}
+                className="px-8 py-3 bg-transparent border-2 border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-white transition-all duration-300"
+              >
+                Know More
+              </button>
+            </div>
           </div>
         </div>
       </div>

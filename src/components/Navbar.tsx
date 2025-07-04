@@ -136,9 +136,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className={cn(
             "text-2xl font-bold",
-            scrolled ? "text-aicwa-darkGray" : "text-white"
+            scrolled ? "text-aicwa-darkGray" : "text-yellow-500"
           )}>
-           <img src="/images/logo.png" alt="Aicwa Foundation" className="h-16 md:h-14" />
+           Aicwa Foundation
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">

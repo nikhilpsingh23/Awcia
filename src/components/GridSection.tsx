@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const impacts = [
   {
     title: "Health",
-    image: "/images/art.jpg",
+    image: "/images/art.png",
     description:
       "AICWA is committed to supporting the health and well-being of cine workers across India by offering access to regular medical camps, health insurance support, mental wellness initiatives, and emergency assistance to those in need.",
     bg: "bg-[#f1f1d4]",
@@ -28,7 +28,7 @@ const impacts = [
   },
   {
     title: "Women Empowerment",
-    image: "/images/women.jpeg",
+    image: "/images/s8.png",
     description:
       "We promote equal opportunities for women in the film industry by providing training, financial support, legal aid, and a safe working environment for female cine workers and artists.",
     bg: "bg-[#f2d9dd]",
