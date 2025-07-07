@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Link } from 'react-router-dom';
 import { GraduationCap, Heart, Home, Users, Utensils, BookOpen } from 'lucide-react';
 
 const DonationComponent = () => {
   return (
+    <section className='w-full'>
     <div className="w-full bg-[#303C69] py-16 px-4 md:px-16 flex justify-center items-center">
       <div className="max-w-7xl w-full flex flex-col lg:flex-row gap-8 items-start">
         {/* Left Section - Donation Form */}
@@ -48,7 +50,7 @@ const DonationComponent = () => {
               onClick={() => window.location.href = '/donate'}
               className="w-full bg-[#2A2A2A] text-white py-3 rounded font-medium hover:bg-[#1A1A1A] transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px]"
             >
-              Send message
+              Proceed to Donate
             </Button>
 
             <div className="mt-6 transform hover:scale-105 transition-transform duration-300">
@@ -111,7 +113,21 @@ const DonationComponent = () => {
           </div>
         </div>
       </div>
+      
     </div>
+    <div className="relative w-full -mt-20">
+  <svg
+    viewBox="0 0 1440 150"
+    className="w-full h-24 md:h-32"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="white"
+      d="M0,0 C480,120 960,120 1440,0 L1440,150 L0,150 Z"
+    />
+  </svg>
+</div>
+    </section>
   );
 };
 

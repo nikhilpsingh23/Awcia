@@ -2,6 +2,16 @@ import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useNavigate } from 'react-router-dom';
+import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,67 +42,55 @@ const WhatWeDoSection = () => {
   }, []);
 
   return (
-    <section className="what-we-do-section w-full bg-[#fffaf4] py-16 md:py-24 px-4 md:px-10 lg:px-20 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto relative">
-        {/* Background Circle */}
-        <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-[#f89b36] rounded-full -z-10 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4" />
+    <section className="relative bg-[#303C69] text-white overflow-hidden what-we-do-section">
+  {/* Centered Content */}
+  <div className="max-w-4xl mx-auto px-4 pt-20 pb-10 flex flex-col items-center text-center">
+    {/* Top Name + Title */}
+    <h4 className="text-lg mb-2">Hello! I'm</h4>
+    <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight">
+          Suresh Shyamlal Gupta
+        </h1>
+        <p className="text-yellow-400 text-lg mt-2 font-medium">
+          President, AICWA Foundation
+        </p>
 
-        {/* Content Container */}
-        <div className="relative z-10 flex flex-col items-center text-center">
-          {/* Image */}
-          <div className="mb-8">
-            <img
-              src="/images/suresh.png"
-              alt="AICWA Leader"
-              className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-white shadow-lg"
-              loading="eager"
-            />
-          </div>
+    {/* Social Media Icons */}
 
-          {/* Text Content */}
-          <div className="quote-content max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#821818] mb-4">
-              Follow Our Journey
-            </h2>
-            <p className="text-base md:text-lg text-gray-700 mb-6">
-              All Indian Cine Workers Association (AICWA) is the only association in Bollywood affiliated with Government of Maharashtra.
-            </p>
 
-            {/* Author Info */}
-            <div className="quote-author inline-block border-l-4 border-yellow-500 pl-4 mt-4 text-left">
-              <p className="text-lg md:text-xl font-semibold text-gray-800">Suresh Shyamlal Gupta</p>
-              <p className="text-sm md:text-base text-gray-500">President, AICWA Foundation</p>
-            </div>
+    {/* Image Middle Section */}
+    <div className="-mb-20 mt-12 z-10">
+      <img
+        src="/images/suresh.png"
+        alt="Jane Williamson"
+        className="w-64 h-auto object-contain"
+      />
+    </div>
+  </div>
 
-            {/* Social Icons */}
-            <div className="flex justify-center space-x-4 mt-8">
-              {['fb', 'yt', 'insta', 'in', 'tw'].map((icon, i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center border hover:scale-105 transition"
-                >
-                  <img
-                    src={`/icons/${icon}.svg`}
-                    alt={`${icon} icon`}
-                    className="w-5 h-5"
-                  />
-                </div>
-              ))}
-            </div>
+  {/* Bottom Curve */}
+  <div className="relative">
+    <svg
+      viewBox="0 0 1440 150"
+      className="w-full h-auto text-white"
+      preserveAspectRatio="none"
+    >
+      <path
+        fill="white"
+        d="M0,0 C480,120 960,120 1440,0 L1440,150 L0,150 Z"
+      ></path>
+    </svg>
 
-            {/* Know More Button */}
-            <div className="mt-8">
-              <button
-                onClick={() => navigate('/about')}
-                className="px-8 py-3 bg-transparent border-2 border-yellow-500 text-yellow-500 rounded-full font-medium hover:bg-yellow-500 hover:text-white transition-all duration-300"
-              >
-                Know More
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    {/* Know More Button */}
+    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
+      <Link to="#about">
+        <Button className="text-black bg-yellow-500 px-6 py-2 rounded-full shadow-md hover:bg-gray-200 transition">
+          Know More
+        </Button>
+      </Link>
+    </div>
+  </div>
+</section>
+
   );
 };
 

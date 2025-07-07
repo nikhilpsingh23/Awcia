@@ -117,7 +117,7 @@ const Index = () => {
           <FaTwitter size={20} />
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/aicwafoundation"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-all duration-300 hover:scale-110"
@@ -133,7 +133,7 @@ const Index = () => {
           <FaYoutube size={20} />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/aicwafoundation/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-pink-600 hover:bg-pink-700 text-white rounded transition-all duration-300 hover:scale-110"
@@ -141,7 +141,7 @@ const Index = () => {
           <FaInstagram size={20} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/company/aicwafoundation/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-blue-800 hover:bg-blue-900 text-white rounded transition-all duration-300 hover:scale-110"
@@ -153,7 +153,7 @@ const Index = () => {
       {/* Social Media Icons - Mobile */}
       <div className="fixed bottom-0 left-0 right-0 md:hidden z-50 bg-white/10 backdrop-blur-sm p-2 flex justify-center gap-4">
         <a
-          href="https://twitter.com"
+          href="https://x.com/AICWAFoundation"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-black hover:bg-gray-800 text-white rounded-full transition-all duration-300 active:scale-95"
@@ -197,57 +197,58 @@ const Index = () => {
       <Navbar/>
       
       {/* Hero Section with Carousel */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Carousel with Fade Effect */}
-      <Swiper
-        modules={[Autoplay, EffectFade]}
-        effect="fade"
-        loop={true}
-        autoplay={{
-          delay: 6000,
-          disableOnInteraction: false,
-        }}
-        className="absolute inset-0 w-full h-full -z-10"
-      >
-        {heroImages.map((image, index) => (
-          <SwiperSlide key={index}>
-            <div className="relative w-full h-screen">
-              <img
-                src={image}
-                alt={`Hero ${index}`}
-                className="w-full h-full object-cover transition-all duration-1000 ease-in-out"
-              />
-              {/* Consistent Blue Overlay */}
-              <div className="absolute inset-0 bg-[#0b2c48]/60 transition-all duration-1000" />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+ <section className="relative min-h-screen flex items-center overflow-hidden">
+  {/* Background Carousel with Fade Effect */}
+  <Swiper
+    modules={[Autoplay, EffectFade]}
+    effect="fade"
+    loop={true}
+    autoplay={{
+      delay: 6000,
+      disableOnInteraction: false,
+    }}
+    className="absolute inset-0 w-full h-full -z-10"
+  >
+    {heroImages.map((image, index) => (
+      <SwiperSlide key={index}>
+        <div className="relative w-full h-[100vh] md:h-screen">
+          <img
+            src={image}
+            alt={`Hero ${index}`}
+            className="w-full h-full object-cover"
+          />
+          {/* Consistent Blue Overlay */}
+          <div className="absolute inset-0 bg-[#0b2c48]/60" />
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
 
-      {/* Foreground Text */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
-        className="relative z-10 px-6 max-w-2xl ml-8 md:ml-16 lg:ml-24 text-white"
-      >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">
-          Support the Hands Behind Indian Cinema
-        </h1>
-        <h2 className="text-3xl md:text-5xl font-light mb-6 drop-shadow-sm">
-          Help people<br />
-          around the World.
-        </h2>
-        <Link to="/donate">
-          <button className="flex items-center bg-yellow-500 text-white px-2 py-2 rounded-full shadow-lg border border-white/20 hover:scale-105 transition-all duration-300">
-            <span className="px-4 text-base font-medium">Donate Now</span>
-            <span className="bg-[#0b2c48] text-white rounded-full p-2 ml-2">
-              <ArrowRight size={16} />
-            </span>
-          </button>
-        </Link>
-      </motion.div>
-    </section>
+  {/* Foreground Text */}
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1.2 }}
+    className="relative z-10 px-4 sm:px-6 md:px-8 max-w-xl md:max-w-2xl ml-4 sm:ml-8 md:ml-16 lg:ml-24 text-white"
+  >
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 drop-shadow-md bg-gradient-to-r from-yellow-400 via-yellow-550 to-yellow-700 bg-clip-text text-transparent">
+  Support the Hands Behind Indian Cinema
+</h1>
+    <h2 className="text-2xl sm:text-3xl md:text-2xl font-light mb-6 drop-shadow-sm">
+      
+      Empowering the Backbone <br /> of Indian Cinema
+    </h2>
+    <Link to="/donate">
+      <button className="flex items-center bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg border border-white/20 hover:scale-105 transition-all duration-300">
+        <span className="text-base  font-medium">Donate Now</span>
+        <span className="bg-[#0b2c48] text-white rounded-full p-2 ml-2">
+          <ArrowRight size={16} />
+        </span>
+      </button>
+    </Link>
+  </motion.div>
+</section>
+
 
 
       {/* Scrollable Content Container */}
@@ -258,9 +259,8 @@ const Index = () => {
           <GridSection/>
           {/*<AreaOfImpact/>*/}
           <WhatWeDoSection/>
-          <Story/>
           <DonateSection/>
-           
+          <Story/>
           {/*<AboutUs/>
           <JoinUs/> */}
         </div>
