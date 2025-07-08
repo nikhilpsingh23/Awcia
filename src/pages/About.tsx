@@ -1,289 +1,247 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import PageHeader from '@/components/PageHeader';
-import SectionTitle from '@/components/SectionTitle';
-import Button from '@/components/Button';
-import { CheckCircle, Target, Users, Globe, Award } from 'lucide-react';
 
 const About = () => {
+  const teamMembers = [
+    {
+        name: "Somaiya dhara",
+        role: "Team",
+        image: "/images/somaiya.jpeg"
+    },
+    {
+        name: "Sarah Shivangi mehra",
+        role: "Team",
+        image: "/images/shivangi.jpeg"
+    },
+    {
+      name: "Somaiya dhara",
+      role: "Team",
+      image: "/images/somaiya.jpeg"
+  },
+  {
+      name: "Sarah Shivangi mehra",
+      role: "Team",
+      image: "/images/shivangi.jpeg"
+  },
+  {
+    name: "Somaiya dhara",
+    role: "Team",
+    image: "/images/somaiya.jpeg"
+},
+{
+    name: "Sarah Shivangi mehra",
+    role: "Team",
+    image: "/images/shivangi.jpeg"
+},
+{
+  name: "Sarah Shivangi mehra",
+  role: "Team",
+  image: "/images/shivangi.jpeg"
+},
+{
+  name: "Sarah Shivangi mehra",
+  role: "Team",
+  image: "/images/shivangi.jpeg"
+},
+
+
+];
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
-      <PageHeader
-        title="About AICWA"
-        subtitle="Learn about our mission, vision, and journey"
-        imageSrc="https://media.istockphoto.com/id/1279995279/photo/double-exposure-panoramic-teamwork-business-join-hand-together-with-silhouette-business.webp?a=1&b=1&s=612x612&w=0&k=20&c=YvdGyDgn3-cYbS1oxDzOE7k3LgKJOGsjM64D7qU6uts="
-      />
-      
-      <section className="py-16 px-4">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row items-start gap-12">
-            <div className="w-full lg:w-2/3">
-              <SectionTitle
-                title="Our Story"
-                subtitle="From humble beginnings to impactful change"
-              />
-              
-              <div className="prose max-w-none text-aicwa-gray">
-                <div className="flex flex-col md:flex-row gap-8 mb-8 items-center">
-                  <div className="w-full md:w-1/2">
-                    <img 
-                      src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800"
-                      alt="Children studying"
-                      className="rounded-lg shadow-lg w-full h-[300px] object-cover"
-                    />
-                  </div>
-                  <div className="w-full md:w-1/2">
-                    <p className="mb-4">
-                      Founded in 2008, AICWA began as a small initiative by a group of passionate individuals determined to make a difference in their local community. What started as weekend literacy classes for underprivileged children quickly grew as the founders recognized the interconnected challenges facing the communities they served.
-                    </p>
-                  </div>
-                </div>
 
-                <div className="flex flex-col md:flex-row-reverse gap-8 mb-8 items-center">
-                  <div className="w-full md:w-1/2">
-                    <img 
-                      src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800"
-                      alt="Healthcare camp"
-                      className="rounded-lg shadow-lg w-full h-[300px] object-cover"
-                    />
-                  </div>
-                  <div className="w-full md:w-1/2">
-                    <p className="mb-4">
-                      Over the years, AICWA expanded its focus to include healthcare access, child welfare programs, support for the elderly, and broader humanitarian efforts. Today, we operate across multiple states in India, partnering with local communities, governments, and other organizations to implement sustainable solutions to pressing social challenges.
-                    </p>
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold text-aicwa-darkGray mt-8 mb-4">Our Approach</h3>
-                
-                <div className="flex flex-col md:flex-row gap-8 mb-8 items-center">
-                  <div className="w-full md:w-1/2">
-                    <img 
-                      src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800"
-                      alt="Community meeting"
-                      className="rounded-lg shadow-lg w-full h-[300px] object-cover"
-                    />
-                  </div>
-                  <div className="w-full md:w-1/2">
-                    <p className="mb-4">
-                      At AICWA, we believe in a community-centered approach. We recognize that lasting change comes from within communities, and our role is to support, facilitate, and amplify local initiatives. We work closely with community leaders, understanding their unique needs, strengths, and challenges before implementing any program.
-                    </p>
-                    <p className="mb-4">
-                      Our programs are designed with sustainability in mind. Rather than creating dependency, we focus on building capacity, fostering self-reliance, and creating systems that can continue to function and evolve even after our direct involvement ends.
-                    </p>
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold text-aicwa-darkGray mt-8 mb-4">Our Impact</h3>
-                
-                <p className="mb-4">
-                  Over the past 15 years, AICWA has:
-                </p>
-                
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
-                    <span>Provided educational support to over 50,000 children</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
-                    <span>Conducted health camps serving more than 100,000 individuals</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
-                    <span>Established support networks for 15,000 elderly individuals</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
-                    <span>Implemented child welfare programs in 500+ communities</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mr-2 mt-1 flex-shrink-0" size={18} />
-                    <span>Trained 10,000+ volunteers in community development</span>
-                  </li>
-                </ul>
-                
-                <p>
-                  Behind these numbers are individual stories of transformation and hope. We measure our success not just in the scale of our reach, but in the depth of our impact on each life we touch.
-                </p>
-              </div>
-            </div>
-            
-            <div className="w-full lg:w-1/3 bg-gray-50 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-aicwa-darkGray mb-6">Our Values</h3>
-              
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-lg font-semibold text-aicwa-darkGray mb-2">Compassion</h4>
-                  <p className="text-aicwa-gray">
-                    We approach our work with deep empathy and respect for the dignity of every individual.
-                  </p>
-                </div>
-                
-                <div>
-                  <h4 className="text-lg font-semibold text-aicwa-darkGray mb-2">Integrity</h4>
-                  <p className="text-aicwa-gray">
-                    We are committed to transparency, accountability, and ethical practices in all we do.
-                  </p>
-                </div>
-                
-                <div>
-                  <h4 className="text-lg font-semibold text-aicwa-darkGray mb-2">Innovation</h4>
-                  <p className="text-aicwa-gray">
-                    We continuously seek creative, effective solutions to complex social challenges.
-                  </p>
-                </div>
-                
-                <div>
-                  <h4 className="text-lg font-semibold text-aicwa-darkGray mb-2">Collaboration</h4>
-                  <p className="text-aicwa-gray">
-                    We believe in the power of partnerships and collective action to create lasting change.
-                  </p>
-                </div>
-                
-                <div>
-                  <h4 className="text-lg font-semibold text-aicwa-darkGray mb-2">Sustainability</h4>
-                  <p className="text-aicwa-gray">
-                    We design our programs with a long-term perspective, focusing on durable solutions.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="mt-8">
-                <Button size="lg" className="w-full">Support Our Mission</Button>
-              </div>
-            </div>
+      <main className="min-h-screen bg-[#f2f2f2]">
+        {/* Section 1 - Hero Section */}
+        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+          <div className="absolute inset-0">
+            <img
+              src="/images/about-cover.JPG"
+              alt="Volunteer Hero"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50" />
           </div>
-        </div>
-      </section>
-      
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto">
-          <SectionTitle
-            title="Our Team"
-            subtitle="Meet the dedicated individuals behind AICWA"
-            centered
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { name: "Rajesh Singh", role: "Executive Director", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600" },
-              { name: "Meera Kumar", role: "Programs Director", image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600" },
-              { name: "Vikram Patel", role: "Chief Financial Officer", image: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&w=600" },
-              { name: "Ananya Gupta", role: "Community Relations", image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?auto=format&fit=crop&w=600" },
-            ].map((member, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md fade-in-up">
-                <div className="h-60 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h4 className="text-lg font-semibold text-aicwa-darkGray">{member.name}</h4>
-                  <p className="text-aicwa-gray">{member.role}</p>
-                </div>
-              </div>
-            ))}
+          <div className="relative z-10 text-center text-white px-4">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">About AICWA</h1>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+              Empowering the Unsung Heroes of the Indian Film Industry
+            </p>
           </div>
-        </div>
-      </section>
-      
-      // New Vision & Mission Section
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Target className="text-yellow-500" size={24} />
-                <h3 className="text-2xl font-bold text-aicwa-darkGray">Our Vision</h3>
-              </div>
-              <p className="text-aicwa-gray">
-                To create a world where every individual, regardless of their circumstances, has access to quality education, healthcare, and opportunities for growth. We envision communities where children thrive, elderly are respected and cared for, and human dignity is preserved through sustainable development initiatives.
+        </section>
+
+        {/* Section 2 - Mission and Vision overlapping Hero */}
+        <section className="-mt-32 relative z-20 px-4">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Mission Card */}
+            <div className="bg-[#303C69] p-8 rounded-3xl shadow-2xl ">
+              <h2 className="text-3xl font-bold text-white mb-4">Our Mission</h2>
+              <p className="text-white text-lg">
+                To empower and uplift workers, technicians, junior artists, and artists of the Indian film industry—Bollywood and regional—by providing access to healthcare, education, food, housing, and financial support.
               </p>
             </div>
-            
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Globe className="text-yellow-500" size={24} />
-                <h3 className="text-2xl font-bold text-aicwa-darkGray">Our Mission</h3>
-              </div>
-              <p className="text-aicwa-gray">
-                To empower communities through integrated development programs that focus on education, healthcare, child welfare, and elderly support. We strive to create sustainable solutions by working closely with local communities, fostering partnerships, and promoting social innovation.
+
+            {/* Vision Card */}
+            <div className="bg-[#303C69] p-8 rounded-3xl shadow-2xl ">
+              <h2 className="text-3xl font-bold text-white mb-4">Our Vision</h2>
+              <p className="text-white text-lg">
+                To build a fair, organized, and supportive ecosystem for Indian film industry workers where no artist or technician is left behind. We envision a future where workers have access to charity hospitals.
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* New Achievements Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto">
-          <SectionTitle
-            title="Our Achievements"
-            subtitle="Milestones that mark our journey"
-            centered
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            <div className="bg-white p-6 rounded-lg text-center">
-              <Award className="text-yellow-500 mx-auto mb-4" size={40} />
-              <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">15+ Years</h4>
-              <p className="text-aicwa-gray">Of Dedicated Service</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg text-center">
-              <Users className="text-yellow-500 mx-auto mb-4" size={40} />
-              <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">100,000+</h4>
-              <p className="text-aicwa-gray">Lives Impacted</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg text-center">
-              <Globe className="text-yellow-500 mx-auto mb-4" size={40} />
-              <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">500+</h4>
-              <p className="text-aicwa-gray">Communities Served</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg text-center">
-              <Award className="text-yellow-500 mx-auto mb-4" size={40} />
-              <h4 className="text-xl font-bold text-aicwa-darkGray mb-2">25+</h4>
-              <p className="text-aicwa-gray">National Awards</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        {/* Section 3 - Latest News */}
+<section className="py-20 px-4 bg-white">
+  <div className="max-w-6xl mx-auto space-y-16">
+    <h2 className="text-4xl font-bold text-center text-[#303C69] mb-12">Latest News</h2>
 
-      {/* New Recognition Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto">
-          <SectionTitle
-            title="Recognition & Certifications"
-            subtitle="Our commitment to excellence"
-            centered
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h4 className="text-lg font-bold text-aicwa-darkGray mb-3">ISO 9001:2015</h4>
-              <p className="text-aicwa-gray">Certified for Quality Management Systems in Social Service Operations</p>
-            </div>
-            
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h4 className="text-lg font-bold text-aicwa-darkGray mb-3">NGO of the Year 2022</h4>
-              <p className="text-aicwa-gray">Awarded by the National Social Impact Forum for Excellence in Community Service</p>
-            </div>
-            
-            <div className="border border-gray-200 p-6 rounded-lg">
-              <h4 className="text-lg font-bold text-aicwa-darkGray mb-3">FCRA Registered</h4>
-              <p className="text-aicwa-gray">Authorized to receive foreign contributions for social development projects</p>
-            </div>
-          </div>
+    {/* News 1 - Image Left */}
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="/images/news-1.JPG"
+          alt="News 1"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div>
+        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Free Health Camp for Film Workers</h3>
+        <p className="text-gray-700 text-lg">
+          AICWA successfully organized a free medical checkup and treatment camp benefiting over 500 film workers and technicians in Andheri. Volunteers and local doctors collaborated to offer support.
+        </p>
+      </div>
+    </div>
+
+    {/* News 2 - Image Right */}
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="md:order-2 w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="/images/news-2.png"
+          alt="News 2"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="md:order-1">
+        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Scholarship Drive for Artist Children</h3>
+        <p className="text-gray-700 text-lg">
+          We launched an educational scholarship program for children of junior artists, enabling them to pursue quality education. The initiative has already supported 200 students across Mumbai and Pune.
+        </p>
+      </div>
+    </div>
+
+    {/* News 3 - Image Left */}
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="/images/news-3.JPG"
+          alt="News 3"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div>
+        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Launch of Emergency Relief Fund</h3>
+        <p className="text-gray-700 text-lg">
+          AICWA announced an emergency relief fund to support struggling workers during crisis situations. The fund will ensure no technician or artist faces medical or financial challenges alone.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Section 4 - Our Action */}
+<section className="py-20 px-4 bg-gray-50">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-[#303C69] mb-12">Our Action</h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      {/* Card 1 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/health.png"
+          alt="Health Support"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Health for Film Workers
+          </h3>
+          <p className="text-gray-600 text-base">
+            We organize regular health camps, medical assistance, and provide access to emergency care for artists and crew across the film industry.
+          </p>
         </div>
-      </section>
+      </div>
+
+      {/* Card 2 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/action-1.jpg"
+          alt="Education Support"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Education for Artist Families
+          </h3>
+          <p className="text-gray-600 text-base">
+            From scholarships to skill development, we support the children and spouses of film workers in building brighter futures through learning.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/volunteer.JPG"
+          alt="Technician Support"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Support for Technicians
+          </h3>
+          <p className="text-gray-600 text-base">
+            We ensure financial, legal, and welfare aid reaches backstage heroes—spot boys, camera crews, makeup artists, and sound engineers.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section className="bg-white py-20">
+            <div className="max-w-[1440px] mx-auto px-4">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold mb-4">Our Team</h2>
+                    <p className="text-gray-600">Explore Our Success Stories and Innovative Projects</p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-[1200px] mx-auto">
+                    {teamMembers.map((member, index) => (
+                        <div 
+                            key={index} 
+                            className="group relative flex flex-col items-center transition-all duration-300 hover:-translate-y-2"
+                        >
+                            <div className="rounded-full overflow-hidden w-[220px] h-[220px] border-4 border-gray-100 shadow-lg bg-gray-200">
+                                <img 
+                                    src={member.image} 
+                                    alt={member.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="text-center mt-4">
+                                <h3 className="font-semibold text-lg">{member.name}</h3>
+                                <p className="text-gray-600 text-sm">{member.role}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+
+      </main>
 
       <Footer />
     </div>
