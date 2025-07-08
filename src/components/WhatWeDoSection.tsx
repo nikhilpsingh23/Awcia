@@ -1,23 +1,12 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedinIn,
-  FaYoutube,
-  FaWhatsapp,
-} from "react-icons/fa";
-
+import { ArrowRight } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const WhatWeDoSection = () => {
-  const navigate = useNavigate();
-
   useEffect(() => {
     gsap.from('.quote-content', {
       opacity: 0,
@@ -29,10 +18,10 @@ const WhatWeDoSection = () => {
       },
     });
 
-    gsap.from('.quote-author', {
+    gsap.from('.quote-image', {
       opacity: 0,
-      y: 20,
-      duration: 0.8,
+      x: 30,
+      duration: 1,
       delay: 0.3,
       scrollTrigger: {
         trigger: '.what-we-do-section',
@@ -42,55 +31,63 @@ const WhatWeDoSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-[#303C69] text-white overflow-hidden what-we-do-section">
-  {/* Centered Content */}
-  <div className="max-w-4xl mx-auto px-4 pt-20 pb-10 flex flex-col items-center text-center">
-    {/* Top Name + Title */}
-    <h4 className="text-lg mb-2">Hello! I'm</h4>
-    <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight">
-          Suresh Shyamlal Gupta
-        </h1>
-        <p className="text-yellow-400 text-lg mt-2 font-medium">
-          President, AICWA Foundation
-        </p>
+    <section className="relative what-we-do-section overflow-hidden bg-white">
+      {/* Pattern Dots (Blurred Circles Repeating) */}
+      <div className="absolute inset-0 z-0 bg-[url('/images/blur-dot-pattern.svg')] bg-repeat opacity-20 pointer-events-none" />
 
-    {/* Social Media Icons */}
+      {/* Main Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-24 flex flex-col lg:flex-row items-center gap-12">
+        
+        {/* Left Content */}
+        <div className="flex-1 quote-content text-[#1E293B] relative">
+          {/* Aligned Quote Mark */}
+          
+
+          {/* Name */}
+          <h3 className="text-2xl sm:text-3xl font-semibold text-[#303C69] mb-1">
+            Suresh Shyamlal Gupta
+          </h3>
+
+          {/* Title */}
+          <p className="text-base sm:text-lg font-medium text-[#64748B] mb-6">
+            President, AICWA Foundation
+          </p>
 
 
-    {/* Image Middle Section */}
-    <div className="-mb-20 mt-12 z-10">
-      <img
-        src="/images/suresh.png"
-        alt="Jane Williamson"
-        className="w-64 h-auto object-contain"
-      />
-    </div>
-  </div>
+          {/* Paragraph */}
+          <h2 className="text-2xl md:text-xl font-light mb-6">
+            Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.
+          </h2>
 
-  {/* Bottom Curve */}
-  <div className="relative">
-    <svg
-      viewBox="0 0 1440 150"
-      className="w-full h-auto text-white"
-      preserveAspectRatio="none"
-    >
-      <path
-        fill="white"
-        d="M0,0 C480,120 960,120 1440,0 L1440,150 L0,150 Z"
-      ></path>
-    </svg>
+          {/* CTA */}
+          <div className="mt-8 flex flex-col items-start">
+          <Link to="/donate">
+      <button className="flex items-center ms-auto bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg border border-white/20 hover:scale-105 transition-all duration-300">
+        <span className="text-sm sm:text-base font-medium">Donate Now</span>
+        <span className="bg-[#0b2c48] text-white rounded-full p-2 ml-2">
+          <ArrowRight size={16} />
+        </span>
+      </button>
+    </Link>
+          </div>
+        </div>
 
-    {/* Know More Button */}
-    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
-      <Link to="#about">
-        <Button className="text-black bg-yellow-500 px-6 py-2 rounded-full shadow-md hover:bg-gray-200 transition">
-          Know More
-        </Button>
-      </Link>
-    </div>
-  </div>
-</section>
+        {/* Right Image */}
+        <div className="flex-1 quote-image relative">
+          <div className="relative z-10 overflow-hidden ">
+            <img
+              src="/images/suresh.png"
+              alt="Suresh Shyamlal Gupta"
+              className="w-full h-auto object-cover transform"
+            />
+          </div>
 
+          {/* Extra decorative blue blur dots */}
+          <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-300/70 rounded-full blur-2xl"></div>
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-300/70 rounded-full blur-2xl"></div>
+        </div>
+      </div>
+    </section>
   );
 };
 

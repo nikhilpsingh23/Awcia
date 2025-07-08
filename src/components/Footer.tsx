@@ -10,7 +10,8 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           {/* Contact Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
-            <img src="/images/logo.png" alt="Aicwa Foundation" className="h-16 md:h-20" />
+            {/* Text Logo */}
+            <h2 className="text-2xl font-bold text-[#303C69]">AICWA Foundation</h2>
 
             <div className="flex flex-wrap justify-center md:justify-end gap-6 text-center md:text-left">
               {/* Phone */}
@@ -30,9 +31,6 @@ const Footer = () => {
                   <p className="text-sm">contact@s.org</p>
                 </div>
               </div>
-
-              {/* Socials */}
-             
             </div>
           </div>
 
@@ -58,7 +56,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 3 - Additional Links */}
+            {/* Column 3 - Explore */}
             <div>
               <h3 className="font-bold mb-4">EXPLORE</h3>
               <ul className="space-y-2">
@@ -68,28 +66,29 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 4 - Newsletter */}
+            {/* Column 4 - Contact Info */}
             <div>
-              <h3 className="font-bold mb-4">GET UPDATES</h3>
-              <p className="mb-4">Keep up with the latest news of our charity organization.</p>
-              <div className="space-y-3">
-                <input
-                  type="email"
-                  placeholder="Enter email address"
-                  className="w-full px-4 py-2 bg-[#C99B42] placeholder-black text-sm"
-                />
-                <button className="bg-black text-white px-5 py-2 text-sm hover:bg-gray-800 w-full sm:w-auto">
-                  SUBSCRIBE
-                </button>
-              </div>
+              <h3 className="font-bold mb-4">CONTACT INFORMATION</h3>
+              <p className="mb-2">
+                <strong>Office Address:</strong><br />
+                5, Sunheights Building,<br />
+                Near Shyamlal Sohanlal Gupta Chowk,<br />
+                JVLR, Powai, Mumbai - 400076
+              </p>
+              <p className="mb-2">
+                <strong>Contact No:</strong> 9820982115
+              </p>
+              <p>
+                <strong>Email:</strong> info@aicwafoundation.org
+              </p>
             </div>
           </div>
         </div>
       </footer>
 
       {/* Copyright */}
-      <div className="bg-gray-700 text-white py-3 text-center text-xs sm:text-sm">
-        © 2025 AICWA Foundation. Designed and Developed by : CodeKrafters.in
+      <div className="bg-[#303C69] text-white py-3 text-center text-xs sm:text-sm">
+        © 2025 AICWA Foundation. Designed and Developed by : <a href="https://codekrafters.in" className="underline">CodeKrafters.in</a>
       </div>
     </>
   );

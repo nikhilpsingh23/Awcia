@@ -51,7 +51,7 @@ const Story = () => {
     <div
       className="relative w-full py-20 px-4 md:px-8 text-white"
       style={{
-        backgroundImage: `url('/images/cover2.png')`,
+        backgroundImage: `url('/images/story-cover.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

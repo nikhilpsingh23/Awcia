@@ -122,7 +122,7 @@ const DonationComponent = () => {
     preserveAspectRatio="none"
   >
     <path
-      fill="white"
+      fill="#f2f2f2"
       d="M0,0 C480,120 960,120 1440,0 L1440,150 L0,150 Z"
     />
   </svg>

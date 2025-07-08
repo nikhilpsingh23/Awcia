@@ -116,7 +116,7 @@ const Navbar = () => {
   return (
     <nav className={cn(
       'fixed w-full z-50 transition-all duration-300 ease-in-out',
-      scrolled ? 'bg-[#e6e6e6] shadow-md py-2' : 'bg-transparent py-4'
+      scrolled ? 'bg-[#f2f2f2] shadow-md py-2' : 'bg-transparent py-4'
     )}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
@@ -124,7 +124,7 @@ const Navbar = () => {
             "text-2xl font-bold",
             scrolled ? "text-aicwa-darkGray" : "text-yellow-500"
           )}>
-            Aicwa Foundation
+            AICWA Foundation
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

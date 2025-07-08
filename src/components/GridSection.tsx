@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 const impacts = [
   {
     title: "Health",
-    image: "/images/art.png",
+    image: "/images/health.png",
     description:
-      "AICWA is committed to supporting the health and well-being of cine workers across India by offering access to regular medical camps, health insurance support, mental wellness initiatives, and emergency assistance to those in need.",
+      "The Health Department of AICWA Foundation is committed to the physical and mental well-being of every film industry worker — from lightmen, spot boys, and make-up artists to stuntmen, sound engineers, and backstage crew.Special attention is given to elderly workers who have spent decades contributing to Indian cinema but now face severe health challenges without proper treatment or financial support. These unsung heroes often slip through the cracks of the healthcare system. We aim to give them the care they deserve.",
     bg: "bg-[#f1f1d4]",
     align: "left",
   },
@@ -14,15 +14,15 @@ const impacts = [
     title: "Education",
     image: "/images/education.JPG",
     description:
-      "We strive to provide educational opportunities for the children of cine workers and underprivileged communities through scholarships, mentorship programs, and partnerships with schools and training institutions.",
+      "The AICWA (All Indian Cine Workers Association) Foundation recognizes that behind the glitz and glamour of the Indian film industry lies a massive, hardworking community of technicians, artists, and crew members. Their children often face limited access to quality education due to financial instability, long working hours of parents, and lack of support structures.We aim to break this cycle by ensuring that every child—especially those from film worker families—has the opportunity to learn, grow, and thrive academically and personally, whether in India or abroad.",
     bg: "bg-[#dbe4fa]",
     align: "right",
   },
   {
     title: "Rural Transformation",
-    image: "https://images.unsplash.com/photo-1707811180272-53a54a905d14?w=800",
+    image: "/images/rural.png",
     description:
-      "Through skill development programs, financial aid, and infrastructure support, AICWA empowers rural artisans and laborers associated with the film industry to lead dignified and sustainable lives.",
+      "India’s rural communities remain the backbone of the nation, yet many live without access to the most basic needs—food, education, healthcare, dignity. While cities advance in the name of development and technology, rural India still walks barefoot in broken slippers, striving merely to survive.The President of AICWA Foundation, during visits to deeply underdeveloped villages, encountered heart-wrenching realities that demand urgent attention and sustained action.",
     bg: "bg-[#d8ebd9]",
     align: "left",
   },
@@ -38,7 +38,7 @@ const impacts = [
     title: "Art , Culture & Heritage",
     image: "/images/art.png",
     description:
-      "AICWA celebrates and preserves India’s diverse art forms and cultural heritage through film festivals, heritage projects, and by honoring the contributions of traditional artists and filmmakers.",
+      "India’s cultural heritage is deeply woven into its cinema, music, fashion, theater, and performing arts. Yet, despite its global recognition, the backbone of the Indian creative industry—its artists and workers—often remain unrecognized, unsupported, and financially insecure. The AICWA Foundation believes that the time has come to transform the structure of India’s creative ecosystem—by investing not just in art, but in the people who create it.",
     bg: "bg-[#e9e9e9]",
     align: "left",
   },
@@ -48,7 +48,7 @@ const GridSection = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full px-4 md:px-8 py-10 ">
+    <div className="w-full bg-[#f2f2f2]  px-4 md:px-8 py-10 ">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#303C69]">
         Area Of Impacts
       </h2>
