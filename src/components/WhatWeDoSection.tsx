@@ -31,7 +31,7 @@ const WhatWeDoSection = () => {
   }, []);
 
   return (
-    <section className="relative what-we-do-section overflow-hidden bg-white">
+    <section className="relative what-we-do-section overflow-hidden bg-[#f2f2f2] ">
       {/* Pattern Dots (Blurred Circles Repeating) */}
       <div className="absolute inset-0 z-0 bg-[url('/images/blur-dot-pattern.svg')] bg-repeat opacity-20 pointer-events-none" />
 

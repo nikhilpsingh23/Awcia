@@ -18,7 +18,7 @@ const DonateSection = () => {
   };
 
   return (
-    <section className="bg-[#f4f8fc] py-16">
+    <section className="bg-[#f2f2f2]  py-16">
       <div className="max-w-5xl mx-auto px-4 text-center">
         {/* ✅ Title exactly like image */}
         <h2 className="text-4xl md:text-5xl font-bold text-[#012B61] mb-4">
