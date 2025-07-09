@@ -1,127 +1,139 @@
 import { useForm } from 'react-hook-form';
-import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { Mail, Phone } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 interface DonationFormData {
-  amount: number;
-  firstName: string;
-  lastName: string;
   email: string;
-  message: string;
+  phone: string;
+  address?: string;
+  panNumber?: string;
+  amount: number;
 }
 
 const Donate = () => {
-  const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors }, watch } = useForm<DonationFormData>();
+  const navigate = useNavigate();
 
   const onSubmit = (data: DonationFormData) => {
     console.log(data);
-    // Handle payment gateway integration here
+    // Payment logic here
   };
 
   return (
-    <div className="min-h-screen relative">
-      {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop"
-          alt="Background"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
+    <div className="flex flex-col min-h-screen">
+      
 
-      {/* Back Button */}
-      <div className="absolute top-4 left-4">
+      {/* Back to Home Button */}
+      <div className="px-6 pt-6">
         <button
-          onClick={() => navigate(-1)}
-          className="flex items-center text-white hover:text-aicwa-orange transition-colors"
+          onClick={() => navigate('/')}
+          className="flex items-center text-blue-600 hover:text-orange-600 text-sm font-medium"
         >
-          <ArrowLeft className="h-5 w-5 mr-2" />
-          Back
+          <ArrowLeft className="h-4 w-4 mr-1" />
+          Back to Home
         </button>
       </div>
 
-      <div className="container mx-auto px-4 py-20">
-        <div className="max-w-2xl mx-auto text-center text-white mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Support Our Mission</h1>
-          <p className="text-xl opacity-90">Help us empower film industry workers and their families</p>
-        </div>
+      {/* Main Donation Section */}
+      <div className="flex-1 px-4 md:px-16 py-12 bg-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+          {/* Left Content with Bank Details and UPI Image */}
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">AICWA Foundation | NGO</h2>
+            <p className="text-gray-700 mb-4">
+              Thank you for considering a donation to AICWA Foundation. Your generosity helps fund programs that support film industry workers and their families.
+            </p>
+            <p className="text-gray-700 mb-4">
+              You can contribute via UPI, credit/debit card, or direct bank transfer. All donations are tax-deductible and go directly toward supporting our mission.
+            </p>
 
-        <div className="max-w-xl mx-auto bg-[#de7621]/90 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-white mb-6">Donate</h2>
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-            <div>
-              <input
-                type="number"
-                placeholder="Amount you want to donate"
-                {...register("amount", {
-                  required: "Amount is required",
-                  min: { value: 100, message: "Minimum donation amount is ₹100" }
-                })}
-                className="w-full p-3 rounded-md bg-white/90 placeholder-gray-500"
-              />
-              {errors.amount && (
-                <p className="mt-1 text-sm text-white">{errors.amount.message}</p>
-              )}
+            <div className="bg-gray-50 border border-gray-200 rounded-md p-4 text-sm text-gray-800 mb-6">
+              <h4 className="font-semibold text-lg mb-2">Bank Details:</h4>
+              <p><strong>Account Name:</strong> AICWA Foundation</p>
+              <p><strong>Bank:</strong> HDFC Bank</p>
+              <p><strong>Account Number:</strong> 50200110636055</p>
+              <p><strong>IFSC Code:</strong> HDFC0000239</p>
+              <p><strong>Branch:</strong> Powai, Mumbai</p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="First name"
-                {...register("firstName", { required: "First name is required" })}
-                className="p-3 rounded-md bg-white/90 placeholder-gray-500"
-              />
-              <input
-                type="text"
-                placeholder="Last name"
-                {...register("lastName", { required: "Last name is required" })}
-                className="p-3 rounded-md bg-white/90 placeholder-gray-500"
-              />
-            </div>
-
-            <input
-              type="email"
-              placeholder="Your email address"
-              {...register("email", {
-                required: "Email is required",
-                pattern: {
-                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                  message: "Invalid email address"
-                }
-              })}
-              className="w-full p-3 rounded-md bg-white/90 placeholder-gray-500"
+            <img
+              src="/images/upi-pay.png"
+              alt="UPI Payment"
+              className="w-full h-40 object-contain rounded-md shadow-md"
             />
+          </div>
 
-            <textarea
-              placeholder="Message (optional)"
-              {...register("message")}
-              rows={4}
-              className="w-full p-3 rounded-md bg-white/90 placeholder-gray-500"
-            />
+          {/* Right Donation Form */}
+          <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+            <h3 className="text-xl font-semibold text-gray-800 mb-6">Payment Details</h3>
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  {...register("email", { required: "Email is required" })}
+                  className="w-full border border-gray-300 rounded-md p-3 placeholder-gray-500"
+                />
+                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+              </div>
 
-            <button
-              type="submit"
-              className="w-full bg-white text-[#de7621] py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Send message
-            </button>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  {...register("phone", { required: "Phone is required" })}
+                  className="w-full border border-gray-300 rounded-md p-3 placeholder-gray-500"
+                />
+                {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>}
+              </div>
 
-            <div className="mt-4">
-              <p className="text-white text-sm text-center">We accept:</p>
-              <div className="flex justify-center mt-2">
-                <img 
-                  src="/pay.png" 
-                  alt="Accepted Payment Methods" 
-                  className="h-8 object-contain"
+              <div>
+                <input
+                  type="text"
+                  placeholder="Address (Optional)"
+                  {...register("address")}
+                  className="w-full border border-gray-300 rounded-md p-3 placeholder-gray-500"
                 />
               </div>
-            </div>
-          </form>
+
+              <div>
+                <input
+                  type="text"
+                  placeholder="Pan Number (Optional)"
+                  {...register("panNumber")}
+                  className="w-full border border-gray-300 rounded-md p-3 placeholder-gray-500"
+                />
+              </div>
+
+              <div>
+                <input
+                  type="number"
+                  placeholder="Amount"
+                  defaultValue={0}
+                  {...register("amount", { required: "Amount is required", min: 1 })}
+                  className="w-full border border-gray-300 rounded-md p-3 placeholder-gray-500"
+                />
+                {errors.amount && <p className="text-red-500 text-sm mt-1">{errors.amount.message}</p>}
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-md transition-colors"
+              >
+                Pay ₹ {watch('amount') || 0}.00
+              </button>
+
+              <div className="mt-4 flex justify-center">
+                <img src="/pay.png" alt="Payment Methods" className="h-6 object-contain" />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

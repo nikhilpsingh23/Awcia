@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Mail, Phone } from 'lucide-react';
+
 interface ContactFormData {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
   phone: string;
   message: string;
@@ -15,166 +15,148 @@ const Contact = () => {
 
   const onSubmit = (data: ContactFormData) => {
     console.log(data);
-    // Handle form submission here
     reset();
   };
 
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
-      <div className="relative text-white min-h-[60vh] flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1920"
-            alt="Contact Us"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </div>
-        
-        {/* Content */}
-        <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl max-w-2xl">
-            Get in touch with us. We're here to help and answer any questions you might have.
+<section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+  <img
+    src="/images/volunteer.JPG"
+    alt="Volunteer Hero"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-black/50" />
+  <div className="relative z-10 text-center text-white px-4">
+    <h1 className="text-5xl md:text-6xl font-bold mb-6">Volunteer With Us</h1>
+    <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+      Join our mission to create positive change and make a lasting impact in the lives of those who need it most.
+    </p>
+  </div>
+
+  {/* Left-aligned floating breadcrumb (half overlay) */}
+  <div className="absolute -bottom-6 left-6 z-20">
+    <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
+      <a href="/" className="hover:underline">Home</a>
+      <span className="text-[#4b2d0c] font-bold">›</span>
+      <span>Contact Us</span>
+    </div>
+  </div>
+</section>
+
+{/* Spacer below breadcrumb so next section doesn't overlap */}
+<div className="h-10" />
+
+      {/* Spacer for breadcrumb to not overlap */}
+      <div className="h-12" />
+
+      {/* Get In Touch Section */}
+      <section className="px-6 md:px-20 py-16 bg-white">
+        <div className="text-left mb-12">
+          <p className="text-sm uppercase tracking-wide text-[#10635a] font-medium">Get In Touch</p>
+          <h2 className="text-4xl font-bold text-[#f4a300] mb-4">Contact With Us</h2>
+          <p className="max-w-3xl text-gray-700">
+            The secret to happiness lies in helping others. Never underestimate the difference YOU can make in
+            the lives of the poor, the abused and the helpless. Spread sunshine in their lives no matter what
+            the weather may be.
           </p>
         </div>
-      </div>
 
-      {/* Contact Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Map Column */}
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6063806677917!2d72.92167060000001!3d19.124916400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c700121f49f1%3A0x39bdb36177fb1386!2sAICWA%20FOUNDATION!5e0!3m2!1sen!2sin!4v1746507859494!5m2!1sen!2sin"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-              
-              <div className="bg-white p-6">
-                <h3 className="text-2xl font-bold text-aicwa-darkGray mb-4">Our Location</h3>
-                <address className="not-italic text-aicwa-gray space-y-2">
-                <p>5, Sunheights Building</p>
-              <p>Near Shyamlal Sohanlal Gupta Chowk</p>
-              <p>JVLR, Powai, Mumbai - 400076</p>
-              <p>India</p>
-              <p className="flex items-center mt-2">
-                <Mail size={16} className="mr-2" /> 
-                <a href="mailto:aicwafoundation@gmail.com" className="hover:text-aicwa-orange transition-colors">
-                aicwafoundation@gmail.com
-                </a>
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Left - Contact Info */}
+          <div className="space-y-6">
+            <div className="bg-[#f6e2bd] p-6 rounded-md shadow-sm">
+              <h4 className="font-semibold text-gray-800 mb-2">Our Address</h4>
+              <p className="text-sm text-gray-700">
+                Admin Office: AICWA Foundation <br />
+                5, Sunheights Building,<br/>
+Near Shyamlal Sohanlal Gupta Chowk,<br/>
+JVLR, Powai, Mumbai - 400076
               </p>
-              <p className="flex items-center mt-2">
-                <Phone size={16} className="mr-2" /> 
-                <a href="9820982115" className="hover:text-aicwa-orange transition-colors">
-                9820982115
-                </a>
+            </div>
+
+            <div className="bg-[#cde4dc] p-6 rounded-md shadow-sm">
+              <h4 className="font-semibold text-gray-800 mb-2">Phone Number</h4>
+              <p className="text-sm text-gray-700">
+                +91 22 2867 7820<br />
+                +91 97699 86440<br />
+                +91 98702 34440
               </p>
-                </address>
+            </div>
+
+            <div className="bg-[#f1e4d8] p-6 rounded-md shadow-sm">
+              <h4 className="font-semibold text-gray-800 mb-2">Email Address</h4>
+              <p className="text-sm text-blue-600 underline">info@aicwa.org</p>
+              <p className="text-sm text-blue-600 underline">support@aicwa.org</p>
+            </div>
+          </div>
+
+          {/* Right - Form */}
+          <div className="bg-gray-50 p-6 rounded-md shadow-sm">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  {...register("firstName", { required: "First name is required" })}
+                  placeholder="First Name"
+                  className="w-full p-3 border border-gray-300 rounded-md"
+                />
+                <input
+                  {...register("lastName", { required: "Last name is required" })}
+                  placeholder="Last Name"
+                  className="w-full p-3 border border-gray-300 rounded-md"
+                />
               </div>
-            </div>
 
-            {/* Contact Form */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-aicwa-darkGray mb-6">Send us a Message</h3>
-              
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-aicwa-darkGray mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your full name"
-                    {...register("name", { required: "Name is required" })}
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-aicwa-orange focus:border-transparent"
-                  />
-                  {errors.name && (
-                    <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
-                  )}
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  {...register("email", { required: "Email is required" })}
+                  placeholder="Your Email"
+                  className="w-full p-3 border border-gray-300 rounded-md"
+                />
+                <input
+                  {...register("phone", { required: "Phone number is required" })}
+                  placeholder="Phone Number"
+                  className="w-full p-3 border border-gray-300 rounded-md"
+                />
+              </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-aicwa-darkGray mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email address"
-                    {...register("email", {
-                      required: "Email is required",
-                      pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: "Invalid email address"
-                      }
-                    })}
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-aicwa-orange focus:border-transparent"
-                  />
-                  {errors.email && (
-                    <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
-                  )}
-                </div>
+              <textarea
+                {...register("message", { required: "Message is required" })}
+                placeholder="Message"
+                rows={5}
+                className="w-full p-3 border border-gray-300 rounded-md"
+              />
 
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-aicwa-darkGray mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    placeholder="Enter your 10-digit phone number"
-                    {...register("phone", {
-                      pattern: {
-                        value: /^[0-9]{10}$/,
-                        message: "Please enter a valid 10-digit phone number"
-                      }
-                    })}
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-aicwa-orange focus:border-transparent"
-                  />
-                  {errors.phone && (
-                    <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>
-                  )}
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-aicwa-darkGray mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    placeholder="Type your message here..."
-                    {...register("message", { required: "Message is required" })}
-                    className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-aicwa-orange focus:border-transparent"
-                  />
-                  {errors.message && (
-                    <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
-                  )}
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-aicwa-orange text-white py-3 rounded-md hover:bg-aicwa-orange/90 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
+              <button
+                type="submit"
+                className="bg-yellow-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-[#13493a] transition"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </section>
-      
+
+     {/* Location rounded map */}
+<section className="w-full my-12">
+  <div className="mx-4 md:mx-16 rounded-lg overflow-hidden shadow-lg border border-gray-200">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6063806677917!2d72.92167060000001!3d19.124916400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c700121f49f1%3A0x39bdb36177fb1386!2sAICWA%20FOUNDATION!5e0!3m2!1sen!2sin!4v1746507859494!5m2!1sen!2sin"
+      width="100%"
+      height="450"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+</section>
+
+
       <Footer />
     </>
   );
