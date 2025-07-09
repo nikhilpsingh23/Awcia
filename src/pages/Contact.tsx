@@ -25,13 +25,13 @@ const Contact = () => {
       {/* Hero Section */}
 <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
   <img
-    src="/images/volunteer.JPG"
+    src="/images/contact-covers.jpeg"
     alt="Volunteer Hero"
     className="absolute inset-0 w-full h-full object-cover"
   />
   <div className="absolute inset-0 bg-black/50" />
   <div className="relative z-10 text-center text-white px-4">
-    <h1 className="text-5xl md:text-6xl font-bold mb-6">Volunteer With Us</h1>
+    <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact With Us</h1>
     <p className="text-xl md:text-2xl max-w-3xl mx-auto">
       Join our mission to create positive change and make a lasting impact in the lives of those who need it most.
     </p>
