@@ -122,7 +122,7 @@ const Donate = () => {
                 type="submit"
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-md transition-colors"
               >
-                Pay ₹ {watch('amount') || 0}.00
+                Pay ₹ {watch('amount')}.00
               </button>
 
               <div className="mt-4 flex justify-center">

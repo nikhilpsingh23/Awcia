@@ -13,16 +13,15 @@ const Gallery = () => {
     { id: 'all', name: 'All' },
     { id: 'health', name: 'Health' },
     { id: 'education', name: 'Education' },
-    { id: 'child-welfare', name: 'Child Welfare' },
-    { id: 'old-age', name: 'Old Age Support' },
-    { id: 'humanity', name: 'Humanity Awareness' },
-    { id: 'events', name: 'Events' },
+    { id: 'Rural Transformation', name: 'Child Welfare' },
+    { id: 'Women Empowerment', name: 'Old Age Support' },
+    { id: 'Art,Culture & Heritage', name: 'Humanity Awareness' },
   ];
   
   const galleryImages = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800',
+      src: '/images/1.JPG',
       alt: 'Children smiling',
       category: 'child-welfare',
       title: 'Happy Faces Program',
@@ -114,11 +113,29 @@ const Gallery = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <PageHeader
-        title="Gallery"
-        subtitle="Moments from our journey of creating positive change"
-        imageSrc="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1920"
-      />
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+  <img
+    src="/images/gallery-cover.jpg"
+    alt="gallery Hero"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-black/50" />
+  <div className="relative z-10 text-center text-white px-4">
+    <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact With Us</h1>
+    <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+      Join our mission to create positive change and make a lasting impact in the lives of those who need it most.
+    </p>
+  </div>
+
+  {/* Left-aligned floating breadcrumb (half overlay) */}
+  <div className="absolute -bottom-6 left-6 z-20">
+    <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
+      <a href="/" className="hover:underline">Home</a>
+      <span className="text-[#4b2d0c] font-bold">›</span>
+      <span>Gallery</span>
+    </div>
+  </div>
+</section>
       
       <section className="py-16 px-4">
         <div className="container mx-auto">

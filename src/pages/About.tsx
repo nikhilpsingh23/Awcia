@@ -90,6 +90,57 @@ const About = () => {
           </div>
         </section>
 
+{/* Section 2.5 - About AICWA Foundation */}
+{/* Section 2.5 - About AICWA Foundation */}
+<section className="py-20 px-4 bg-white">
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Left Text Content */}
+    <div>
+      <h2 className="text-3xl font-bold text-[#303C69] mb-4 border-b-4  inline-block">
+        About AICWA
+      </h2>
+      <p className="text-gray-700 text-lg mb-6">
+        AICWA Foundation stands as the voice for the millions of behind-the-scenes workers who bring the magic of cinema to life.
+        From junior artists and technicians to makeup artists and light crew—our mission is to recognize, support, and empower their lives.
+      </p>
+
+      {/* Bullet Points */}
+      <div className="space-y-4">
+        <div className="flex items-start gap-3">
+          <span className="text-green-600 mt-1">✅</span>
+          <p className="text-gray-700">
+            <strong>Healthcare Access:</strong> Free medical camps, emergency support, and regular check-ups for artists and crew.
+          </p>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-green-600 mt-1">✅</span>
+          <p className="text-gray-700">
+            <strong>Educational Aid:</strong> Scholarships and educational support for children of backstage workers.
+          </p>
+        </div>
+        <div className="flex items-start gap-3">
+          <span className="text-green-600 mt-1">✅</span>
+          <p className="text-gray-700">
+            <strong>Respect & Recognition:</strong> Highlighting and celebrating the hard work of ground-level contributors to cinema.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Right Image */}
+    <div className="overflow-hidden  w-full h-full">
+      <img
+        src="/images/about-main.png"
+        alt="AICWA Support"
+        className="w-full h-full object-cover "
+      />
+    </div>
+
+  </div>
+</section>
+
+
         {/* Section 3 - Latest News */}
 <section className="py-20 px-4 bg-white">
   <div className="max-w-6xl mx-auto space-y-16">
