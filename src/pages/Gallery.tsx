@@ -13,9 +13,9 @@ const Gallery = () => {
     { id: 'all', name: 'All' },
     { id: 'health', name: 'Health' },
     { id: 'education', name: 'Education' },
-    { id: 'Rural Transformation', name: 'Child Welfare' },
-    { id: 'Women Empowerment', name: 'Old Age Support' },
-    { id: 'Art,Culture & Heritage', name: 'Humanity Awareness' },
+    { id: 'Rural Transformation', name: 'Rural Transformation' },
+    { id: 'Women Empowerment', name: 'Women Empowerment' },
+    { id: 'Art,Culture & Heritage', name: 'Art,Culture & Heritage' },
   ];
   
   const galleryImages = [
@@ -115,7 +115,7 @@ const Gallery = () => {
       
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
   <img
-    src="/images/gallery-cover.jpg"
+    src="/images/gall.jpeg"
     alt="gallery Hero"
     className="absolute inset-0 w-full h-full object-cover"
   />

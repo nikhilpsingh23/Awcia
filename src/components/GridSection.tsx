@@ -50,7 +50,7 @@ const GridSection = () => {
   return (
     <div className="w-full bg-[#f2f2f2]  px-4 md:px-8 py-10 ">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#303C69]">
-        Area Of Impacts
+      Pillars of Change
       </h2>
       <div className="space-y-4 max-w-[1400px] mx-auto">
         {impacts.map((item, index) => (

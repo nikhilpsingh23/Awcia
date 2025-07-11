@@ -1,4 +1,4 @@
-import { useState } from 'react';
+{/* import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const AreaOfImpact = () => {
@@ -159,4 +159,4 @@ const AreaOfImpact = () => {
   );
 };
 
-export default AreaOfImpact;
+export default AreaOfImpact; */}

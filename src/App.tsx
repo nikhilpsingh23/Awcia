@@ -14,6 +14,11 @@ import GetInvolved from './pages/Volunteer';
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import WhatsAppButton from "./components/WhatsAppButton";
+import HealthPage from "./pages/impact/health";
+import EducationPage from "./pages/impact/education";
+import RuralPage from "./pages/impact/rural";
+import WomenPage from "./pages/impact/women";
+import ArtPage from "./pages/impact/art";
 
 const queryClient = new QueryClient();
 
@@ -33,9 +38,14 @@ const App = () => (
           <Route path="/getinvolved" element={<GetInvolved />} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/donate" element={<Donate/>} />
+          <Route path="/impact/health" element={<HealthPage/>} />
+          <Route path="/impact/education" element={<EducationPage/>} />
+          <Route path="/impact/rural-transformation" element={<RuralPage/>} />
+          <Route path="/impact/women-empowerment" element={<WomenPage/>} />
+          <Route path="/impact/art-culture-heritage" element={<ArtPage/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
-        </Routes>
+        </Routes> 
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -22,7 +22,7 @@ const DonateSection = () => {
       <div className="max-w-5xl mx-auto px-4 text-center">
         {/* ✅ Title exactly like image */}
         <h2 className="text-4xl md:text-5xl font-bold text-[#012B61] mb-4">
-        Supporting Film Industry Workers
+        AICWA Takes a Stand, So Every Workers Can Stand Tall.
         </h2>
 
         {/* ✅ Subtitle centered paragraph */}

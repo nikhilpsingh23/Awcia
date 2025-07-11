@@ -16,12 +16,8 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById('hero-section');
-      if (heroSection) {
-        const offset = heroSection.offsetHeight - 100;
-        setScrolled(window.scrollY > offset);
-      } else {
-        setScrolled(window.scrollY > 100);
-      }
+      const offset = heroSection ? heroSection.offsetHeight - 100 : 100;
+      setScrolled(window.scrollY > offset);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -36,6 +32,7 @@ const Navbar = () => {
     const createHoverAnimation = (element) => {
       if (!element) return null;
       const timeline = gsap.timeline({ paused: true });
+
       if (element === donateBtn) {
         timeline.to(element, {
           scale: 1.05,
@@ -58,44 +55,31 @@ const Navbar = () => {
           ease: 'power1.out'
         });
       }
+
       return timeline;
     };
 
     const animations = [];
+
     menuItems.forEach((item) => {
       if (item) {
         const anim = createHoverAnimation(item);
         if (anim) {
-          const handleEnter = () => anim.play();
-          const handleLeave = () => anim.reverse();
-          item.addEventListener('mouseenter', handleEnter);
-          item.addEventListener('mouseleave', handleLeave);
-          animations.push({ element: item, enter: handleEnter, leave: handleLeave });
+          item.addEventListener('mouseenter', anim.play);
+          item.addEventListener('mouseleave', anim.reverse);
+          animations.push({ element: item, enter: anim.play, leave: anim.reverse });
         }
       }
     });
 
-    if (donateBtn) {
-      const anim = createHoverAnimation(donateBtn);
-      if (anim) {
-        const handleEnter = () => anim.play();
-        const handleLeave = () => anim.reverse();
-        donateBtn.addEventListener('mouseenter', handleEnter);
-        donateBtn.addEventListener('mouseleave', handleLeave);
-        animations.push({ element: donateBtn, enter: handleEnter, leave: handleLeave });
+    [donateBtn, mobileBtn].forEach((btn) => {
+      const anim = createHoverAnimation(btn);
+      if (anim && btn) {
+        btn.addEventListener('mouseenter', anim.play);
+        btn.addEventListener('mouseleave', anim.reverse);
+        animations.push({ element: btn, enter: anim.play, leave: anim.reverse });
       }
-    }
-
-    if (mobileBtn) {
-      const anim = createHoverAnimation(mobileBtn);
-      if (anim) {
-        const handleEnter = () => anim.play();
-        const handleLeave = () => anim.reverse();
-        mobileBtn.addEventListener('mouseenter', handleEnter);
-        mobileBtn.addEventListener('mouseleave', handleLeave);
-        animations.push({ element: mobileBtn, enter: handleEnter, leave: handleLeave });
-      }
-    }
+    });
 
     return () => {
       animations.forEach(({ element, enter, leave }) => {
@@ -107,11 +91,19 @@ const Navbar = () => {
     };
   }, []);
 
-  const linkClasses = (isScrolled: boolean) =>
+  const linkClasses = (isScrolled) =>
     cn(
       "transition-all duration-300 hover:underline underline-offset-4 decoration-yellow-500 decoration-[2px]",
       isScrolled ? "text-aicwa-darkGray" : "text-white"
     );
+
+  const impactLinks = [
+    { label: "Health", to: "/impact/health" },
+    { label: "Education", to: "/impact/education" },
+    { label: "Rural Transformation", to: "/impact/rural-transformation" },
+    { label: "Women Empowerment", to: "/impact/women-empowerment" },
+    { label: "Art, Culture & Heritage", to: "/impact/art-culture-heritage" }
+  ];
 
   return (
     <nav className={cn(
@@ -127,26 +119,28 @@ const Navbar = () => {
             AICWA Foundation
           </Link>
 
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link ref={el => menuItemsRef.current[0] = el} to="/about" className={linkClasses(scrolled)}>About Us</Link>
             <Link ref={el => menuItemsRef.current[1] = el} to="/getinvolved" className={linkClasses(scrolled)}>Volunteer</Link>
 
+            {/* Dropdown */}
             <div className="relative group">
               <button onClick={() => setIsImpactOpen(!isImpactOpen)} className={linkClasses(scrolled)}>
                 Area of Impact <ChevronDown size={16} className="ml-1 inline-block" />
               </button>
               <div className={cn(
-                "absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 ease-in-out",
+                "absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 ease-in-out z-50",
                 isImpactOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
               )}>
-                {["health", "education", "Rural transformation", "Women Empowerment", "Art,Culture & Heritage"].map((item, idx) => (
+                {impactLinks.map(({ label, to }, idx) => (
                   <Link
                     key={idx}
-                    to={`/impact/${item}`}
+                    to={to}
                     className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
                     onClick={() => setIsImpactOpen(false)}
                   >
-                    {item.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+                    {label}
                   </Link>
                 ))}
               </div>
@@ -168,7 +162,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile button */}
+          {/* Mobile Hamburger */}
           <button
             ref={mobileMenuButtonRef}
             className={cn("md:hidden focus:outline-none transition-transform duration-300", scrolled ? "text-aicwa-darkGray" : "text-white")}
@@ -184,38 +178,36 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile Menu */}
         <div className={cn(
           "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
           isMobileMenuOpen ? "max-h-screen opacity-100 py-4" : "max-h-0 opacity-0"
         )}>
           <div className="flex flex-col space-y-4">
             <Link to="/about" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-            <Link to="/getinvolved" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Get Involved</Link>
+            <Link to="/getinvolved" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Volunteer</Link>
 
+            {/* Mobile Dropdown */}
             <button onClick={() => setIsImpactOpen(!isImpactOpen)} className={linkClasses(scrolled)}>
               Area of Impact <ChevronDown size={16} className="ml-1 inline-block" />
             </button>
-
             {isImpactOpen && (
               <div className="pl-4 space-y-2">
-                {["health", "education", "child-welfare", "old-age", "humanity"].map((item, idx) => (
+                {impactLinks.map(({ label, to }, idx) => (
                   <Link
                     key={idx}
-                    to={`/impact/${item}`}
+                    to={to}
                     className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    {item.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+                    {label}
                   </Link>
                 ))}
               </div>
             )}
 
             <Link to="/gallery" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
-            <Link to="/story" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Story</Link>
             <Link to="/contact" className={linkClasses(scrolled)} onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
-
             <Link to="/donate" className="px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-opacity-90 transition-colors inline-block w-fit" onClick={() => setIsMobileMenuOpen(false)}>Donate</Link>
           </div>
         </div>
