@@ -4,9 +4,9 @@ import Footer from '@/components/Footer';
 const About = () => {
   const teamMembers = [
     {
-        name: "Somaiya dhara",
-        role: "Team",
-        image: "/images/somaiya.jpeg"
+        name: "Sonam Jain",
+        role: "Committe",
+        image: "/images/sonam-maam.jpeg"
     },
     {
         name: "Sarah Shivangi mehra",
@@ -19,19 +19,19 @@ const About = () => {
       image: "/images/somaiya.jpeg"
   },
   {
-      name: "Sarah Shivangi mehra",
-      role: "Team",
-      image: "/images/shivangi.jpeg"
+      name: "Dharm Prakash Rudra",
+      role: "Committe",
+      image: "/images/dharm.jpeg"
   },
   {
-    name: "Somaiya dhara",
+    name: "Rahul Sharma",
     role: "Team",
-    image: "/images/somaiya.jpeg"
+    image: "/images/rahul.jpeg"
 },
 {
-    name: "Sarah Shivangi mehra",
+    name: "Dharm Prakash Rudra",
     role: "Team",
-    image: "/images/shivangi.jpeg"
+    image: "/images/dharm.jpeg"
 },
 {
   name: "Sarah Shivangi mehra",
@@ -97,36 +97,37 @@ const About = () => {
     
     {/* Left Text Content */}
     <div>
-      <h2 className="text-3xl font-bold text-[#303C69] mb-4 border-b-4  inline-block">
-        About AICWA
-      </h2>
-      <p className="text-gray-700 text-lg mb-6">
-        AICWA Foundation stands as the voice for the millions of behind-the-scenes workers who bring the magic of cinema to life.
-        From junior artists and technicians to makeup artists and light crew—our mission is to recognize, support, and empower their lives.
-      </p>
+  <h2 className="text-3xl font-bold text-[#303C69] mb-4 border-b-4 inline-block">
+    About AICWA
+  </h2>
+  <p className="text-gray-700 text-lg mb-6">
+    AICWA Foundation is committed to supporting the backbone of the film industry—technicians, junior artists, and backstage crew members. 
+    Through dedicated initiatives, we ensure their health, dignity, and professional recognition.
+  </p>
 
-      {/* Bullet Points */}
-      <div className="space-y-4">
-        <div className="flex items-start gap-3">
-          <span className="text-green-600 mt-1">✅</span>
-          <p className="text-gray-700">
-            <strong>Healthcare Access:</strong> Free medical camps, emergency support, and regular check-ups for artists and crew.
-          </p>
-        </div>
-        <div className="flex items-start gap-3">
-          <span className="text-green-600 mt-1">✅</span>
-          <p className="text-gray-700">
-            <strong>Educational Aid:</strong> Scholarships and educational support for children of backstage workers.
-          </p>
-        </div>
-        <div className="flex items-start gap-3">
-          <span className="text-green-600 mt-1">✅</span>
-          <p className="text-gray-700">
-            <strong>Respect & Recognition:</strong> Highlighting and celebrating the hard work of ground-level contributors to cinema.
-          </p>
-        </div>
-      </div>
+  {/* Bullet Points */}
+  <div className="space-y-4">
+    <div className="flex items-start gap-3">
+      <span className="text-green-600 mt-1">✅</span>
+      <p className="text-gray-700">
+        <strong>Technician Welfare:</strong> Programs tailored for lightmen, cameramen, and other technical crew to ensure job security and growth.
+      </p>
     </div>
+    <div className="flex items-start gap-3">
+      <span className="text-green-600 mt-1">✅</span>
+      <p className="text-gray-700">
+        <strong>Junior Artist Support:</strong> Financial aid, work safety advocacy, and recognition for aspiring and working junior artists.
+      </p>
+    </div>
+    <div className="flex items-start gap-3">
+      <span className="text-green-600 mt-1">✅</span>
+      <p className="text-gray-700">
+        <strong>Healthcare for Crew:</strong> Regular checkups, emergency medical assistance, and wellness drives for on-set crew.
+      </p>
+    </div>
+  </div>
+</div>
+
 
     {/* Right Image */}
     <div className="overflow-hidden  w-full h-full">
@@ -156,7 +157,7 @@ const About = () => {
         />
       </div>
       <div>
-        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Free Health Camp for Film Workers</h3>
+        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Launch of Emergency Relief Fund</h3>
         <p className="text-gray-700 text-lg">
           AICWA successfully organized a free medical checkup and treatment camp benefiting over 500 film workers and technicians in Andheri. Volunteers and local doctors collaborated to offer support.
         </p>
@@ -173,7 +174,7 @@ const About = () => {
         />
       </div>
       <div className="md:order-1">
-        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Scholarship Drive for Artist Children</h3>
+        <h3 className="text-2xl font-bold text-[#303C69] mb-4">AICWA Foundation voice for Film Workers</h3>
         <p className="text-gray-700 text-lg">
           We launched an educational scholarship program for children of junior artists, enabling them to pursue quality education. The initiative has already supported 200 students across Mumbai and Pune.
         </p>
@@ -184,13 +185,13 @@ const About = () => {
     <div className="grid md:grid-cols-2 gap-10 items-center">
       <div className="w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
         <img
-          src="/images/news-3.JPG"
+          src="/images/4.jpeg"
           alt="News 3"
           className="w-full h-full object-cover"
         />
       </div>
       <div>
-        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Launch of Emergency Relief Fund</h3>
+        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Free Health Camp for Film Workers</h3>
         <p className="text-gray-700 text-lg">
           AICWA announced an emergency relief fund to support struggling workers during crisis situations. The fund will ensure no technician or artist faces medical or financial challenges alone.
         </p>
@@ -209,7 +210,7 @@ const About = () => {
       {/* Card 1 */}
       <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
         <img
-          src="/images/health.png"
+          src="/images/health-home.jpg"
           alt="Health Support"
           className="w-full h-48 object-cover"
         />

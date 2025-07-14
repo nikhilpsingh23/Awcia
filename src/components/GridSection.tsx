@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const impacts = [
   {
     title: "Health",
-    image: "/images/health.png",
+    image: "/images/health-home.jpg",
     description:
       "The Health Department of AICWA Foundation is committed to the physical and mental well-being of every film industry worker — from lightmen, spot boys, and make-up artists to stuntmen, sound engineers, and backstage crew.Special attention is given to elderly workers who have spent decades contributing to Indian cinema but now face severe health challenges without proper treatment or financial support. These unsung heroes often slip through the cracks of the healthcare system. We aim to give them the care they deserve.",
     bg: "bg-[#f1f1d4]",
@@ -14,13 +14,13 @@ const impacts = [
     title: "Education",
     image: "/images/education.JPG",
     description:
-      "The AICWA (All Indian Cine Workers Association) Foundation recognizes that behind the glitz and glamour of the Indian film industry lies a massive, hardworking community of technicians, artists, and crew members. Their children often face limited access to quality education due to financial instability, long working hours of parents, and lack of support structures.We aim to break this cycle by ensuring that every child—especially those from film worker families—has the opportunity to learn, grow, and thrive academically and personally, whether in India or abroad.",
+      "The AICWA Foundation recognizes that behind the glitz and glamour of the Indian film industry lies a massive, hardworking community of technicians, artists, and crew members. Their children often face limited access to quality education due to financial instability, long working hours of parents, and lack of support structures.We aim to break this cycle by ensuring that every child—especially those from film worker families—has the opportunity to learn, grow, and thrive academically and personally, whether in India or abroad.",
     bg: "bg-[#dbe4fa]",
     align: "right",
   },
   {
     title: "Rural Transformation",
-    image: "/images/rural.png",
+    image: "/images/rural.jpg",
     description:
       "India’s rural communities remain the backbone of the nation, yet many live without access to the most basic needs—food, education, healthcare, dignity. While cities advance in the name of development and technology, rural India still walks barefoot in broken slippers, striving merely to survive.The President of AICWA Foundation, during visits to deeply underdeveloped villages, encountered heart-wrenching realities that demand urgent attention and sustained action.",
     bg: "bg-[#d8ebd9]",

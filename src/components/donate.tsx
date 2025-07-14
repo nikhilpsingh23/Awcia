@@ -73,7 +73,7 @@ const DonationComponent = () => {
               <Heart className="w-8 h-8 text-[#D4AF37] flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-medium text-[#D4AF37] mb-2">Health</h3>
-                <p className="text-white/70">Medical support and health insurance coverage for workers and their families.</p>
+                <p className="text-white/70"> Assist in medical camps, insurance drives, and health awareness for industry workers.</p>
               </div>
             </div>
 
@@ -81,7 +81,7 @@ const DonationComponent = () => {
               <GraduationCap className="w-8 h-8 text-[#D4AF37] flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-medium text-[#D4AF37] mb-2">Education </h3>
-                <p className="text-white/70">Providing educational assistance to children of film industry workers, including scholarships and learning materials.</p>
+                <p className="text-white/70">Help provide school support, scholarships, and learning resources for workers’ children.</p>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ const DonationComponent = () => {
               <Home className="w-8 h-8 text-[#D4AF37] flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-medium text-[#D4AF37] mb-2">Rural transformation</h3>
-                <p className="text-white/70">Housing assistance and shelter programs for industry workers in need.</p>
+                <p className="text-white/70">Support shelter, basic needs, and upliftment in underdeveloped areas connected to the film workforce.</p>
               </div>
             </div>
 
@@ -99,7 +99,8 @@ const DonationComponent = () => {
               <Utensils className="w-8 h-8 text-[#D4AF37] flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-medium text-[#D4AF37] mb-2">Women Empowerment</h3>
-                <p className="text-white/70">Ensuring nutritional support and food assistance to workers' families.</p>
+                <p className="text-white/70">Be part of nutrition, safety, and skill-building programs for women in the industry.
+                </p>
               </div>
             </div>
 
@@ -107,7 +108,7 @@ const DonationComponent = () => {
               <BookOpen className="w-8 h-8 text-[#D4AF37] flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-medium text-[#D4AF37] mb-2">Art, Culture & heritage</h3>
-                <p className="text-white/70">Training programs and workshops for career advancement in the film industry.</p>
+                <p className="text-white/70">Help us preserve, promote, and protect the legacy of Indian cinema through training and cultural campaigns.</p>
               </div>
             </div>
           </div>

@@ -19,7 +19,7 @@ const Footer = () => {
                 <BsTelephone className="text-xl" />
                 <div>
                   <p className="font-bold text-sm">CALL US NOW</p>
-                  <p className="text-sm">011-41410075/76</p>
+                  <p className="text-sm">7700999457</p>
                 </div>
               </div>
 
@@ -28,7 +28,7 @@ const Footer = () => {
                 <MdEmail className="text-xl" />
                 <div>
                   <p className="font-bold text-sm">SEND AN EMAIL</p>
-                  <p className="text-sm">contact@s.org</p>
+                  <p className="text-sm">info@aicwafoundation.org</p>
                 </div>
               </div>
             </div>
@@ -40,7 +40,10 @@ const Footer = () => {
             <div>
               <h3 className="font-bold mb-4">ABOUT US</h3>
               <p>
-                AICWA is dedicated to making a positive impact in health, education, child welfare, old age support, and humanity awareness through community-driven initiatives.
+              AICWA Foundation is a pan-India initiative dedicated to uplifting the unseen pillars of the entertainment industry — its workers.
+Through focused programs in Health, Education, Rural Transformation, Women Empowerment, and Art, Culture & Heritage, we support for to the soul of Indian cinema.
+
+We don’t just support workers. We honour their legacy
               </p>
             </div>
 
@@ -61,8 +64,9 @@ const Footer = () => {
               <h3 className="font-bold mb-4">EXPLORE</h3>
               <ul className="space-y-2">
                 <li><a href="#" className="hover:underline">About Us</a></li>
-                <li><a href="#" className="hover:underline">Get Involved</a></li>
+                <li><a href="#" className="hover:underline">Volunteer</a></li>
                 <li><a href="#" className="hover:underline">Gallery</a></li>
+                <li><a href="#" className="hover:underline">Contact</a></li>
               </ul>
             </div>
 
@@ -76,7 +80,7 @@ const Footer = () => {
                 JVLR, Powai, Mumbai - 400076
               </p>
               <p className="mb-2">
-                <strong>Contact No:</strong> 9820982115
+                <strong>Contact No:</strong> 7700999457
               </p>
               <p>
                 <strong>Email:</strong> info@aicwafoundation.org

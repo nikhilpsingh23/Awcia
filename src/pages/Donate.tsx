@@ -24,17 +24,30 @@ const Donate = () => {
   return (
     <div className="flex flex-col min-h-screen">
       
+      <Navbar/>
+      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+          <img
+            src="/images/rural.jpg"
+            alt="Volunteer Hero"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative z-10 text-center text-white px-4">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6">Aapka diya hua ek paisa, kisi की पूरी ज़िंदगी बदल सकता है|</h1>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+            Help us build a better tomorrow for the unseen hands behind the screen
+            </p>
+          </div>
 
-      {/* Back to Home Button */}
-      <div className="px-6 pt-6">
-        <button
-          onClick={() => navigate('/')}
-          className="flex items-center text-blue-600 hover:text-orange-600 text-sm font-medium"
-        >
-          <ArrowLeft className="h-4 w-4 mr-1" />
-          Back to Home
-        </button>
-      </div>
+          {/* Left-aligned floating breadcrumb (half overlay) */}
+          <div className="absolute -bottom-6 left-6 z-20">
+            <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
+              <a href="/" className="hover:underline">Home</a>
+              <span className="text-[#4b2d0c] font-bold">›</span>
+              <span>Donate</span>
+            </div>
+          </div>
+        </section>
 
       {/* Main Donation Section */}
       <div className="flex-1 px-4 md:px-16 py-12 bg-white">

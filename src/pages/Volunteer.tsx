@@ -31,56 +31,69 @@ const Volunteer = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-<section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
-  <img
-    src="/images/volunteer.JPG"
-    alt="Volunteer Hero"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 bg-black/50" />
-  <div className="relative z-10 text-center text-white px-4">
-    <h1 className="text-5xl md:text-6xl font-bold mb-6">Volunteer With Us</h1>
-    <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-      Join our mission to create positive change and make a lasting impact in the lives of those who need it most.
-    </p>
-  </div>
+        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+          <img
+            src="/images/volunteer.JPG"
+            alt="Volunteer Hero"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative z-10 text-center text-white px-4">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Volunteer With Us</h1>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+              Stand with those who build cinema behind the scenes. Volunteer with AICWA Foundation.
+            </p>
+          </div>
 
-  {/* Left-aligned floating breadcrumb (half overlay) */}
-  <div className="absolute -bottom-6 left-6 z-20">
-    <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
-      <a href="/" className="hover:underline">Home</a>
-      <span className="text-[#4b2d0c] font-bold">›</span>
-      <span>Volunteer</span>
-    </div>
-  </div>
-</section>
+          {/* Left-aligned floating breadcrumb (half overlay) */}
+          <div className="absolute -bottom-6 left-6 z-20">
+            <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
+              <a href="/" className="hover:underline">Home</a>
+              <span className="text-[#4b2d0c] font-bold">›</span>
+              <span>Volunteer</span>
+            </div>
+          </div>
+        </section>
 
-{/* Spacer below breadcrumb so next section doesn't overlap */}
-<div className="h-10" />
+        {/* Spacer below breadcrumb so next section doesn't overlap */}
+        <div className="h-10" />
 
+        <section className="py-20 bg-white px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#303C69] mb-6">
+              Be the Voice Behind the Spotlight.
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              At AICWA Foundation, we believe that true change in the film industry begins with those who care enough to act. <br className="hidden md:inline" />
+              Behind every frame of entertainment, there are thousands of workers — technicians, junior artists, daily wage labourers — who give their all but remain unseen and unsupported.
+            </p>
+          </div>
+        </section>
         {/* Section 2 - Why Volunteer */}
         <section className="py-16 md:py-24 bg-[#f2f2f2]">
           <div className="container mx-auto px-4 md:px-10 lg:px-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
               {/* Left Side - Text */}
               <div className="space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                  Why Volunteer With Us?
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                  Why Volunteer With AICWA Foundation?
                 </h2>
                 <div className="space-y-4 text-lg text-gray-600">
                   <p>
-                    Join our mission to create lasting change in the lives of children and communities across India. As a volunteer, you'll be part of a dedicated team working towards meaningful social impact.
+                    You won’t just be giving your time —<br />
+                    You’ll be giving dignity, hope, and opportunity to those who build the dreams we watch on screen.
                   </p>
-                  <p>Your time and skills can make a real difference in:</p>
+                  <p>As a volunteer, you will directly contribute to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Education and skill development programs</li>
-                    <li>Community outreach initiatives</li>
-                    <li>Healthcare awareness campaigns</li>
-                    <li>Rural development projects</li>
-                    <li>Women empowerment programs</li>
+                    <li>Health Initiatives – Assist in medical camps, insurance drives, and health awareness for industry workers.</li>
+                    <li>Educational Outreach – Help provide school support, scholarships, and learning resources for workers’ children.</li>
+                    <li>Rural Transformation Projects – Support shelter, basic needs, and upliftment in underdeveloped areas connected to the film workforce.</li>
+                    <li>Women Empowerment Programs – Be part of nutrition, safety, and skill-building programs for women in the industry.</li>
+                    <li>Art, Culture & Heritage – Help us preserve, promote, and protect the legacy of Indian cinema through training and cultural campaigns.</li>
                   </ul>
                   <p>
-                    Together, we can create positive change and build a better future for those in need.
+                    Together, we can build a future where no backstage worker is left behind.
                   </p>
                 </div>
               </div>
@@ -97,7 +110,7 @@ const Volunteer = () => {
 
                 {/* Image */}
                 <img
-                  src="/images/s8.png"
+                  src="/images/volunteer-why.jpeg"
                   alt="Volunteers working together"
                   className="w-full h-full object-cover"
                 />
@@ -105,9 +118,11 @@ const Volunteer = () => {
                 {/* Dark overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               </div>
+
             </div>
           </div>
         </section>
+
 
         {/* Section 3 - Join Form */}
         <section className="py-16 md:py-24 bg-[#303C69]">
@@ -118,7 +133,7 @@ const Volunteer = () => {
                 Join Our Volunteer Community
               </h2>
               <p className="text-xl text-gray-200">
-                Take the first step towards making a difference. Fill out the form below and become part of our volunteer family.
+              Together, we won’t just support lives — we’ll celebrate them.
               </p>
             </div>
 

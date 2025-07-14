@@ -29,10 +29,22 @@ const Story = () => {
       company: "Spot Boy"
     },
     {
-      name: "Michael Brown",
-      quote: "We light up sets daily, but our own homes stayed dark for years. AICWA Foundation is bringing light to our lives—through healthcare, housing, and humanity.",
-      imageSrc: "/images/suresh.png",
-      company: "Grand Party Rental"
+      name: "Ashima Chauhan",
+      quote: "In this industry, a woman’s silence is often expected—but I choose to speak. Because when we break the silence, we don’t just protect ourselves. we protect every woman who comes after us. ",
+      imageSrc: "/images/ashima.jpeg",
+      company: "Actress"
+    },
+    {
+      name: "Rishav Trivedi",
+      quote: "In this industry, every actor carries not just dreams, but daily battles—financial pressure, lack of support, and uncertainty. AICWA Foundation gives us more than help; it gives us strength, stability, and the belief that we’re not alone ",
+      imageSrc: "/images/rishav.jpeg",
+      company: "Actor"
+    },
+    {
+      name: "Dhara Somaiya",
+      quote: "On set, I create beautiful looks—but in real life, even basic needs were sometimes a struggle. AICWA Foundation brought stability, support, and self-respect to people like us who’ve given our lives to this industry",
+      imageSrc: "/images/somaiya.jpeg",
+      company: "Costume Designer"
     },
   ];
 

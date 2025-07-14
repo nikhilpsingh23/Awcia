@@ -12,7 +12,6 @@ import { ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
-import AreaOfImpact from '@/components/areaofimpact';
 import DonateSection from '@/components/donateSection';
 import JoinUs from '@/components/joinus';
 import AboutUs from '@/components/aboutUs';
@@ -98,9 +97,11 @@ const Index = () => {
  
   
   const heroImages = [
-    "./images/1.JPG",
+    "./images/1-home.HEIC",
     "./images/2.HEIC",
-    "./images/3.PNG"
+    "./images/3.HEIC",
+    "./images/4.jpeg",
+    "./images/5.jpg"
   ];
 
   return (
@@ -108,7 +109,7 @@ const Index = () => {
       {/* Social Media Icons - Desktop */}
       <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 hidden md:flex flex-col gap-2 bg-white/10 backdrop-blur-sm p-2 rounded-l-lg shadow-lg">
         <a
-          href="https://twitter.com"
+          href="https://x.com/sureshsgupta"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-black hover:bg-gray-800 text-white rounded transition-all duration-300 hover:scale-110"
@@ -124,7 +125,7 @@ const Index = () => {
           <FaFacebook size={20} />
         </a>
         <a
-          href="https://youtube.com"
+          href="https://youtube.com/@aicwafoundation"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-red-600 hover:bg-red-700 text-white rounded transition-all duration-300 hover:scale-110"
