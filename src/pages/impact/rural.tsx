@@ -8,9 +8,9 @@ const RuralPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+        <section className="relative h-[50vh] min-h-[600px] flex items-center justify-center">
           <img
-            src="https://static.toiimg.com/photo/msid-80514186,width-96,height-65.cms"
+            src="/images/rural-cover.jpeg"
             alt="Rural Transformation Hero"
             className="absolute inset-0 w-full h-full object-cover"
           />
