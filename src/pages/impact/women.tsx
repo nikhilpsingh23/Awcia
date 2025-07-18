@@ -8,9 +8,9 @@ const WomenPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
           <img
-            src="https://karunalaya.ngo/wp-content/uploads/2018/03/women-empowerment-877x470.jpg"
+            src="/images/story-cover.png"
             alt="Women Empowerment Hero"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -68,7 +68,7 @@ const WomenPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/health.webp"
+            src="/images/a4.png"
             alt="Women Empowerment Support"
             className="w-full h-auto object-cover"
           />
@@ -178,13 +178,13 @@ const WomenPage = () => {
             <div className="w-full md:w-1/2 text-center md:text-left text-white">
               <h4 className="text-2xl font-semibold mb-2">FOR SUPPORT</h4>
               <p>
-                <span className="font-semibold">9820982111</span>
+                <span className="font-semibold">9820982115</span>
                 <br />
                 <a
-                  href="mailto:women@aicwafoundation.org"
+                  href="mailto:info@aicwafoundation.org"
                   className="underline text-white"
                 >
-                  women@aicwafoundation.org
+                  info@aicwafoundation.org
                 </a>
               </p>
             </div>

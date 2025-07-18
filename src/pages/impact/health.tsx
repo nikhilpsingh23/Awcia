@@ -9,9 +9,9 @@ const HealthPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
           <img
-            src="https://sundayguardianlive.com/wp-content/uploads/2018/12/itv.jpg"
+            src="/images/aoi-health.jpg"
             alt="Volunteer Hero"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -82,7 +82,7 @@ const HealthPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/health.webp"
+            src="/images/a1.png"
             alt="Health Support"
             className="w-full h-auto object-cover"
           />
@@ -196,13 +196,13 @@ const HealthPage = () => {
             <div className="w-full md:w-1/2 text-center md:text-left text-white">
               <h4 className="text-2xl font-semibold mb-2">FOR SUPPORT</h4>
               <p>
-                <span className="font-semibold">9820982111</span>
+                <span className="font-semibold">9820982115</span>
                 <br />
                 <a
-                  href="mailto:csr@aicwafoundation.org"
+                  href="mailto:info@aicwafoundation.org"
                   className="underline text-white"
                 >
-                  @aicwafoundation.org
+                  info@aicwafoundation.org
                 </a>
               </p>
             </div>

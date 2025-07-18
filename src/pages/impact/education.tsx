@@ -8,9 +8,9 @@ const EducationPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
           <img
-            src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc"
+            src="/images/V9.jpg"
             alt="Education Hero"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -71,7 +71,7 @@ const EducationPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/health.webp"
+            src="/images/a2.png"
             alt="Education Support"
             className="w-full h-auto object-cover"
           />
@@ -183,13 +183,13 @@ const EducationPage = () => {
             <div className="w-full md:w-1/2 text-center md:text-left text-white">
               <h4 className="text-2xl font-semibold mb-2">FOR SUPPORT</h4>
               <p>
-                <span className="font-semibold">9820982111</span>
+                <span className="font-semibold">9820982115</span>
                 <br />
                 <a
-                  href="mailto:education@aicwafoundation.org"
+                  href="mailto:info@aicwafoundation.org"
                   className="underline text-white"
                 >
-                  education@aicwafoundation.org
+                  info@aicwafoundation.org
                 </a>
               </p>
             </div>

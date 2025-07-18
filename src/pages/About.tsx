@@ -266,7 +266,7 @@ const About = () => {
 <section className="bg-white py-20">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold mb-4">Our Team</h2>
+                    <h2 className="text-3xl text-[#303C69] font-bold mb-4">Our Team</h2>
                     <p className="text-gray-600">Explore Our Success Stories and Innovative Projects</p>
                 </div>
 

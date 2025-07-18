@@ -23,9 +23,9 @@ const Contact = () => {
       <Navbar />
 
       {/* Hero Section */}
-<section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+<section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
   <img
-    src="/images/contact-covers.jpeg"
+    src="/images/contact-cover.jpeg"
     alt="Volunteer Hero"
     className="absolute inset-0 w-full h-full object-cover"
   />
@@ -71,7 +71,7 @@ const Contact = () => {
             <div className="bg-[#f6e2bd] p-6 rounded-md shadow-sm">
               <h4 className="font-semibold text-gray-800 mb-2">Our Address</h4>
               <p className="text-sm text-gray-700">
-                Admin Office: AICWA Foundation <br />
+                AICWA Foundation <br />
                 5, Sunheights Building,<br/>
 Near Shyamlal Sohanlal Gupta Chowk,<br/>
 JVLR, Powai, Mumbai - 400076
@@ -81,21 +81,19 @@ JVLR, Powai, Mumbai - 400076
             <div className="bg-[#cde4dc] p-6 rounded-md shadow-sm">
               <h4 className="font-semibold text-gray-800 mb-2">Phone Number</h4>
               <p className="text-sm text-gray-700">
-                +91 22 2867 7820<br />
-                +91 97699 86440<br />
-                +91 98702 34440
+                +91 9820982115<br />
+                
               </p>
             </div>
 
             <div className="bg-[#f1e4d8] p-6 rounded-md shadow-sm">
               <h4 className="font-semibold text-gray-800 mb-2">Email Address</h4>
-              <p className="text-sm text-blue-600 underline">info@aicwa.org</p>
-              <p className="text-sm text-blue-600 underline">support@aicwa.org</p>
+              <p className="text-sm text-blue-600 underline">info@aicwafoundation.org</p>
             </div>
           </div>
 
           {/* Right - Form */}
-          <div className="bg-gray-50 p-6 rounded-md shadow-sm">
+          <div className="bg-gray-200 p-6 rounded-md shadow-sm">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input

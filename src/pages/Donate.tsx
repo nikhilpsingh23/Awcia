@@ -23,31 +23,31 @@ const Donate = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      
-      <Navbar/>
-      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
-          <img
-            src="/images/rural.jpg"
-            alt="Volunteer Hero"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-          <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">Aapka diya hua ek paisa, kisi की पूरी ज़िंदगी बदल सकता है|</h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Help us build a better tomorrow for the unseen hands behind the screen
-            </p>
-          </div>
 
-          {/* Left-aligned floating breadcrumb (half overlay) */}
-          <div className="absolute -bottom-6 left-6 z-20">
-            <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
-              <a href="/" className="hover:underline">Home</a>
-              <span className="text-[#4b2d0c] font-bold">›</span>
-              <span>Donate</span>
-            </div>
+      <Navbar />
+      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+        <img
+          src="/images/6.jpg"
+          alt="Volunteer Hero"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-3xl md:text-4xl font-bold mb-6">Aapka diya hua ek paisa, kisi की पूरी ज़िंदगी बदल सकता है|</h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+            Help us build a better tomorrow for the unseen hands behind the screen
+          </p>
+        </div>
+
+        {/* Left-aligned floating breadcrumb (half overlay) */}
+        <div className="absolute -bottom-6 left-6 z-20">
+          <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
+            <a href="/" className="hover:underline">Home</a>
+            <span className="text-[#4b2d0c] font-bold">›</span>
+            <span>Donate</span>
           </div>
-        </section>
+        </div>
+      </section>
 
       {/* Main Donation Section */}
       <div className="flex-1 px-4 md:px-16 py-12 bg-white">
@@ -71,11 +71,31 @@ const Donate = () => {
               <p><strong>Branch:</strong> Powai, Mumbai</p>
             </div>
 
-            <img
-              src="/images/upi-pay.png"
-              alt="UPI Payment"
-              className="w-full h-40 object-contain rounded-md shadow-md"
-            />
+            {/* Tax Benefits Info */}
+            <div className="bg-[#fef9ec] border border-yellow-300 rounded-md p-5 text-gray-800 shadow-sm">
+              <h4 className="font-semibold text-lg mb-3 flex items-center">
+                📢 Tax Benefits You Can Trust (Under Section 80G & 12A)
+              </h4>
+              <p className="mb-2">
+                🧾 <strong>All donations made to AICWA Foundation are eligible for Income Tax Exemption:</strong>
+              </p>
+              <div className="space-y-3 ml-4">
+                <div>
+                  <p className="font-medium text-[#13493a]">✅ 80G Exemption:</p>
+                  <ul className="list-disc list-inside text-sm text-gray-700">
+                    <li>Claim 50% of your donation as deduction in your Income Tax Return</li>
+                    <li>(Example: Donate ₹10,000 – get ₹5,000 reduced from taxable income)</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-medium text-[#13493a]">✅ 12A Registration:</p>
+                  <ul className="list-disc list-inside text-sm text-gray-700">
+                    <li>Certified under the Income Tax Act for charitable work</li>
+                    <li>Ensures legal accountability & fund utilization for public welfare</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Donation Form */}

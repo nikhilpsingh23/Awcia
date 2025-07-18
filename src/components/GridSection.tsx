@@ -20,7 +20,7 @@ const impacts = [
   },
   {
     title: "Rural Transformation",
-    image: "/images/rural.jpg",
+    image: "/images/rural1.jpeg",
     description:
       "India’s rural communities remain the backbone of the nation, yet many live without access to the most basic needs—food, education, healthcare, dignity. While cities advance in the name of development and technology, rural India still walks barefoot in broken slippers, striving merely to survive.The President of AICWA Foundation, during visits to deeply underdeveloped villages, encountered heart-wrenching realities that demand urgent attention and sustained action.",
     bg: "bg-[#d8ebd9]",

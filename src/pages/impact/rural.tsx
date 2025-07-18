@@ -8,7 +8,7 @@ const RuralPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
+        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
           <img
             src="https://static.toiimg.com/photo/msid-80514186,width-96,height-65.cms"
             alt="Rural Transformation Hero"
@@ -68,7 +68,7 @@ const RuralPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/health.webp"
+            src="/images/a3.png"
             alt="Rural Support"
             className="w-full h-auto object-cover"
           />
@@ -179,13 +179,13 @@ const RuralPage = () => {
             <div className="w-full md:w-1/2 text-center md:text-left text-white">
               <h4 className="text-2xl font-semibold mb-2">FOR SUPPORT</h4>
               <p>
-                <span className="font-semibold">9820982111</span>
+                <span className="font-semibold">9820982115</span>
                 <br />
                 <a
-                  href="mailto:rural@aicwafoundation.org"
+                  href="mailto:info@aicwafoundation.org"
                   className="underline text-white"
                 >
-                  rural@aicwafoundation.org
+                  info@aicwafoundation.org
                 </a>
               </p>
             </div>

@@ -58,7 +58,7 @@ const Volunteer = () => {
         {/* Spacer below breadcrumb so next section doesn't overlap */}
         <div className="h-10" />
 
-        <section className="py-20 bg-white px-4">
+        <section className="py-20 bg-[#f2f2f2] px-4 ">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-[#303C69] mb-6">
               Be the Voice Behind the Spotlight.
