@@ -25,7 +25,7 @@ const Donate = () => {
     <div className="flex flex-col min-h-screen">
 
       <Navbar />
-      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+      <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
         <img
           src="/images/6.jpg"
           alt="Volunteer Hero"

@@ -23,7 +23,7 @@ const Contact = () => {
       <Navbar />
 
       {/* Hero Section */}
-<section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+<section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
   <img
     src="/images/contact-cover.jpeg"
     alt="Volunteer Hero"

@@ -8,7 +8,7 @@ const ArtPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+        <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
           <img
             src="/images/art-aoi.HEIC"
             alt="Volunteer Hero"

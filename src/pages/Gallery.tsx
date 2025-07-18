@@ -91,7 +91,7 @@ const Gallery = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+      <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
   <img
     src="/images/gall.jpeg"
     alt="gallery Hero"

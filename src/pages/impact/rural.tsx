@@ -8,7 +8,7 @@ const RuralPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[600px] flex items-center justify-center">
+        <section className="relative h-[50vh] min-h-[650px] flex items-center justify-center">
           <img
             src="/images/rural-cover.jpeg"
             alt="Rural Transformation Hero"
