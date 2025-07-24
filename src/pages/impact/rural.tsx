@@ -68,7 +68,7 @@ const RuralPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/a3.png"
+            src="/images/rural1.jpeg"
             alt="Rural Support"
             className="w-full h-auto object-cover"
           />

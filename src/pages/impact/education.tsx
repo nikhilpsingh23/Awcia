@@ -71,7 +71,7 @@ const EducationPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/a2.png"
+            src="/images/education.JPG"
             alt="Education Support"
             className="w-full h-auto object-cover"
           />

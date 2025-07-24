@@ -16,6 +16,11 @@ const DonationComponent = () => {
 
   <div className="space-y-4">
     <Input
+      type="text"
+      placeholder="Name"
+      className="w-full p-3 bg-white/90 rounded border-0 placeholder-gray-500"
+    />
+    <Input
       type="email"
       placeholder="Email"
       className="w-full p-3 bg-white/90 rounded border-0 placeholder-gray-500"
@@ -57,7 +62,7 @@ const DonationComponent = () => {
 
 
         {/* Right Section - Impact Areas */}
-        <div className="w-full lg:w-1/2 text-white pt-8 lg:pt-16">
+        <div className="w-full lg:w-1/2 text-white pt-8 lg:pt-1">
           <h2 className="text-4xl font-light mb-12">Our mission is to support film industry workers.</h2>
           
           <div className="space-y-8">

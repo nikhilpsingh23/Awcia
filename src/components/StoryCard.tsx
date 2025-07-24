@@ -46,6 +46,18 @@ const Story = () => {
       imageSrc: "/images/somaiya.jpeg",
       company: "Costume Designer"
     },
+    {
+      name: "Jay Shankar Singh",
+      quote: "People see the lights and glamour, but no one sees the camera attendants like us struggling behind the scenes. AICWA Foundation is the first to support us with healthcare, housing, and financial help.",
+      imageSrc: "/images/jai-shankar.jpeg",
+      company: "Camera Attendant"
+    },
+    {
+      name: "Nikita Dadhich",
+      quote: "Behind every glamorous walk on the ramp, there’s a world struggle—especially for young talents without support. AICWA Foundation is empowering women, uplifting artists, and building a future where every dream gets a fair chance. ",
+      imageSrc: "/images/nikita.jpeg",
+      company: "Super Model"
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -68,7 +68,7 @@ const WomenPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/a4.png"
+            src="/images/M3.jpg"
             alt="Women Empowerment Support"
             className="w-full h-auto object-cover"
           />

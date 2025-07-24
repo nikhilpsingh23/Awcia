@@ -82,7 +82,7 @@ const HealthPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/a1.png"
+            src="/images/a1.jpg"
             alt="Health Support"
             className="w-full h-auto object-cover"
           />

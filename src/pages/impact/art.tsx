@@ -74,7 +74,7 @@ const ArtPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/a5.png"
+            src="/images/art.png"
             alt="Health Support"
             className="w-full h-auto object-cover"
           />

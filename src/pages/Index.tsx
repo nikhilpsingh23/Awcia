@@ -98,10 +98,11 @@ const Index = () => {
   
   const heroImages = [
     "./images/1-home.HEIC",
+    "./images/security.JPG",
     "./images/1-rural.jpeg",
     "./images/2.HEIC",
     "./images/3.HEIC",
-    "./images/4.jpeg",
+    
     "./images/5.jpg"
   ];
 
@@ -198,8 +199,8 @@ const Index = () => {
       <Navbar/>
       
       {/* Hero Section with Carousel */}
-      <section className="relative flex items-center overflow-hidden min-h-[80vh] sm:min-h-screen">
-  {/* Background Carousel with Responsive Height */}
+      <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+  {/* Background Image Carousel */}
   <Swiper
     modules={[Autoplay, EffectFade]}
     effect="fade"
@@ -212,11 +213,11 @@ const Index = () => {
   >
     {heroImages.map((image, index) => (
       <SwiperSlide key={index}>
-        <div className="relative w-full h-[80vh] sm:h-screen">
+        <div className="relative w-full h-screen">
           <img
             src={image}
             alt={`Hero ${index}`}
-            className="w-full h-full object-contain sm:object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-[#0b2c48]/60" />
         </div>
@@ -224,29 +225,33 @@ const Index = () => {
     ))}
   </Swiper>
 
-  {/* Foreground Text */}
+  {/* Text Overlay */}
   <motion.div
-    initial={{ opacity: 0, y: 40 }}
+    initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1.2 }}
-    className="relative z-10 px-4 sm:px-6 md:px-8 max-w-[90%] sm:max-w-xl md:max-w-2xl mx-auto text-center text-white"
+    transition={{ duration: 1 }}
+    className="relative z-10 px-4 text-white text-center max-w-[90%]"
   >
-    <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-700 bg-clip-text text-transparent drop-shadow-md">
+    <h1 className="text-[1.5rem] sm:text-[2.2rem] md:text-[2.8rem] lg:text-[3.4rem] font-bold leading-tight mb-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-700 bg-clip-text text-transparent drop-shadow-md">
       Support the Hands Behind Indian Cinema
     </h1>
-    <h2 className="text-lg sm:text-2xl md:text-2xl font-light mb-6 drop-shadow-sm">
-      Empowering the Backbone <br /> of Indian Cinema
-    </h2>
+    <p className="text-[1rem] sm:text-[1.25rem] mb-6">
+      Empowering the Backbone <br className="hidden sm:inline" /> of Indian Cinema
+    </p>
+
     <Link to="/donate">
-      <button className="flex items-center mx-auto bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg border border-white/20 hover:scale-105 transition-all duration-300">
-        <span className="text-sm sm:text-base font-medium">Donate Now</span>
-        <span className="bg-[#0b2c48] text-white rounded-full p-2 ml-2">
-          <ArrowRight size={16} />
+      <button className="flex items-center mx-auto px-[1.5rem] py-[0.75rem] rounded-full bg-yellow-500 text-white text-[1rem] font-medium shadow-md hover:scale-105 transition-transform duration-300">
+        <span>Donate Now</span>
+        <span className="ml-3 bg-[#0b2c48] p-2 rounded-full">
+          <ArrowRight size={16} color="white" />
         </span>
       </button>
     </Link>
   </motion.div>
 </section>
+
+
+
 
 
 

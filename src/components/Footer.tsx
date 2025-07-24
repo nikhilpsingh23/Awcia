@@ -51,11 +51,11 @@ We don’t just support workers. We honour their legacy
             <div>
               <h3 className="font-bold mb-4">QUICK LINKS</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:underline">Health</a></li>
-                <li><a href="#" className="hover:underline">Education</a></li>
-                <li><a href="#" className="hover:underline">Rural Transformation</a></li>
-                <li><a href="#" className="hover:underline">Women Empowerment</a></li>
-                <li><a href="#" className="hover:underline">Art, Culture & Heritage</a></li>
+                <li><a href="/impact/health" className="hover:underline">Health</a></li>
+                <li><a href="/impact/education" className="hover:underline">Education</a></li>
+                <li><a href="impact/rural" className="hover:underline">Rural Transformation</a></li>
+                <li><a href="/impact/women-empowerment" className="hover:underline">Women Empowerment</a></li>
+                <li><a href="/impact/art-culture-heritage" className="hover:underline">Art, Culture & Heritage</a></li>
               </ul>
             </div>
 
@@ -63,10 +63,10 @@ We don’t just support workers. We honour their legacy
             <div>
               <h3 className="font-bold mb-4">EXPLORE</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:underline">About Us</a></li>
-                <li><a href="#" className="hover:underline">Volunteer</a></li>
-                <li><a href="#" className="hover:underline">Gallery</a></li>
-                <li><a href="#" className="hover:underline">Contact</a></li>
+                <li><a href="/about" className="hover:underline">About Us</a></li>
+                <li><a href="/volunteer" className="hover:underline">Volunteer</a></li>
+                <li><a href="/gallery" className="hover:underline">Gallery</a></li>
+                <li><a href="/contact" className="hover:underline">Contact</a></li>
               </ul>
             </div>
 
