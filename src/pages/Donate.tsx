@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 interface DonationFormData {
+  name:string;
   email: string;
   phone: string;
   address?: string;
@@ -27,7 +28,7 @@ const Donate = () => {
       <Navbar />
       <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
         <img
-          src="/images/6.jpg"
+          src="/images/donation-cover.JPG"
           alt="Volunteer Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -102,7 +103,17 @@ const Donate = () => {
           <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
             <h3 className="text-xl font-semibold text-gray-800 mb-6">Payment Details</h3>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            <div>
+  <input
+    type="text"
+    placeholder="Full Name"
+    {...register("name", { required: "Name is required" })}
+    className="w-full border border-gray-300 rounded-md p-3 placeholder-gray-500"
+  />
+  {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+</div>
               <div>
+                
                 <input
                   type="email"
                   placeholder="Email"
