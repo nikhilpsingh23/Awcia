@@ -25,7 +25,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
         <img
-          src="/images/contact-office.jpeg"
+          src="/images/contact-01.jpeg"
           alt="Volunteer Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -109,45 +109,65 @@ const Contact = () => {
           </div>
 
           {/* Contact Info Row */}
-          <div className="bg-white p-6 rounded-md shadow-md max-w-3xl mx-auto text-center space-y-6">
+      <div className="bg-[#303C69] p-6 rounded-md shadow-md max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 text-white">
   {/* Address */}
-          <div className="bg-[#f6e2bd] p-6 rounded-md shadow-sm">
-    <h4 className="font-semibold text-gray-800 mb-2">Our Address</h4>
-    <p className="text-sm text-gray-700 leading-relaxed">
+  <div>
+    <h4 className="font-semibold text-lg mb-2">Our Address</h4>
+    <p className="text-sm leading-relaxed">
       AICWA Foundation <br />
       5, Sunheights Building,<br />
       Near Shyamlal Sohanlal Gupta Chowk,<br />
       JVLR, Powai, Mumbai - 400076
     </p>
-    <br/>
-    <h4 className="font-semibold text-gray-800 mb-2">Phone Number</h4>
-    <p className="text-sm text-gray-700">+91 9820982115</p>
-    <br />
-    <h4 className="font-semibold text-gray-800 mb-2">Email Address</h4>
-    <p className="text-sm text-blue-600 underline">info@aicwafoundation.org</p>
-         </div>
-         </div>
+  </div>
+
+  {/* Phone */}
+  <div>
+    <h4 className="font-semibold text-lg mb-2">Phone Number</h4>
+    <p className="text-sm">+91 9820982115</p>
+  </div>
+
+  {/* Email */}
+  <div>
+    <h4 className="font-semibold text-lg mb-2">Email Address</h4>
+    <p className="text-sm underline">info@aicwafoundation.org</p>
+  </div>
+</div>
+
         </div>
       </section>
 
       {/* Image Grid Section */}
 <section className="px-6 md:px-20 py-12 bg-[#fdf7ee]">
   <h3 className="text-3xl font-bold text-center text-[#13493a] mb-8">Our Office</h3>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {/* Row 1 */}
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-      <img src="/images/about-1.JPG" alt="Gallery 1" className="w-full h-64 object-cover" />
+      <img src="/images/contact-office.jpeg" alt="Gallery 1" className="w-full h-64 object-cover" />
     </div>
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
       <img src="/images/contact-cover.jpeg" alt="Gallery 2" className="w-full h-64 object-cover" />
     </div>
+
+    {/* Row 2 */}
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
       <img src="/images/office2.jpeg" alt="Gallery 3" className="w-full h-64 object-cover" />
     </div>
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
       <img src="/images/office1.jpeg" alt="Gallery 4" className="w-full h-64 object-cover" />
     </div>
+
+    {/* Row 3 */}
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contact-02.jpeg" alt="Gallery 5" className="w-full h-64 object-cover" />
+    </div>
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contact-03.jpeg" alt="Gallery 6" className="w-full h-64 object-cover" />
+    </div>
   </div>
 </section>
+
 
       {/* Location rounded map */}
       <section className="w-full my-12">

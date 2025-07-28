@@ -71,26 +71,23 @@ const About = () => {
         </section>
 
 
-        {/* Section 2 - Mission and Vision overlapping Hero 
         <section className="-mt-32 relative z-20 px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Mission Card 
             <div className="bg-[#303C69] p-8 rounded-3xl shadow-2xl ">
-              <h2 className="text-3xl font-bold text-white mb-4">Our Mission</h2>
+              <h2 className="text-3xl font-bold text-white mb-4">Our Belief</h2>
               <p className="text-white text-lg">
                 To empower and uplift workers, technicians, junior artists, and artists of the Indian film industry—Bollywood and regional—by providing access to healthcare, education, food, housing, and financial support.
               </p>
             </div>
 
-            {/* Vision Card 
             <div className="bg-[#303C69] p-8 rounded-3xl shadow-2xl ">
-              <h2 className="text-3xl font-bold text-white mb-4">Our Vision</h2>
+              <h2 className="text-3xl font-bold text-white mb-4">Our Dream</h2>
               <p className="text-white text-lg">
                 To build a fair, organized, and supportive ecosystem for Indian film industry workers where no artist or technician is left behind. We envision a future where workers have access to charity hospitals.
               </p>
             </div>
           </div>
-        </section> */}
+        </section> 
 
 {/* Section 2.5 - About AICWA Foundation */}
 {/* Section 2.5 - About AICWA Foundation */}
@@ -144,57 +141,55 @@ const About = () => {
 </section>
 
 <section className="w-full bg-[#303C69] py-12">
-      <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between px-4 gap-8">
-        {/* Left Side Image */}
-        <div className="w-full lg:w-1/2 relative">
-          <img
-            src="/images/6.jpg"
-            alt="Amal Clooney"
-            width={700}
-            height={500}
-            className="w-full h-auto rounded shadow-lg object-cover"
-          />
-          
-        </div>
+  <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-start justify-between px-4 gap-8">
+    {/* Left Side Image */}
+    <div className="w-full lg:w-1/2 relative">
+      <img
+        src="/images/6.jpg"
+        alt="Mission Image"
+        width={700}
+        height={500}
+        className="w-full h-auto rounded shadow-lg object-cover"
+      />
+    </div>
 
-        {/* Right Side Text Card */}
-        <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-md p-6">
-          <p className="text-lg font-semibold text-[#3c3c3c] mb-4 leading-snug">
-             Mission
-          </p>
-          <p className="text-sm text-gray-700 leading-relaxed">
-          Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.
-          </p>
-        </div>
-      </div>
-    </section>
+    {/* Right Side Text Content */}
+    <div className="w-full lg:w-1/2 bg-transparent p-6">
+      <p className="text-xl font-semibold text-white mb-4 leading-snug">
+        Mission
+      </p>
+      <p className="text-base text-gray-100 leading-relaxed">
+        Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <section className="w-full bg-[#303C69] py-12">
-      <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between px-4 gap-8">
-        {/* Left Side Image */}
-        <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-md p-6">
-          <p className="text-lg font-semibold text-[#3c3c3c] mb-4 leading-snug">
-            Vission
-          </p>
-          <p className="text-sm text-gray-700 leading-relaxed">
-          Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.
-          </p>
-        </div>
-        
+<section className="w-full bg-[#303C69] py-12">
+  <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-start justify-between px-4 gap-8">
+    {/* Left Side Text Content */}
+    <div className="w-full lg:w-1/2 bg-transparent p-6">
+      <p className="text-xl font-semibold text-white mb-4 leading-snug">
+        Vision
+      </p>
+      <p className="text-base text-gray-100 leading-relaxed">
+        Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.
+      </p>
+    </div>
 
-        {/* Right Side Text Card */}
-        <div className="w-full lg:w-1/2 relative">
-          <img
-            src="/images/about-1.JPG"
-            alt="Amal Clooney"
-            width={700}
-            height={500}
-            className="w-full h-auto rounded shadow-lg object-cover"
-          />
-          
-        </div>
-      </div>
-    </section>
+    {/* Right Side Image */}
+    <div className="w-full lg:w-1/2 relative">
+      <img
+        src="/images/about-1.JPG"
+        alt="Vision Image"
+        width={700}
+        height={500}
+        className="w-full h-auto rounded shadow-lg object-cover"
+      />
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -204,36 +199,38 @@ const About = () => {
     <h2 className="text-4xl font-bold text-center text-[#303C69] mb-12">Latest News</h2>
 
     {/* News 1 - Image Left */}
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      <div className="w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="/images/news-1.JPG"
-          alt="News 1"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div>
-        <h3 className="text-2xl font-bold text-[#303C69] mb-4">Launch of Emergency Relief Fund</h3>
-        <p className="text-gray-700 text-lg">
-          AICWA successfully organized a free medical checkup and treatment camp benefiting over 500 film workers and technicians in Andheri. Volunteers and local doctors collaborated to offer support.
-        </p>
-      </div>
-    </div>
+<div className="grid md:grid-cols-2 gap-10 items-start">
+  <div className="w-full h-[650px] rounded-2xl overflow-hidden shadow-lg">
+    <img
+      src="/images/news-1.JPG"
+      alt="News 1"
+      className="w-full h-full object-cover"
+    />
+  </div>
+  <div>
+    <h3 className="text-2xl font-bold text-[#303C69] mb-4">Launch of Emergency Relief Fund</h3>
+    <p className="text-gray-700 text-lg">
+      AICWA successfully organized a free medical checkup and treatment camp benefiting over 500 film workers and technicians in Andheri. Volunteers and local doctors collaborated to offer support.
+    </p>
+  </div>
+</div>
+
 
     {/* News 2 - Image Right */}
     <div className="grid md:grid-cols-2 gap-10 items-center">
-      <div className="md:order-2 w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+      <div className="md:order-2 w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="/images/news-3.JPG"
+          alt="News 2"
+          className="w-full h-full object-cover"
+        />
+      </div>
+       <div className="md:order-2 w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
         <img
           src="/images/news-2.png"
           alt="News 2"
           className="w-full h-full object-cover"
         />
-      </div>
-      <div className="md:order-1">
-        <h3 className="text-2xl font-bold text-[#303C69] mb-4">AICWA Foundation voice for Film Workers</h3>
-        <p className="text-gray-700 text-lg">
-          We launched an educational scholarship program for children of junior artists, enabling them to pursue quality education. The initiative has already supported 200 students across Mumbai and Pune.
-        </p>
       </div>
     </div>
 
