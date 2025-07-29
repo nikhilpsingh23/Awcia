@@ -93,7 +93,7 @@ const Gallery = () => {
       
       <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
   <img
-    src="/images/gall.jpeg"
+    src="/images/gallery-cover1.jpeg"
     alt="gallery Hero"
     className="absolute inset-0 w-full h-full object-cover"
   />

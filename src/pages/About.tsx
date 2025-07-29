@@ -30,19 +30,19 @@ const About = () => {
     image: "/images/rahul.jpeg"
 },
 {
-    name: "Dharm Prakash Rudra",
+    name: "Raman Pratap Singh",
     role: "Team",
-    image: "/images/dharm.jpeg"
+    image: "/images/raman.jpeg"
 },
 {
-  name: "Sarah Shivangi mehra",
+  name: "Loveli Prabhu",
   role: "Team",
-  image: "/images/shivangi.jpeg"
+  image: "/images/loveli.jpeg"
 },
 {
-  name: "Sarah Shivangi mehra",
-  role: "Team",
-  image: "/images/shivangi.jpeg"
+  name: "Mahima Rathore",
+  role: "Committe",
+  image: "/images/mahima.jpeg"
 },
 
 
@@ -131,9 +131,9 @@ const About = () => {
     {/* Right Image */}
     <div className="overflow-hidden  w-full h-full">
       <img
-        src="/images/about-main.png"
+        src="/images/about-main.jpeg"
         alt="AICWA Support"
-        className="w-full h-full object-cover "
+        className="w-full h-full rounded-[8px] object-cover "
       />
     </div>
 
@@ -180,7 +180,7 @@ const About = () => {
     {/* Right Side Image */}
     <div className="w-full lg:w-1/2 relative">
       <img
-        src="/images/about-1.JPG"
+        src="/images/about-vision.jpeg"
         alt="Vision Image"
         width={700}
         height={500}
@@ -208,33 +208,25 @@ const About = () => {
     />
   </div>
   <div>
-    <h3 className="text-2xl font-bold text-[#303C69] mb-4">Launch of Emergency Relief Fund</h3>
+    <h3 className="text-2xl font-bold text-[#303C69] mb-4">A City’s Voice Echoes Ahead of Elections</h3>
     <p className="text-gray-700 text-lg">
-      AICWA successfully organized a free medical checkup and treatment camp benefiting over 500 film workers and technicians in Andheri. Volunteers and local doctors collaborated to offer support.
+      As the nation awaits the Lok Sabha poll results, Maharashtra braces for its own crucial battles — with state assembly and civic elections on the horizon. This edition of Sunday Mid-Day dives deep into what today’s Mumbaikar wants: from accessibility to accountability. With bold cover stories ranging from the emotional impact of AI on voiceover artists to disturbing social truths uncovered by student filmmakers, the issue captures the ambition, unrest, and outspoken spirit of a city on the cusp of change. Voices from all walks of life — artists, activists, and professionals — unite under the compelling question: "I Want... Mala Pahije... Mujhe Chahiye... Mārē jo’ī’ē chē."
     </p>
   </div>
 </div>
 
 
     {/* News 2 - Image Right */}
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      <div className="md:order-2 w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="/images/news-3.JPG"
-          alt="News 2"
-          className="w-full h-full object-cover"
-        />
-      </div>
-       <div className="md:order-2 w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="/images/news-2.png"
-          alt="News 2"
-          className="w-full h-full object-cover"
-        />
-      </div>
-    </div>
+    <div className="w-full h-[600px] rounded-2xl overflow-hidden shadow-lg">
+  <img
+    src="/images/news2.png" // Or use news-2.png if preferred
+    alt="News"
+    className="w-full h-full object-cover"
+  />
+</div>
 
-    {/* News 3 - Image Left */}
+
+    {/* News 3 - Image Left 
     <div className="grid md:grid-cols-2 gap-10 items-center">
       <div className="w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
         <img
@@ -249,7 +241,7 @@ const About = () => {
           AICWA announced an emergency relief fund to support struggling workers during crisis situations. The fund will ensure no technician or artist faces medical or financial challenges alone.
         </p>
       </div>
-    </div>
+    </div>*/}
   </div>
 </section>
 
