@@ -98,7 +98,7 @@ const Index = () => {
   
   const heroImages = [
     "./images/1-home.HEIC",
-    "./images/security.JPG",
+    "./images/7.jpeg",
     "./images/1-rural.jpeg",
     "./images/1.JPG",
     "./images/2.HEIC",

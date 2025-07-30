@@ -8,7 +8,7 @@ const RuralPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[650px] flex items-center justify-center">
+        <section className="relative h-[50vh] min-h-[300px] sm:h-[70vh] sm:min-h-[650px] flex items-center justify-center">
           <img
             src="/images/rural-cover.jpeg"
             alt="Rural Transformation Hero"
@@ -16,10 +16,10 @@ const RuralPage = () => {
           />
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-2xl md:text-6xl font-bold mb-6">
               Rural Transformation Mission
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+            <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
               Empowering Rural India—One Village, One Family at a Time.
             </p>
           </div>

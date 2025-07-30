@@ -91,24 +91,25 @@ const Gallery = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
+      <section className="relative h-[50vh] min-h-[300px] sm:h-[70vh] sm:min-h-[650px] flex items-center justify-center">
+
   <img
     src="/images/gallery-cover1.jpeg"
     alt="gallery Hero"
     className="absolute inset-0 w-full h-full object-cover"
   />
   <div className="absolute inset-0 bg-black/50" />
-  
 
   {/* Left-aligned floating breadcrumb (half overlay) */}
-  <div className="absolute -bottom-6 left-6 z-20">
-    <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
+  <div className="absolute -bottom-6 left-4 sm:left-6 z-20">
+    <div className="bg-[#e1a535] px-3 sm:px-5 py-1.5 sm:py-2 rounded-md shadow text-white font-medium flex items-center space-x-1 sm:space-x-2 text-sm sm:text-base">
       <a href="/" className="hover:underline">Home</a>
       <span className="text-[#4b2d0c] font-bold">›</span>
       <span>Gallery</span>
     </div>
   </div>
 </section>
+
       
       <section className="py-16 px-4">
         <div className="container mx-auto">

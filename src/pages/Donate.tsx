@@ -31,7 +31,7 @@ const Donate = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
+              <section className="relative h-[50vh] min-h-[300px] sm:h-[70vh] sm:min-h-[650px] flex items-center justify-center">
         <img
           src="/images/donation-cover.JPG"
           alt="Donate Cover"
@@ -39,10 +39,10 @@ const Donate = () => {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-3xl md:text-4xl font-bold mb-6">
+          <h1 className="text-2xl md:text-4xl font-bold mb-6">
             Aapka diya hua ek paisa, kisi की पूरी ज़िंदगी बदल सकता है|
           </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+          <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
             Help us build a better tomorrow for the unseen hands behind the screen
           </p>
         </div>
@@ -120,11 +120,11 @@ const Donate = () => {
     {/* Left: Bank Details */}
     <div className="flex-1 space-y-2 text-gray-800 text-sm">
       <h3 className="text-xl font-semibold mb-4 text-gray-900">Bank Transfer Details</h3>
-      <p><strong>Account Holder:</strong> Social Thumb Foundation</p>
+      <p><strong>Account Holder:</strong> AICWA Foundation</p>
       <p><strong>Bank Name:</strong> HDFC Bank</p>
-      <p><strong>Bank Branch:</strong> SUS Pashan Road, Baner</p>
-      <p><strong>Account No.:</strong> 50200067368760</p>
-      <p><strong>IFSC Code:</strong> HDFC0005529</p>
+      <p><strong>Bank Branch:</strong> Powai, Mumbai</p>
+      <p><strong>Account No.:</strong> 50200110636055</p>
+      <p><strong>IFSC Code:</strong> HDFC0000239</p>
     </div>
 
     {/* Right: QR Code */}

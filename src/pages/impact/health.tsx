@@ -9,7 +9,7 @@ const HealthPage = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="relative h-[70vh] min-h-[650px] flex items-center justify-center">
+                <section className="relative h-[50vh] min-h-[300px] sm:h-[70vh] sm:min-h-[650px] flex items-center justify-center">
           <img
             src="/images/aoi-health.jpg"
             alt="Volunteer Hero"
@@ -17,10 +17,10 @@ const HealthPage = () => {
           />
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-2xl md:text-6xl font-bold mb-6">
               Health
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+            <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
               Join our mission to create positive change and make a lasting impact
               in the lives of those who need it most.
             </p>

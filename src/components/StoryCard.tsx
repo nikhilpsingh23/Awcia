@@ -58,6 +58,20 @@ const Story = () => {
       imageSrc: "/images/nikita.jpeg",
       company: "Super Model"
     },
+        {
+      name: "Ishita Thakur",
+      quote: "“Many come to Mumbai with dreams, but not everyone finds support. AICWA Foundation is ensuring that no artist is left behind—especially women fighting both personal and professional battles.",
+      imageSrc: "/images/ishita.jpeg",
+      company: "Super Model"
+    },
+    {
+      name: "Shruti Tulli",
+      quote: "Beyond the glamour of fashion, many of us walk a tough path—no insurance, no safety. AICWA Foundation is giving us what the industry never did: security, strength, and solidarity. ",
+      imageSrc: "/images/shruti.jpeg",
+      company: "Super Model"
+    },
+
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

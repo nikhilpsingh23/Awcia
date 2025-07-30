@@ -53,7 +53,8 @@ const About = () => {
 
       <main className="min-h-screen bg-[#f2f2f2]">
         {/* Section 1 - Hero Section */}
-        <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center">
+        <section className="relative h-[50vh] min-h-[300px] sm:h-[70vh] sm:min-h-[650px] flex items-center justify-center">
+
           <div className="absolute inset-0">
             <img
               src="/images/about-cover.JPG"
@@ -63,15 +64,15 @@ const About = () => {
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">About AICWA</h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">About AICWA</h1>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
               Empowering the Unsung Heroes of the Indian Film Industry
             </p>
           </div>
         </section>
 
 
-        <section className="-mt-32 relative z-20 px-4">
+        <section className="-mt-36 relative z-20 px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-[#303C69] p-8 rounded-3xl shadow-2xl ">
               <h2 className="text-3xl font-bold text-white mb-4">Our Belief</h2>
@@ -244,6 +245,24 @@ const About = () => {
     </div>*/}
   </div>
 </section>
+
+
+{/* Section - Full-width Image with Overlay and Centered Text */}
+<section className="relative w-full h-[500px]">
+  <img
+    src="/images/suresh-story.jpeg" // 🔁 Replace with your actual image path
+    alt="Overlay Banner"
+    className="w-full h-full object-cover"
+  />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+    <p className="text-white text-xl md:text-2xl font-semibold text-center px-4 max-w-2xl leading-relaxed">
+      The AICWA Foundation continues to uplift, empower, and protect the unseen pillars of the Indian film industry—ensuring dignity, support, and recognition for every worker behind the scenes.
+    </p>
+  </div>
+</section>
+
+
 
 {/* Section 4 - Our Action */}
 <section className="py-20 px-4 bg-gray-50">
