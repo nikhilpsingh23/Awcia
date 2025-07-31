@@ -59,7 +59,8 @@ const Donate = () => {
       {/* Donation Form */}
       <div className="bg-[#faf9f5] py-16 px-4 md:px-10">
         <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
-          <h2 className="text-2xl font-bold text-center text-[#303C69] mb-6">Donate to AICWA Foundation</h2>
+          <h2 className="text-2xl font-bold text-center text-[#303C69] mb-6">“Support Our Mission – Direct Bank Transfer”
+          </h2>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
             <input
               type="text"

@@ -110,7 +110,7 @@ const Contact = () => {
       <div className="bg-[#303C69] p-6 rounded-md shadow-md max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 text-white">
   {/* Address */}
   <div>
-    <h4 className="font-semibold text-lg mb-2">Our Address</h4>
+    <h4 className="font-semibold text-lg mb-2">Headquarters</h4>
     <p className="text-sm leading-relaxed">
       AICWA Foundation <br />
       5, Sunheights Building,<br />
@@ -121,13 +121,13 @@ const Contact = () => {
 
   {/* Phone */}
   <div>
-    <h4 className="font-semibold text-lg mb-2">Phone Number</h4>
+    <h4 className="font-semibold text-lg mb-2">Call Us</h4>
     <p className="text-sm">+91 9820982115</p>
   </div>
 
   {/* Email */}
   <div>
-    <h4 className="font-semibold text-lg mb-2">Email Address</h4>
+    <h4 className="font-semibold text-lg mb-2"> Email Us</h4>
     <p className="text-sm underline">info@aicwafoundation.org</p>
   </div>
 </div>

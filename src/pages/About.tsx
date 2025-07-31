@@ -55,6 +55,16 @@ const About = () => {
   role: "Committe",
   image: "/images/rakesh.jpeg"
 },
+{
+  name: " Purna Behera",
+  role: "Committe",
+  image: "/images/purna.jpeg"
+},
+{
+  name: "Jasmin Khurana",
+  role: "Committe",
+  image: "/images/jasmin.jpeg"
+},
 
 ];
   return (
@@ -197,7 +207,7 @@ const About = () => {
             <p className="text-base text-gray-100 leading-relaxed">
               <Typewriter
                 words={[
-                  `Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.`
+                  `To create a just, inclusive, and dignified future for every cine worker in India—where no individual behind the camera is left vulnerable, unrecognized, or unsupported. We envision an industry where every worker, regardless of their role or rank, has access to education for their children, quality healthcare, secure housing, and the assurance of social and financial protection. Through long-term advocacy, welfare initiatives, and systemic reforms, the AICWA Foundation aspires to transform the lives of film workers—ensuring safety on sets, stability in livelihood, and dignity in retirement. Our vision is a film industry where every worker is respected, protected, and empowered.`
                 ]}
                 typeSpeed={30}
                 cursor
