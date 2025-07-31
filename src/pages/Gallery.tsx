@@ -81,6 +81,36 @@ const Gallery = () => {
       src: '/images/2.HEIC',
       category: 'old-age',
     },
+    {
+      id: 13,
+      src: '/images/art-aoi.HEIC',
+      category: 'Art,Culture & Heritage',
+    },
+    {
+      id: 14,
+      src: '/images/6.jpg',
+      category: 'volunteer',
+    },
+    {
+      id: 15,
+      src: '/images/rural.jpg',
+      category: 'health',
+    },
+    {
+      id: 16,
+      src: '/images/rural-cover.jpeg',
+      category: 'Rural Transformation',
+    },
+    {
+      id: 17,
+      src: '/images/a1.jpg',
+      category: 'health',
+    },
+    {
+      id: 18,
+      src: '/images/7.jpeg',
+      category: 'volunteer',
+    },
   ];
   
   const filteredImages = selectedCategory === 'all'
@@ -99,6 +129,14 @@ const Gallery = () => {
     className="absolute inset-0 w-full h-full object-cover"
   />
   <div className="absolute inset-0 bg-black/50" />
+  <div className="relative z-10 text-center text-white px-4">
+            <h1 className="text-2xl md:text-6xl font-bold mb-6">
+            Real Stories. Real Impact
+            </h1>
+            <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
+            Each frame tells a story of courage, dignity, and transformation led by AICWA Foundation.
+            </p>
+          </div>
 
   {/* Left-aligned floating breadcrumb (half overlay) */}
   <div className="absolute -bottom-6 left-4 sm:left-6 z-20">
@@ -115,7 +153,7 @@ const Gallery = () => {
         <div className="container mx-auto">
           <SectionTitle
             title="Our Impact in Pictures"
-            subtitle="Browse through the visual story of our work across different impact areas"
+            
             centered
           />
           

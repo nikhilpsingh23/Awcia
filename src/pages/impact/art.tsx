@@ -10,7 +10,7 @@ const ArtPage = () => {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[300px] sm:h-[70vh] sm:min-h-[650px] flex items-center justify-center">
           <img
-            src="/images/art-aoi.HEIC"
+            src="/images/nagma.JPG"
             alt="Volunteer Hero"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -31,7 +31,7 @@ const ArtPage = () => {
                 Home
               </a>
               <span className="text-[#4b2d0c] font-bold">›</span>
-              <span>Art</span>
+              <span>Art-Culture-Heritage</span>
             </div>
           </div>
         </section>
@@ -163,7 +163,7 @@ const ArtPage = () => {
         <section
           className="relative py-20 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://sundayguardianlive.com/wp-content/uploads/2018/12/itv.jpg')",
+            backgroundImage: "url('/images/art-aoi.HEIC')",
           }}
         >
           <div className="absolute inset-0 bg-blue-900 opacity-70"></div>

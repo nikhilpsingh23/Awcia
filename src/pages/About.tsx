@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-
+import { Typewriter } from 'react-simple-typewriter';
 
 const About = () => {
   const teamMembers = [
@@ -10,10 +10,10 @@ const About = () => {
         image: "/images/sonam-maam.jpeg"
     },
     {
-        name: "Sarah Shivangi mehra",
-        role: "Team",
-        image: "/images/shivangi.jpeg"
-    },
+      name: "Raman Pratap Singh",
+      role: "Team",
+      image: "/images/raman.jpeg"
+  },
     {
       name: "Somaiya dhara",
       role: "Team",
@@ -29,13 +29,14 @@ const About = () => {
     role: "Team",
     image: "/images/rahul.jpeg"
 },
+
 {
-    name: "Raman Pratap Singh",
-    role: "Team",
-    image: "/images/raman.jpeg"
+  name: "Sarah Shivangi mehra",
+  role: "Team",
+  image: "/images/shivangi.jpeg"
 },
 {
-  name: "Loveli Prabhu",
+  name: "Lovell Prabhu",
   role: "Team",
   image: "/images/loveli.jpeg"
 },
@@ -44,7 +45,16 @@ const About = () => {
   role: "Committe",
   image: "/images/mahima.jpeg"
 },
-
+{
+  name: "Anirudh Pratap Singh",
+  role: "Team",
+  image: "/images/anirudh.jpeg"
+},
+{
+  name: " Rakesh Kumar",
+  role: "Committe",
+  image: "/images/rakesh.jpeg"
+},
 
 ];
   return (
@@ -132,7 +142,7 @@ const About = () => {
     {/* Right Image */}
     <div className="overflow-hidden  w-full h-full">
       <img
-        src="/images/about-main.jpeg"
+        src="/images/1.JPG"
         alt="AICWA Support"
         className="w-full h-full rounded-[8px] object-cover "
       />
@@ -141,55 +151,75 @@ const About = () => {
   </div>
 </section>
 
-<section className="w-full bg-[#303C69] py-12">
-  <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-start justify-between px-4 gap-8">
-    {/* Left Side Image */}
-    <div className="w-full lg:w-1/2 relative">
-      <img
-        src="/images/6.jpg"
-        alt="Mission Image"
-        width={700}
-        height={500}
-        className="w-full h-auto rounded shadow-lg object-cover"
-      />
-    </div>
 
-    {/* Right Side Text Content */}
-    <div className="w-full lg:w-1/2 bg-transparent p-6">
-      <p className="text-xl font-semibold text-white mb-4 leading-snug">
-        Mission
-      </p>
-      <p className="text-base text-gray-100 leading-relaxed">
-        Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.
-      </p>
-    </div>
-  </div>
-</section>
 
-<section className="w-full bg-[#303C69] py-12">
-  <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-start justify-between px-4 gap-8">
-    {/* Left Side Text Content */}
-    <div className="w-full lg:w-1/2 bg-transparent p-6">
-      <p className="text-xl font-semibold text-white mb-4 leading-snug">
-        Vision
-      </p>
-      <p className="text-base text-gray-100 leading-relaxed">
-        Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.
-      </p>
-    </div>
+      {/* Mission Section */}
+      <section className="w-full bg-[#303C69] py-12">
+        <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between px-4 gap-8">
+          
+          {/* Left Side Image */}
+          <div className="w-full lg:w-1/2 relative">
+            <img
+              src="/images/6.jpg"
+              alt="Mission Image"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded shadow-lg object-cover"
+            />
+          </div>
 
-    {/* Right Side Image */}
-    <div className="w-full lg:w-1/2 relative">
-      <img
-        src="/images/about-vision.jpeg"
-        alt="Vision Image"
-        width={700}
-        height={500}
-        className="w-full h-auto rounded shadow-lg object-cover"
-      />
-    </div>
-  </div>
-</section>
+          {/* Right Side Text Content */}
+          <div className="w-full lg:w-1/2 bg-transparent p-6">
+            <p className="text-xl font-semibold text-white mb-4 leading-snug">Mission</p>
+            <p className="text-base text-gray-100 leading-relaxed">
+              <Typewriter
+                words={[
+                  `Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.`
+                ]}
+                typeSpeed={30}
+                cursor
+                cursorStyle="|"
+                delaySpeed={1000}
+                loop={1}
+              />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className="w-full bg-[#303C69] py-12">
+        <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-start justify-between px-4 gap-8">
+          
+          {/* Left Side Text Content */}
+          <div className="w-full lg:w-1/2 bg-transparent p-6">
+            <p className="text-xl font-semibold text-white mb-4 leading-snug">Vision</p>
+            <p className="text-base text-gray-100 leading-relaxed">
+              <Typewriter
+                words={[
+                  `Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.`
+                ]}
+                typeSpeed={30}
+                cursor
+                cursorStyle="|"
+                delaySpeed={1000}
+                loop={1}
+              />
+            </p>
+          </div>
+
+          {/* Right Side Image */}
+          <div className="w-full lg:w-1/2 relative">
+            <img
+              src="/images/about-vision.jpeg"
+              alt="Vision Image"
+              width={700}
+              height={500}
+              className="w-full h-auto rounded shadow-lg object-cover"
+            />
+          </div>
+        </div>
+      </section>
 
 
 
@@ -197,7 +227,7 @@ const About = () => {
         {/* Section 3 - Latest News */}
 <section className="py-20 px-4 bg-white">
   <div className="max-w-6xl mx-auto space-y-16">
-    <h2 className="text-4xl font-bold text-center text-[#303C69] mb-12">Latest News</h2>
+    <h2 className="text-3xl font-bold text-center text-[#303C69] mb-12">When the Media Speaks the Truth – Voices for the Voiceless Workers of Indian Cinema</h2>
 
     {/* News 1 - Image Left */}
 <div className="grid md:grid-cols-2 gap-10 items-start">
@@ -211,8 +241,14 @@ const About = () => {
   <div>
     <h3 className="text-2xl font-bold text-[#303C69] mb-4">A City’s Voice Echoes Ahead of Elections</h3>
     <p className="text-gray-700 text-lg">
-      As the nation awaits the Lok Sabha poll results, Maharashtra braces for its own crucial battles — with state assembly and civic elections on the horizon. This edition of Sunday Mid-Day dives deep into what today’s Mumbaikar wants: from accessibility to accountability. With bold cover stories ranging from the emotional impact of AI on voiceover artists to disturbing social truths uncovered by student filmmakers, the issue captures the ambition, unrest, and outspoken spirit of a city on the cusp of change. Voices from all walks of life — artists, activists, and professionals — unite under the compelling question: "I Want... Mala Pahije... Mujhe Chahiye... Mārē jo’ī’ē chē."
-    </p>
+    When it comes to the rights of workers behind the camera, AICWA Foundation, under the leadership of Suresh Shyamlal Gupta, speaks with courage and clarity.
+
+In June 2024, Sunday Mid-Day spotlighted his powerful stand for film industry workers — raising issues like delayed payments, exploitation, lack of insurance, and safety for women on film sets.
+
+“Every worker deserves timely payment, dignity, and protection.” – Suresh Shyamlal Gupta
+
+This recognition is a reflection of AICWA Foundation’s ongoing mission — to make the film industry fair, safe, and truly organised for all.
+      </p>
   </div>
 </div>
 
@@ -257,7 +293,10 @@ const About = () => {
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
     <p className="text-white text-xl md:text-2xl font-semibold text-center px-4 max-w-2xl leading-relaxed">
-      The AICWA Foundation continues to uplift, empower, and protect the unseen pillars of the Indian film industry—ensuring dignity, support, and recognition for every worker behind the scenes.
+    “Main awaaz shohrat ke liye nahi uthata — system ko hilaane ke liye uthata hoon,
+
+jab tak har mazdoor tak insaaf na pahunch jaye.”
+– Suresh Shyamlal Gupta
     </p>
   </div>
 </section>
@@ -330,8 +369,7 @@ const About = () => {
 <section className="bg-white py-20">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl text-[#303C69] font-bold mb-4">Our Team</h2>
-                    <p className="text-gray-600">Explore Our Success Stories and Innovative Projects</p>
+                    <h2 className="text-3xl text-[#303C69] font-bold mb-4">Team AICWA – The People Behind the Vision</h2>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-[1200px] mx-auto">
@@ -349,7 +387,7 @@ const About = () => {
                             </div>
                             <div className="text-center mt-4">
                                 <h3 className="font-semibold text-lg">{member.name}</h3>
-                                <p className="text-gray-600 text-sm">{member.role}</p>
+                                
                             </div>
                         </div>
                     ))}

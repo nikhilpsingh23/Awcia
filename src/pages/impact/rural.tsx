@@ -157,7 +157,7 @@ const RuralPage = () => {
           className="relative py-20 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://static.toiimg.com/photo/msid-80514186,width-96,height-65.cms')",
+              "url('/images/rural-child.jpeg')",
           }}
         >
           <div className="absolute inset-0 bg-blue-900 opacity-70"></div>

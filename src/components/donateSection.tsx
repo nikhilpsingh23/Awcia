@@ -25,11 +25,7 @@ const DonateSection = () => {
         AICWA Takes a Stand, So Every Workers Can Stand Tall.
         </h2>
 
-        {/* ✅ Subtitle centered paragraph */}
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
-          Learn about how AICWA is making a difference in the lives of film industry workers through our various initiatives and support programs.
-        </p>
-
+        
         {/* ✅ Centered YouTube iframe with shadow & rounded corners */}
         <div className="rounded-xl shadow-lg overflow-hidden max-w-3xl mx-auto">
           <div className="relative pb-[56.25%] h-0">

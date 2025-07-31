@@ -70,6 +70,36 @@ const Story = () => {
       imageSrc: "/images/shruti.jpeg",
       company: "Super Model"
     },
+    {
+      name: "Arshi Bharti Shandilya ",
+      quote: "In an industry that often writes women as fragile, I chose to rewrite myself as fearless. Empowerment is not just about survival—it’s about owning your voice, your space, and your story, unapologetically. ",
+      imageSrc: "/images/arshi.jpeg",
+      company: "Actress"
+    },
+    {
+      name: "Pankaj Jha ",
+      quote: "The journey of an actor is never easy—uncertain income, emotional stress, no safety net. AICWA Foundation has become that net, that hope, that silent power backing thousands like me. ",
+      imageSrc: "/images/pankaj.jpeg",
+      company: "Actor"
+    },
+    {
+      name: "Jail Cowasji  ",
+      quote: "We frame stories through our lenses, but our own lives often remained out of focus. AICWA Foundation is bringing clarity, care, and structure to the lives of technicians like us.",
+      imageSrc: "/images/jail.jpeg",
+      company: "Cinematographer"
+    },
+    {
+      name: "Purna Behera  ",
+      quote: "In regional industries like ours, cine workers are often unheard and unprotected. AICWA Foundation has united us under one powerful mission—bringing healthcare, education, housing, and financial security to the very hands that keep this industry alive.",
+      imageSrc: "/images/purna.jpeg",
+      company: "Cinematographer"
+    },
+    {
+      name: "Simran Khan  ",
+      quote: "The spotlight is easy to chase, but the struggle behind it is real. AICWA Foundation has become that rare light that guides us—not with fame, but with care, security, and true support",
+      imageSrc: "/images/simran.jpeg",
+      company: "Actress"
+    },
 
     
   ];

@@ -173,7 +173,7 @@ const HealthPage = () => {
         <section
           className="relative py-20 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://sundayguardianlive.com/wp-content/uploads/2018/12/itv.jpg')",
+            backgroundImage: "url('/images/rural.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-blue-900 opacity-70"></div>

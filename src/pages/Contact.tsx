@@ -56,9 +56,7 @@ const Contact = () => {
           <p className="text-sm uppercase tracking-wide text-[#10635a] font-medium">Get In Touch</p>
           <h2 className="text-4xl font-bold text-[#f4a300] mb-4">Contact With Us</h2>
           <p className="max-w-3xl text-gray-700">
-            The secret to happiness lies in helping others. Never underestimate the difference YOU can make in
-            the lives of the poor, the abused and the helpless. Spread sunshine in their lives no matter what
-            the weather may be.
+          Your voice matters. Whether you seek help, want to support a cause, or raise an issue — AICWA Foundation is here for you. Let’s stand together for justice, dignity, and hope.
           </p>
         </div>
 
@@ -167,7 +165,21 @@ const Contact = () => {
     </div>
 
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-      <img src="/images/contack-03.jpeg" alt="Gallery 5" className="w-full h-64 object-cover" />
+      <img src="/images/contact-01.jpeg" alt="Gallery 5" className="w-full h-64 object-cover" />
+    </div>
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contact-05.jpeg" alt="Gallery 6" className="w-full h-64 object-cover" />
+    </div>
+
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contact-06.jpeg" alt="Gallery 5" className="w-full h-64 object-cover" />
+    </div>
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contact-07.jpeg" alt="Gallery 6" className="w-full h-64 object-cover" />
+    </div>
+
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contack-03.png" alt="Gallery 5" className="w-full h-64 object-cover" />
     </div>
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
       <img src="/images/contact-03.jpeg" alt="Gallery 6" className="w-full h-64 object-cover" />

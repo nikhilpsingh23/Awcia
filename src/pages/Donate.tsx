@@ -46,6 +46,14 @@ const Donate = () => {
             Help us build a better tomorrow for the unseen hands behind the screen
           </p>
         </div>
+
+        <div className="absolute -bottom-6 left-6 z-20">
+          <div className="bg-[#e1a535] px-5 py-2 rounded-md shadow text-white font-medium flex items-center space-x-2">
+            <a href="/" className="hover:underline">Home</a>
+            <span className="text-[#4b2d0c] font-bold">›</span>
+            <span>Donate</span>
+          </div>
+        </div>
       </section>
 
       {/* Donation Form */}
@@ -115,11 +123,11 @@ const Donate = () => {
 
       {/* Bank Details + QR Scanner Section */}
 <div className="px-4 md:px-16 py-12 bg-[#f2f2f2] ">
-  <div className="max-w-4xl mx-auto bg-white shadow-md border border-gray-200 rounded-xl p-6 md:flex items-center justify-between gap-10">
+  <div className="max-w-4xl mx-auto bg-[#303C69]  shadow-md border border-gray-200 rounded-xl p-6 md:flex items-center justify-between gap-10">
     
     {/* Left: Bank Details */}
-    <div className="flex-1 space-y-2 text-gray-800 text-sm">
-      <h3 className="text-xl font-semibold mb-4 text-gray-900">Bank Transfer Details</h3>
+    <div className="flex-1 space-y-2 text-gray-800 text-sm text-white">
+      <h3 className="text-xl font-semibold mb-4 text-white">Bank Transfer Details</h3>
       <p><strong>Account Holder:</strong> AICWA Foundation</p>
       <p><strong>Bank Name:</strong> HDFC Bank</p>
       <p><strong>Bank Branch:</strong> Powai, Mumbai</p>

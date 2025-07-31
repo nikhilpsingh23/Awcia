@@ -161,7 +161,7 @@ const EducationPage = () => {
           className="relative py-20 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238')",
+              "url('/images/education-01.JPG')",
           }}
         >
           <div className="absolute inset-0 bg-blue-900 opacity-70"></div>

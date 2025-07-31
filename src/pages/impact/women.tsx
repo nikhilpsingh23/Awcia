@@ -68,7 +68,7 @@ const WomenPage = () => {
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
           <img
-            src="/images/M3.jpg"
+            src="/images/women-01.jpeg"
             alt="Women Empowerment Support"
             className="w-full h-auto object-cover"
           />
@@ -156,7 +156,7 @@ const WomenPage = () => {
           className="relative py-20 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpe8Vr-8ZcIKrPE-AkV9fZ9UslV6aduY8iNQ&s')",
+              "url('/images/m4.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-blue-900 opacity-70"></div>
