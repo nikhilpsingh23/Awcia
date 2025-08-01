@@ -31,8 +31,8 @@ const Contact = () => {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-3xl md:text-6xl font-bold mb-6">Contact With Us</h1>
-          <p className="text-[19px] md:text-2xl max-w-3xl mx-auto">
+          <h1 className="text-3xl md:text-[36px] font-bold mb-6">Contact With Us</h1>
+          <p className="text-[19px] md:text-[24px] max-w-3xl mx-auto">
             Join our mission to create positive change and make a lasting impact in the lives of those who need it most.
           </p>
         </div>
@@ -54,7 +54,7 @@ const Contact = () => {
       <section className="px-6 md:px-20 py-16 bg-white">
         <div className="text-left mb-12">
           <p className="text-sm uppercase tracking-wide text-[#10635a] font-medium">Get In Touch</p>
-          <h2 className="text-4xl font-bold text-[#f4a300] mb-4">Contact With Us</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">Contact With Us</h2>
           <p className="max-w-3xl text-gray-700">
           Your voice matters. Whether you seek help, want to support a cause, or raise an issue — AICWA Foundation is here for you. Let’s stand together for justice, dignity, and hope.
           </p>
@@ -110,7 +110,7 @@ const Contact = () => {
       <div className="bg-[#303C69] p-6 rounded-md shadow-md max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 text-white">
   {/* Address */}
   <div>
-    <h4 className="font-semibold text-lg mb-2">Headquarters</h4>
+    <h4 className="font-semibold text-lg mb-2">Headquarter</h4>
     <p className="text-sm leading-relaxed">
       AICWA Foundation <br />
       5, Sunheights Building,<br />
@@ -137,7 +137,7 @@ const Contact = () => {
 
       {/* Image Grid Section */}
 <section className="px-6 md:px-20 py-12 bg-[#fdf7ee]">
-  <h3 className="text-3xl font-bold text-center text-[#13493a] mb-8">Our Office</h3>
+  <h3 className="text-2xl md:text-3xl font-semibold text-center mb-5 text-[#303C69]mb-8">Headquarter</h3>
   
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
     {/* Row 1 */}
@@ -183,6 +183,13 @@ const Contact = () => {
     </div>
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
       <img src="/images/contact-03.jpeg" alt="Gallery 6" className="w-full h-64 object-cover" />
+    </div>
+
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contact-09.jpeg" alt="Gallery 5" className="w-full h-64 object-cover" />
+    </div>
+    <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="/images/contact-08.jpeg" alt="Gallery 6" className="w-full h-64 object-cover" />
     </div>
 
     

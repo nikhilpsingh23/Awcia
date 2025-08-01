@@ -21,13 +21,13 @@ const DonateSection = () => {
     <section className="bg-[#f2f2f2]  py-16">
       <div className="max-w-5xl mx-auto px-4 text-center">
         {/* ✅ Title exactly like image */}
-        <h2 className="text-4xl md:text-5xl font-bold text-[#012B61] mb-4">
-        AICWA Takes a Stand, So Every Workers Can Stand Tall.
+        <h2 className="text-4xl md:text-4xl font-medium text-[#012B61] mb-4">
+        AICWA Takes a Stand, So Every Workers Can Stand Form.
         </h2>
 
         
         {/* ✅ Centered YouTube iframe with shadow & rounded corners */}
-        <div className="rounded-xl shadow-lg overflow-hidden max-w-3xl mx-auto">
+        <div className="rounded-xl shadow-lg overflow-hidden max-w-3xl mx-auto mt-8">
           <div className="relative pb-[56.25%] h-0">
             <iframe
               src="https://www.youtube.com/embed/atR6cijcG2s?si=s3whqCRD79scdolf" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

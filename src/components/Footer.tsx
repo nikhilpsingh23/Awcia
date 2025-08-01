@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react
 import { MdEmail } from 'react-icons/md';
 import { BsTelephone } from 'react-icons/bs';
 
-const Footer = () => {
+const Footer = () => { 
   return (
     <>
       {/* Main Footer */}
@@ -13,8 +13,8 @@ const Footer = () => {
             {/* Text Logo */}
             <h2 className="text-2xl font-bold text-[#303C69]">AICWA Foundation</h2>
 
-            <div className="flex flex-wrap justify-center md:justify-end gap-6 text-center md:text-left">
-              {/* Phone */}
+            { /*<div className="flex flex-wrap justify-center md:justify-end gap-6 text-center md:text-left">
+              
               <div className="flex items-center gap-2">
                 <BsTelephone className="text-xl" />
                 <div>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Email */}
+              
               <div className="flex items-center gap-2">
                 <MdEmail className="text-xl" />
                 <div>
@@ -31,7 +31,7 @@ const Footer = () => {
                   <p className="text-sm">info@aicwafoundation.org</p>
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
 
           {/* Footer Grid (4 Columns) */}

@@ -62,7 +62,7 @@ const Slogan = () => {
       <div className="max-w-6xl mx-auto text-center">
         <div 
           ref={textRef}
-          className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6"
+          className="text-2xl md:text-3xl lg:text-4xl font-light text-white mb-6"
         >
           "TV par dikhti hai rangin duniya, lekin uske peeche chhupi hai film industry ke mazdooro ki andheri raat."
         </div>

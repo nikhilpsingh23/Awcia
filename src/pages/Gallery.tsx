@@ -130,10 +130,10 @@ const Gallery = () => {
   />
   <div className="absolute inset-0 bg-black/50" />
   <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-2xl md:text-6xl font-bold mb-6">
+            <h1 className="text-2xl md:text-[36px] font-bold mb-6">
             Real Stories. Real Impact
             </h1>
-            <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
+            <p className="text-[16px] md:text-2xl max-w-2xl mx-auto">
             Each frame tells a story of courage, dignity, and transformation led by AICWA Foundation.
             </p>
           </div>
@@ -153,7 +153,7 @@ const Gallery = () => {
         <div className="container mx-auto">
           <SectionTitle
             title="Our Impact in Pictures"
-            
+            className='text-2xl md:text-3xl font-semibold text-[#303C69]'
             centered
           />
           

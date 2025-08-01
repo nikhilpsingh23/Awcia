@@ -128,7 +128,7 @@ const Donate = () => {
     
     {/* Left: Bank Details */}
     <div className="flex-1 space-y-2 text-gray-800 text-sm text-white">
-      <h3 className="text-xl font-semibold mb-4 text-white">Bank Transfer Details</h3>
+      <h3 className="text-xl font-semibold mb-4 text-white">Banking Information</h3>
       <p><strong>Account Holder:</strong> AICWA Foundation</p>
       <p><strong>Bank Name:</strong> HDFC Bank</p>
       <p><strong>Bank Branch:</strong> Powai, Mumbai</p>

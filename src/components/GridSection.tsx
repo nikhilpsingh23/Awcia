@@ -49,7 +49,7 @@ const GridSection = () => {
 
   return (
     <div className="w-full bg-[#f2f2f2]  px-4 md:px-8 py-10 ">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#303C69]">
+      <h2 className="text-2xl md:text-4xl font-medium text-center mb-12 text-[#303C69]">
       Pillars of Change
       </h2>
       <div className="space-y-4 max-w-[1400px] mx-auto">
@@ -73,7 +73,7 @@ const GridSection = () => {
               />
             </div>
             <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-start">
-  <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">
+  <h3 className="text-2xl md:text-3xl font-medium mb-4 text-gray-800">
     {item.title}
   </h3>
   <p className="text-gray-700 text-sm md:text-base leading-relaxed">

@@ -234,7 +234,7 @@ const Index = () => {
     transition={{ duration: 1 }}
     className="relative z-10 px-4 text-white text-center max-w-[90%]"
   >
-    <h1 className="text-[1.5rem] sm:text-[2.2rem] md:text-[2.8rem] lg:text-[3.4rem] font-bold leading-tight mb-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-700 bg-clip-text text-transparent drop-shadow-md">
+    <h1 className="text-[1.5rem] sm:text-[2.2rem] md:text-[2.6rem] lg:text-[3rem] font-bold leading-tight mb-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-700 bg-clip-text text-transparent drop-shadow-md">
       Support the Hands Behind Indian Cinema
     </h1>
     <p className="text-[1rem] sm:text-[1.25rem] mb-6">

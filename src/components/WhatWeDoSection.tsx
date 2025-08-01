@@ -44,7 +44,7 @@ const WhatWeDoSection = () => {
           
 
           {/* Name */}
-          <h3 className="text-2xl sm:text-3xl font-semibold text-[#303C69] mb-1">
+          <h3 className="text-2xl sm:text-3xl font-medium text-[#303C69] mb-1">
             Suresh Shyamlal Gupta
           </h3>
 

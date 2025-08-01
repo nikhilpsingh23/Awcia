@@ -1,8 +1,8 @@
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '+91XXXXXXXXXX'; // Replace with your WhatsApp number
-  const message = 'Hello! I would like to know more about AICWA Foundation.'; // Default message
+  const phoneNumber = '+919820982111'; 
+  const message = 'Hello! I would like to know more about AICWA Foundation.'; 
 
   const handleClick = () => {
     const encodedMessage = encodeURIComponent(message);

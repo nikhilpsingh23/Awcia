@@ -16,7 +16,7 @@ const WomenPage = () => {
           />
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-2xl md:text-6xl font-bold mb-6">
+            <h1 className="text-2xl md:text-[36px] font-bold mb-6">
               Women Empowerment Initiatives
             </h1>
             <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
@@ -40,7 +40,7 @@ const WomenPage = () => {
         <section className="py-16 bg-[#f2f2f2]">
           <div className="container mx-auto px-4 md:px-10">
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
                 Empowering Every Woman Behind the Cinema.
               </h2>
               <p className="text-lg text-gray-600">
@@ -56,7 +56,7 @@ const WomenPage = () => {
         {/* Mission */}
         <section className="py-12 bg-[#f2f2f2] text-center">
           <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b2c48] mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
               Our Mission
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -77,7 +77,7 @@ const WomenPage = () => {
         {/* Key Focus Areas */}
         <section className="py-16 bg-[#f2f2f2]">
           <div className="container mx-auto px-4 md:px-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] text-center mb-12">
               Our Key Focus Areas
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -44,7 +44,7 @@ const Volunteer = () => {
 
   {/* Content */}
   <div className="relative z-10 text-center text-white px-4">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-bold mb-4">
       Volunteer With Us
     </h1>
     <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
@@ -68,7 +68,7 @@ const Volunteer = () => {
 
         <section className="py-20 bg-[#f2f2f2] px-4 ">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#303C69] mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-6">
               Be the Voice Behind the Spotlight.
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -84,7 +84,7 @@ const Volunteer = () => {
 
               {/* Left Side - Text */}
               <div className="space-y-6">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] leading-tight">
                   Why Volunteer With AICWA Foundation?
                 </h2>
                 <div className="space-y-4 text-lg text-gray-600">
@@ -137,7 +137,7 @@ const Volunteer = () => {
           <div className="container mx-auto px-4 md:px-10 lg:px-20">
             {/* Section Heading */}
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] text-white mb-4">
                 Join Our Volunteer Community
               </h2>
               <p className="text-xl text-gray-200">
