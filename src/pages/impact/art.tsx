@@ -89,51 +89,50 @@ const ArtPage = () => {
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
-        {
-          title: "Theater in Every District",
-          points: [
-            "Construct and operate low-cost, high-quality cinema and multipurpose theaters in every district of India.",
-            "To provide platforms for regional cinema, cultural performances, and local artists.",
-          ],
-        },
-        {
-          title: "Film City in Every StatePlan",
-          points: [
-            "Regular health check-up camps at film sets, studios, and worker settlements",
-            "General health screening, eye checkups, dental camps, and BP/sugar tests",
-            "Preventive healthcare education",
-          ],
-        },
-        {
-          title: " Production Subsidies & Film Grants",
-          points: [
-            "Quick-response support for cine workers facing sudden medical emergencies",
-            "Ambulance tie-ups and 24x7 helpline (proposed)",
-            "Financial aid for surgeries, medications, and hospitalizations in critical cases",
-          ],
-        },
-        {
-          title: " Artist & Film Worker Hostels Across India",
-          points: [
-            "Psychological counseling and therapy for stress, depression, and substance abuse",
-            "Awareness sessions to break the stigma around mental health in the industry",
-          ],
-        },
-        {
-          title: " Welfare & Security for Artists and WorkersHealth Insurance & Medical Support",
-          points: [
-            "De-addiction programs for alcohol and drug dependence",
-            "Post-recovery employment support and wellness monitoring",
-          ],
-        },
-        {
-          title: "Workshops & Awareness Programs",
-          points: [
-            "Yoga, meditation, and fitness workshops for active workers",
-            "Nutritional guidance and health literacy for long-term wellness",
-          ],
-        },
-      ].map((area, idx) => (
+  {
+    title: "Art, Culture & Heritage in Every District",
+    points: [
+      "Establish vibrant cultural centers and performance spaces in every district of India to celebrate diverse art forms.",
+      "Promote regional cinema, folk arts, traditional music, and local craftsmanship through dedicated events and platforms.",
+    ],
+  },
+  {
+    title: "Preservation of Traditional Arts",
+    points: [
+      "Document, archive, and digitally preserve endangered art forms, languages, and rituals across Indian states.",
+      "Collaborate with scholars, artists, and institutions to pass on knowledge to younger generations.",
+    ],
+  },
+  {
+    title: "Support for Local Artists",
+    points: [
+      "Provide grants, residencies, and training to local and folk artists to sustain their practice and livelihood.",
+      "Create employment and performance opportunities through festivals, exhibitions, and cultural programs.",
+    ],
+  },
+  {
+    title: "Cultural Exchange & Integration",
+    points: [
+      "Facilitate cross-regional cultural exchanges to promote national integration and mutual respect.",
+      "Organize inter-state festivals and tours showcasing the richness of India’s diverse traditions.",
+    ],
+  },
+  {
+    title: "Education Through Heritage",
+    points: [
+      "Integrate traditional art, music, and storytelling into school curricula to foster cultural awareness from a young age.",
+      "Organize heritage walks, workshops, and museum visits for students and local communities.",
+    ],
+  },
+  {
+    title: "Modern Platforms for Traditional Voices",
+    points: [
+      "Leverage technology and digital media to showcase folk and classical art forms globally.",
+      "Partner with OTT platforms, YouTube channels, and streaming services to feature heritage-focused content.",
+    ],
+  }
+]
+.map((area, idx) => (
         <div
           key={idx}
           className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"

@@ -1,6 +1,37 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Typewriter } from 'react-simple-typewriter';
+import { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const ImageSlider = ({ images }: { images: string[] }) => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const prevSlide = () => setIndex((prev) => (prev - 1 + images.length) % images.length);
+  const nextSlide = () => setIndex((prev) => (prev + 1) % images.length);
+
+  
+  return (
+    <div className="relative w-full rounded-lg shadow overflow-hidden">
+      <img src={images[index]} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover transition-all duration-700 rounded-lg" />
+      <button onClick={prevSlide} className="absolute top-1/2 left-3 -translate-y-1/2 bg-white bg-opacity-70 p-2 rounded-full shadow-md hover:bg-opacity-100">
+        <ChevronLeft className="w-6 h-6 text-gray-700" />
+      </button>
+      <button onClick={nextSlide} className="absolute top-1/2 right-3 -translate-y-1/2 bg-white bg-opacity-70 p-2 rounded-full shadow-md hover:bg-opacity-100">
+        <ChevronRight className="w-6 h-6 text-gray-700" />
+      </button>
+    </div>
+  );
+};
+
+
 
 const About = () => {
   const teamMembers = [
@@ -87,6 +118,11 @@ const About = () => {
 },
 
 ];
+
+const row1Images = ["/images/blog1.JPG", "/images/blog1-2.JPG", "/images/blog1-4.JPG"];
+  const row2Images = ["/images/blog2.jpg", "/images/blog2-2.jpg", "/images/blog2-3.jpg"];
+  const row3Images = ["/images/blog3.JPG", "/images/blog3-2.JPG", "/images/blog3-3.JPG"]; 
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -117,32 +153,31 @@ const About = () => {
             <div className="bg-[#303C69] p-8 rounded-3xl shadow-2xl ">
               <h2 className="text-2xl font-semibold text-[#303C69]  text-white mb-4">Our Belief</h2>
               <p className="text-white  text-lg">
-                To empower and uplift workers, technicians, junior artists, and artists of the Indian film industry—Bollywood and regional—by providing access to healthcare, education, food, housing, and financial support.
+                We believe every cine worker — from technicians to junior artists — deserves dignity, justice, and opportunity. At AICWA Foundation, we stand to empower them with access to healthcare, education, food, housing and financial security.
               </p>
             </div>
 
             <div className="bg-[#303C69] p-8 rounded-3xl shadow-2xl ">
               <h2 className="text-2xl font-semibold text-[#303C69]  text-white mb-4">Our Dream</h2>
               <p className="text-white text-lg">
-                To build a fair, organized, and supportive ecosystem for Indian film industry workers where no artist or technician is left behind. We envision a future where workers have access to charity hospitals.
-              </p>
+                We dream of an India where no film worker is left behind — where every artist, technician, and crew member has access to healthcare, protection, and respect. A future where charity hospitals and support systems stand by their side.
+                </p>
             </div>
           </div>
         </section> 
 
 {/* Section 2.5 - About AICWA Foundation */}
 {/* Section 2.5 - About AICWA Foundation */}
-<section className="py-20 px-4 bg-white">
+<section className="py-20 px-4 bg-[#f2f2f2]">
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     
     {/* Left Text Content */}
     <div>
   <h2 className="text-3xl font-semibold text-[#303C69] mb-4 border-b-4 inline-block">
-    About AICWA
+    About AICWA Foundation
   </h2>
   <p className="text-gray-700 text-lg  mb-6">
-    AICWA Foundation is committed to supporting the backbone of the film industry—technicians, junior artists, and backstage crew members. 
-    Through dedicated initiatives, we ensure their health, dignity, and professional recognition.
+    AICWA Foundation is dedicated to supporting the real backbone of Indian cinema — the technicians, junior artists, and all film workers who often remain unseen behind the glamour.
   </p>
 
   {/* Bullet Points */}
@@ -255,7 +290,7 @@ const About = () => {
 
 
         {/* Section 3 - Latest News */}
-<section className="py-20 px-4 bg-white">
+<section className="py-20 px-4 bg-[#f2f2f2]">
   <div className="max-w-6xl mx-auto space-y-16">
     <h2 className="text-3xl font-semibold text-[#303C69]  text-center  mb-12">When the Media Speaks the Truth – Voices for the Voiceless Workers of Indian Cinema</h2>
 
@@ -334,9 +369,9 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
 
 
 {/* Section 4 - Our Action */}
-<section className="py-20 px-4 bg-gray-50">
+<section className="py-20 px-4 bg-[#f2f2f2]">
   <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-3xl font-semibold text-[#303C69] mb-12">Our Action</h2>
+    <h2 className="text-3xl font-semibold text-[#303C69] mb-12">Empowering Indian Cinema’s Backbone</h2>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       
@@ -349,10 +384,10 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
         />
         <div className="p-6">
           <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
-            Health for Film Workers
+            Comprehensive Health Support
           </h3>
           <p className="text-gray-600 text-lg text-base">
-            We organize regular health camps, medical assistance, and provide access to emergency care for artists and crew across the film industry.
+            We ensure that all film workers — technicians, junior artists, and backstage workers — receive timely medical aid, health camps, and emergency financial assistance during health crises.
           </p>
         </div>
       </div>
@@ -366,10 +401,10 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
         />
         <div className="p-6">
           <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
-            Education for Artist Families
+            Education & Family Welfare
           </h3>
           <p className="text-gray-600 text-lg">
-            From scholarships to skill development, we support the children and spouses of film workers in building brighter futures through learning.
+            We support the families of film workers with scholarships, educational aid, and skill development programs for a secure and dignified future.
           </p>
         </div>
       </div>
@@ -383,10 +418,10 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
         />
         <div className="p-6">
           <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
-            Support for Technicians
+            Financial, Legal & Welfare Assistance
           </h3>
           <p className="text-gray-600 text-lg">
-            We ensure financial, legal, and welfare aid reaches backstage heroes—spot boys, camera crews, makeup artists, and sound engineers.
+            From financial aid to legal protection and welfare programs, we stand with every film worker — ensuring their job security, dignity, and rightful recognition in the industry.
           </p>
         </div>
       </div>
@@ -396,8 +431,9 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
 </section>
 
 
-    <section className="w-full px-4 py-16 bg-white">
+    <section className="w-full px-4 py-16 bg-[#f2f2f2]">
       <div className="max-w-6xl mx-auto flex flex-col gap-16">
+        <h1 className='text-3xl font-semibold text-[#303C69] text-center'>Voicing the Unheard. Protecting the Backbone of Indian Cinema.</h1>
 
         {/* Row 1 */}
         <div className="grid md:grid-cols-2 items-center gap-10">
@@ -407,30 +443,30 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
             <p className="text-gray-700 text-lg">
               The AICWA Foundation is the humanitarian arm of the All Indian Cine Workers Association (AICWA) — dedicated to supporting the lakhs of unsung heroes who make the Indian film industry possible: its workers, technicians, and backstage artists.
             </p>
-                        <p className="text-gray-700 text-lg">
-              In a landmark moment for Indian cinema, AICWA President Suresh Shyamlal Gupta led a powerful movement in 2019 by meeting the Honourable Leader of Opposition, Shri Radhakrishna Vikhe Patil Ji, to highlight the ongoing challenges faced by cine workers. This resulted in an official high-level meeting on 30th January 2019 at Sahyadri Guest House, Mumbai, chaired by Labour Minister Shri Sambhaji Patil Nilangekar Ji and attended by senior government officials and film industry representatives.
-              </p>
+            <p className="text-gray-700 text-lg">
+              In a landmark moment for Indian cinema, AICWA President Suresh Shyamlal Gupta led a powerful movement in 2019 by meeting the Honourable Leader of Opposition, Shri Radhakrishna Vikhe Patil Ji, to highlight the ongoing challenges faced by cine workers...
+            </p>
           </div>
-          {/* Right - Image */}
+          {/* Right - Image Slider */}
           <div>
-            <img src="/images/blog1.JPG" alt="Row 1" className="w-full rounded-lg shadow" />
+            <ImageSlider images={row1Images} />
           </div>
         </div>
 
         {/* Row 2 */}
         <div className="grid md:grid-cols-2 items-center gap-10">
-          {/* Left - Image */}
+          {/* Left - Image Slider */}
           <div>
-            <img src="/images/blog2.jpg" alt="Row 2" className="w-full rounded-lg shadow" />
+            <ImageSlider images={row2Images} />
           </div>
           {/* Right - Content */}
           <div>
-            <h2 className="text-2xl text-[#303C69] font-medium mb-4"> Standing for Justice: AICWA’s Leadership Initiative</h2>
+            <h2 className="text-2xl text-[#303C69] font-medium mb-4">Standing for Justice: AICWA’s Leadership Initiative</h2>
             <p className="text-gray-700 text-lg">
-              In a decisive step towards safeguarding the dignity and rights of the film industry’s backbone — its workers — the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, formally sought a meeting with the Honourable Speaker of the Maharashtra Legislative Assembly, Shri Nana Patole Ji.
+              In a decisive step towards safeguarding the dignity and rights of the film industry’s backbone — its workers — the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, formally sought a meeting with the Honourable Speaker...
             </p>
-                        <p className="text-gray-700 text-lg">
-              Thousands of workers, including technicians, daily wage artists, set laborers, and backstage crew across the Indian film industry continue to face challenges such as non-payment of wages, unsafe working conditions, lack of social security, and absence of legal protection. Despite being the silent force behind the glamour of cinema, their voices often go unheard.
+            <p className="text-gray-700 text-lg">
+              Thousands of workers, including technicians, daily wage artists, set laborers, and backstage crew across the Indian film industry continue to face challenges...
             </p>
           </div>
         </div>
@@ -439,24 +475,23 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
         <div className="grid md:grid-cols-2 items-center gap-10">
           {/* Left - Content */}
           <div>
-            <h2 className="text-2xl text-[#303C69] font-medium mb-4"> Government Responds to AICWA’s Call: A Breakthrough for Film Industry Workers</h2>
+            <h2 className="text-2xl text-[#303C69] font-medium mb-4">Government Responds to AICWA’s Call: A Breakthrough for Film Industry Workers</h2>
             <p className="text-gray-700 text-lg">
-              In a bold and action-oriented move, the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, met with the Honourable Labour Minister of Maharashtra, Shri Hasan Mushrif Ji, to raise urgent concerns about the exploitation and hardships faced by thousands of workers in the Indian film industry.
+              In a bold and action-oriented move, the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, met with the Honourable Labour Minister of Maharashtra, Shri Hasan Mushrif Ji...
             </p>
-                        <p className="text-gray-700 text-lg">
-              Responding with rare immediacy and seriousness, Honourable Minister Hasan Mushrif Ji convened an emergency meeting at Mantralaya with concerned officials and stakeholders. In that very session, he personally listened to the problems raised by AICWA and directed actionable solutions, showing a clear commitment to safeguarding the dignity and rights of film industry workers.
+            <p className="text-gray-700 text-lg">
+              Responding with rare immediacy and seriousness, Honourable Minister Hasan Mushrif Ji convened an emergency meeting at Mantralaya...
             </p>
           </div>
-          {/* Right - Image */}
+          {/* Right - Image Slider */}
           <div>
-            <img src="/images/blog3.JPG" alt="Row 3" className="w-full rounded-lg shadow" />
+            <ImageSlider images={row3Images} />
           </div>
         </div>
-
       </div>
     </section>
 
-<section className="bg-white py-20">
+<section className="bg-[#f2f2f2] py-20">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-semibold text-[#303C69]  mb-4">Team AICWA – The People Behind the Vision</h2>

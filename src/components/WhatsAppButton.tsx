@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full 
+      className="fixed bottom-14 right-2 z-50 bg-green-500 text-white p-4 rounded-full 
                  shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110 
                  focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 
                  group md:p-5 animate-glow"

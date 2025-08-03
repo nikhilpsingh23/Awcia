@@ -1,6 +1,8 @@
 import { useForm } from 'react-hook-form';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 interface ContactFormData {
   firstName: string;
@@ -16,6 +18,25 @@ const Contact = () => {
   const onSubmit = (data: ContactFormData) => {
     console.log(data);
     reset();
+  };
+
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -63,16 +84,18 @@ const Contact = () => {
         <div className="space-y-10">
           {/* Form - Full Width */}
           <div className="bg-gray-200 p-6 rounded-md shadow-sm">
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            <form ref={form} onSubmit={sendEmail} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   {...register("firstName", { required: "First name is required" })}
                   placeholder="First Name"
+                  name="user_name"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
                 <input
                   {...register("lastName", { required: "Last name is required" })}
                   placeholder="Last Name"
+                  name="user_name"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
               </div>
@@ -81,11 +104,13 @@ const Contact = () => {
                 <input
                   {...register("email", { required: "Email is required" })}
                   placeholder="Your Email"
+                  name="user_name"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
                 <input
                   {...register("phone", { required: "Phone number is required" })}
                   placeholder="Phone Number"
+                  name="user_name"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
               </div>
@@ -93,6 +118,7 @@ const Contact = () => {
               <textarea
                 {...register("message", { required: "Message is required" })}
                 placeholder="Message"
+                name="user_name"
                 rows={5}
                 className="w-full p-3 border border-gray-300 rounded-md"
               />

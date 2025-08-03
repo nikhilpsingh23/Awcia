@@ -197,7 +197,7 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     to={to}
-                    className="block px-4 py-2 text-sm text-aicwa-darkGray hover:bg-gray-100"
+                    className="block px-4 py-2 text-sm text-aicwa-darkGray text-white hover:bg-gray-100"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {label}
