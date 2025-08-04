@@ -268,6 +268,119 @@ const Index = () => {
           {/*<AreaOfImpact/>*/}
           <WhatWeDoSection/>
           <DonateSection/>
+
+          <section className="py-20 px-4 bg-[#f2f2f2]">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl font-semibold text-[#303C69] mb-12">Empowering Indian Cinema’s Backbone</h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      {/* Card 1 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/mariage.JPG"
+          alt="Daughters’ Marriage Support"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Daughters’ Marriage Support
+          </h3>
+          <p className="text-gray-600 text-lg">
+            We proudly take full responsibility for organizing and funding the marriage of film workers' daughters—covering every detail so they begin their new life with dignity and joy.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 2 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/home-child.JPG"
+          alt="Child Education Sponsorship"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Child Education Sponsorship
+          </h3>
+          <p className="text-gray-600 text-lg">
+            From school fees to college books, we sponsor every step of a worker’s child’s education journey — ensuring no dream is ever hindered by financial barriers.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/rural.jpg"
+          alt="Medical Treatment & Healthcare Aid"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Medical Treatment & Daily Healthcare Aid
+          </h3>
+          <p className="text-gray-600 text-lg">
+            From sudden emergencies to daily medicine needs, we cover complete medical expenses for workers and their families — making health a right, not a privilege.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 4 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/village-home.jpg"
+          alt="Building Homes in Villages"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Building Homes in Villages
+          </h3>
+          <p className="text-gray-600 text-lg">
+            We help our film workers build homes in their native villages — turning dreams of security, comfort, and pride into brick-and-mortar reality.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 5 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/fashion.JPG"
+          alt="Mr. & Miss AICWA Fashion Show"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            Mr. & Miss AICWA — National Fashion Show
+          </h3>
+          <p className="text-gray-600 text-lg">
+            India’s most inspiring fashion event, giving hidden talents from small towns a national platform, career break, and spotlight in fashion and film.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 6 */}
+      <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+        <img
+          src="/images/award.JPG"
+          alt="AICWA Excellence Awards"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-[#303C69] mb-3 group-hover:text-yellow-600 transition">
+            AICWA Excellence Awards
+          </h3>
+          <p className="text-gray-600 text-lg">
+            Our annual awards celebrate unsung heroes — from spot boys to senior technicians — who build Indian cinema from behind the scenes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
           <Story/>
           {/*<AboutUs/>
           <JoinUs/> */}

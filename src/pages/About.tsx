@@ -119,7 +119,7 @@ const About = () => {
 
 ];
 
-const row1Images = ["/images/blog1.JPG", "/images/blog1-2.JPG", "/images/blog1-4.JPG"];
+const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4.JPG"];
   const row2Images = ["/images/blog2.jpg", "/images/blog2-2.jpg", "/images/blog2-3.jpg"];
   const row3Images = ["/images/blog3.JPG", "/images/blog3-2.JPG", "/images/blog3-3.JPG"]; 
 
@@ -431,7 +431,7 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
 </section>
 
 
-    <section className="w-full px-4 py-16 bg-[#f2f2f2]">
+    <section className="w-full px-4 py-10 bg-[#f2f2f2]">
       <div className="max-w-6xl mx-auto flex flex-col gap-16">
         <h1 className='text-3xl font-semibold text-[#303C69] text-center'>Voicing the Unheard. Protecting the Backbone of Indian Cinema.</h1>
 
@@ -441,10 +441,13 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
           <div>
             <h2 className="text-2xl font-medium text-[#303C69] mb-4">Strengthening the Backbone of Indian Cinema</h2>
             <p className="text-gray-700 text-lg">
-              The AICWA Foundation is the humanitarian arm of the All Indian Cine Workers Association (AICWA) — dedicated to supporting the lakhs of unsung heroes who make the Indian film industry possible: its workers, technicians, and backstage artists.
-            </p>
+            The AICWA Foundation is the humanitarian arm of the All Indian Cine Workers Association (AICWA) — dedicated to supporting the lakhs of unsung heroes who make the Indian film industry possible: its workers, technicians, and backstage artists.
+            </p><br />
             <p className="text-gray-700 text-lg">
-              In a landmark moment for Indian cinema, AICWA President Suresh Shyamlal Gupta led a powerful movement in 2019 by meeting the Honourable Leader of Opposition, Shri Radhakrishna Vikhe Patil Ji, to highlight the ongoing challenges faced by cine workers...
+              In a landmark moment for Indian cinema, AICWA President Suresh Shyamlal Gupta led a powerful movement in 2019 by meeting the Honourable Leader of Opposition, Shri Radhakrishna Vikhe Patil Ji, to highlight the ongoing challenges faced by cine workers. This resulted in an official high-level meeting on 30th January 2019 at Sahyadri Guest House, Mumbai, chaired by Labour Minister Shri Sambhaji Patil Nilangekar Ji and attended by senior government officials and film industry representatives.
+            </p><br />
+            <p className="text-gray-700 text-lg">
+            As a direct outcome of that meeting, the first-ever Government-recognized committee for the welfare of film industry workers was formed on 7th March 2019 by the Government of Maharashtra, with Suresh Shyamlal Gupta appointed as the Labour Representative. This was a historic step towards recognizing and protecting the rights of the people behind the camera.
             </p>
           </div>
           {/* Right - Image Slider */}
@@ -464,9 +467,12 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
             <h2 className="text-2xl text-[#303C69] font-medium mb-4">Standing for Justice: AICWA’s Leadership Initiative</h2>
             <p className="text-gray-700 text-lg">
               In a decisive step towards safeguarding the dignity and rights of the film industry’s backbone — its workers — the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, formally sought a meeting with the Honourable Speaker...
-            </p>
+            </p><br />
             <p className="text-gray-700 text-lg">
               Thousands of workers, including technicians, daily wage artists, set laborers, and backstage crew across the Indian film industry continue to face challenges...
+            </p><br />
+            <p className="text-gray-700 text-lg">
+            Through this initiative, AICWA aimed to bring these issues directly to the attention of the state’s highest legislative authority. The objective was simple yet powerful — to ensure these workers are not treated as invisible, but as the lifeblood of Indian cinema.
             </p>
           </div>
         </div>
@@ -478,10 +484,14 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
             <h2 className="text-2xl text-[#303C69] font-medium mb-4">Government Responds to AICWA’s Call: A Breakthrough for Film Industry Workers</h2>
             <p className="text-gray-700 text-lg">
               In a bold and action-oriented move, the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, met with the Honourable Labour Minister of Maharashtra, Shri Hasan Mushrif Ji...
-            </p>
+            </p><br />
             <p className="text-gray-700 text-lg">
               Responding with rare immediacy and seriousness, Honourable Minister Hasan Mushrif Ji convened an emergency meeting at Mantralaya...
-            </p>
+            </p><br />
+            <p className="text-gray-700 text-lg">
+            To be the voice that speaks, the force that acts, and the shield that protects the unsung heroes of Indian cinema.
+
+Through direct government engagement and fearless advocacy, AICWA continues to bring accountability, reform, and justice to the heart of the industry — ensuring that no worker is left unheard or unprotected.</p>
           </div>
           {/* Right - Image Slider */}
           <div>
