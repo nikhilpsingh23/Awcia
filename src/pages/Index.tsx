@@ -165,7 +165,7 @@ const Index = () => {
           <FaTwitter size={18} />
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/aicwafoundation"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-all duration-300 active:scale-95"
@@ -173,7 +173,7 @@ const Index = () => {
           <FaFacebook size={18} />
         </a>
         <a
-          href="https://youtube.com"
+          href="https://youtube.com/@aicwafoundation"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-red-600 hover:bg-red-700 text-white rounded-full transition-all duration-300 active:scale-95"
@@ -181,7 +181,7 @@ const Index = () => {
           <FaYoutube size={18} />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/aicwafoundation/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-pink-600 hover:bg-pink-700 text-white rounded-full transition-all duration-300 active:scale-95"
@@ -189,7 +189,7 @@ const Index = () => {
           <FaInstagram size={18} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/company/aicwafoundation/"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 bg-blue-800 hover:bg-blue-900 text-white rounded-full transition-all duration-300 active:scale-95"
