@@ -312,7 +312,7 @@ const Index = () => {
       {/* Card 3 */}
       <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
         <img
-          src="/images/rural.jpg"
+          src="/images/aoi-health.jpg"
           alt="Medical Treatment & Healthcare Aid"
           className="w-full h-48 object-cover"
         />
@@ -329,7 +329,7 @@ const Index = () => {
       {/* Card 4 */}
       <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
         <img
-          src="/images/village-home.jpg"
+          src="/images/rural-cover.jpeg"
           alt="Building Homes in Villages"
           className="w-full h-48 object-cover"
         />

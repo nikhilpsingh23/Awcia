@@ -39,36 +39,34 @@ const ArtPage = () => {
         {/* Spacer */}
         <div className="h-10" />
 
-        {/* Slogan & Introduction */}
-        <section className="py-16 bg-[#f2f2f2]">
-          <div className="container mx-auto px-4 md:px-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-                Healthy Workers, Stronger Cinema!
-              </h2>
-              <p className="text-lg text-gray-600">
-                The Health Department of AICWA Foundation is committed to the physical and
-                mental well-being of every film industry worker — from lightmen, spot boys,
-                and make-up artists to stuntmen, sound engineers, and backstage crew.
-              </p>
-              <p className="mt-4 text-gray-600">
-              Pan-India fashion shows, film-themed art exhibitions, and craft fairs to uplift costume designers, makeup artists, visual storytellers, and folk art creators. Film Schools & Workshops: In acting, direction, production, design, and tech roles. Annual recognition of excellence in cinema, dance, fashion, music, and behind-the-scenes roles.
-              </p>
-            </div>
-          </div>
-        </section>
+{/* Slogan & Introduction */}
+<section className="py-16 bg-[#f2f2f2]">
+  <div className="container mx-auto px-4 md:px-10">
+    <div className="text-center max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+        Celebrating Indian Art, Culture & Cinema Heritage
+      </h2>
+      <p className="text-lg text-gray-600">
+        The Art, Culture & Heritage wing of AICWA Foundation is dedicated to uplifting the creative roots of Indian cinema by nurturing traditional artists, promoting regional storytelling, and preserving the diverse cultural legacy that fuels our film industry.
+      </p>
+      <p className="mt-4 text-gray-600">
+        Through nationwide fashion shows, film-themed art exhibitions, and folk craft fairs, we spotlight the contributions of costume designers, set artists, makeup experts, storytellers, and folk artisans. We also host film schools and workshops in acting, direction, production, and cinematic arts — ensuring our heritage thrives on and off screen.
+      </p>
+    </div>
+  </div>
+</section>
 
-         {/* Mission */}
-        <section className="py-12 bg-[#f2f2f2] text-center">
-          <div className="container mx-auto px-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-              Our Mission
-            </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            To establish strong, sustainable infrastructure and support systems across India that promote, protect, and empower the creative community—while reviving arts, cinema, and cultural pride across every state and region.
-            </p>
-          </div>
-        </section>
+{/* Mission */}
+<section className="py-12 bg-[#f2f2f2] text-center">
+  <div className="container mx-auto px-6">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+      Our Mission
+    </h2>
+    <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+      To revive, preserve, and promote India’s artistic and cinematic heritage by building sustainable platforms, training ecosystems, and recognition forums that empower creators, artists, and storytellers from every cultural corner of the nation.
+    </p>
+  </div>
+</section>
 
 
         {/* Full-Width Image */}

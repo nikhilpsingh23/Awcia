@@ -119,9 +119,9 @@ const About = () => {
 
 ];
 
-const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4.JPG"];
-  const row2Images = ["/images/blog2.jpg", "/images/blog2-2.jpg", "/images/blog2-3.jpg"];
-  const row3Images = ["/images/blog3.JPG", "/images/blog3-2.JPG", "/images/blog3-3.JPG"]; 
+const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4.JPG","/images/blog1-5.jpg","/images/blog1-6.JPG"];
+  const row2Images = ["/images/blog2.jpg", "/images/blog2-2.jpg", "/images/blog2-3.jpg", "/images/blog2.jpg", "/images/blog2-2.jpg"];
+  const row3Images = ["/images/blog3.JPG", "/images/blog3-2.JPG", "/images/blog3-3.JPG","/images/blog3-4.JPG","/images/blog3-5.JPG"]; 
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -466,8 +466,8 @@ jab tak har mazdoor tak insaaf na pahunch jaye.”
           <div>
             <h2 className="text-2xl text-[#303C69] font-medium mb-4">Standing for Justice: AICWA’s Leadership Initiative</h2>
             <p className="text-gray-700 text-lg">
-              In a decisive step towards safeguarding the dignity and rights of the film industry’s backbone — its workers — the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, formally sought a meeting with the Honourable Speaker...
-            </p><br />
+            In a decisive step towards safeguarding the dignity and rights of the film industry’s backbone — its workers — the President of the All Indian Cine Workers Association (AICWA), Mr. Suresh Shyamlal Gupta, formally sought a meeting with the Honourable Speaker of the Maharashtra Legislative Assembly, Shri Nana Patole Ji
+             </p><br />
             <p className="text-gray-700 text-lg">
               Thousands of workers, including technicians, daily wage artists, set laborers, and backstage crew across the Indian film industry continue to face challenges...
             </p><br />
