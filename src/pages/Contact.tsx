@@ -26,8 +26,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('service_1o08bbe', 'template_kvwrseh', form.current, {
+        publicKey: '-FaKhFdpuB_YVn_Jp',
       })
       .then(
         () => {
@@ -89,13 +89,13 @@ const Contact = () => {
                 <input
                   {...register("firstName", { required: "First name is required" })}
                   placeholder="First Name"
-                  name="user_name"
+                  name="first_name"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
                 <input
                   {...register("lastName", { required: "Last name is required" })}
                   placeholder="Last Name"
-                  name="user_name"
+                  name="last_name"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
               </div>
@@ -104,13 +104,13 @@ const Contact = () => {
                 <input
                   {...register("email", { required: "Email is required" })}
                   placeholder="Your Email"
-                  name="user_name"
+                  name="email"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
                 <input
                   {...register("phone", { required: "Phone number is required" })}
                   placeholder="Phone Number"
-                  name="user_name"
+                  name="phone"
                   className="w-full p-3 border border-gray-300 rounded-md"
                 />
               </div>
@@ -118,7 +118,7 @@ const Contact = () => {
               <textarea
                 {...register("message", { required: "Message is required" })}
                 placeholder="Message"
-                name="user_name"
+                name="message"
                 rows={5}
                 className="w-full p-3 border border-gray-300 rounded-md"
               />

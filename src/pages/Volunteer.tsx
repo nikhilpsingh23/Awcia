@@ -94,12 +94,12 @@ const Volunteer = () => {
                   </p>
                   <p>As a volunteer, you will directly contribute to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Health Initiatives – Assist in medical camps, insurance drives, and health awareness for industry workers.</li>
-                    <li>Educational Outreach – Help provide school support, scholarships, and learning resources for workers’ children.</li>
-                    <li>Rural Transformation Projects – Support shelter, basic needs, and upliftment in underdeveloped areas connected to the film workforce.</li>
-                    <li>Women Empowerment Programs – Be part of nutrition, safety, and skill-building programs for women in the industry.</li>
-                    <li>Art, Culture & Heritage – Help us preserve, promote, and protect the legacy of Indian cinema through training and cultural campaigns.</li>
-                  </ul>
+  <li>Health – No worker is denied treatment due to lack of money — providing medical aid, essential medicines, and building charity hospitals for free healthcare access.</li>
+  <li>Education – Free education from school to college for workers’ children, with scholarships for higher studies and building affordable colleges to secure their future.</li>
+  <li>Rural Transformation – Reaching the poorest villages with food, clothing, education, medical help, and building homes — ensuring no family is left behind in the journey of development.</li>
+  <li>Women Empowerment – In the film industry, we protect women from exploitation, threats, and blackmail — ensuring their safety, dignity, and empowering them to raise their voice without fear.</li>
+  <li>Art, Culture & Heritage – Building film cities in every state, theaters in every district, and uplifting regional cinema while providing free or affordable training to nurture India’s creative heritage.</li>
+</ul>
                   <p>
                     Together, we can build a future where no backstage worker is left behind.
                   </p>
