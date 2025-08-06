@@ -61,7 +61,7 @@ const WhatWeDoSection = () => {
 
           {/* CTA */}
           <div className="mt-8 flex flex-col items-start">
-          <Link to="/donate">
+          <Link to="/about">
       <button className="flex items-center ms-auto bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg border border-white/20 hover:scale-105 transition-all duration-300">
         <span className="text-sm sm:text-base font-medium">Know More</span>
         <span className="bg-[#0b2c48] text-white rounded-full p-2 ml-2">

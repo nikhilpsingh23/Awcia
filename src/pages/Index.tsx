@@ -295,7 +295,7 @@ const Index = () => {
       {/* Card 2 */}
       <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
         <img
-          src="/images/home-child.JPG"
+          src="/images/mariage.JPG"
           alt="Child Education Sponsorship"
           className="w-full h-48 object-cover"
         />

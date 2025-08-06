@@ -205,7 +205,7 @@ const Contact = () => {
     </div>
 
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-      <img src="/images/contack-03.png" alt="Gallery 5" className="w-full h-64 object-cover" />
+      <img src="/images/office-img.jpg" alt="Gallery 5" className="w-full h-64 object-cover" />
     </div>
     <div className="overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
       <img src="/images/contact-03.jpeg" alt="Gallery 6" className="w-full h-64 object-cover" />

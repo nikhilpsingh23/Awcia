@@ -177,7 +177,7 @@ const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4
     About AICWA Foundation
   </h2>
   <p className="text-gray-700 text-lg  mb-6">
-    AICWA Foundation is dedicated to supporting the real backbone of Indian cinema — the technicians, junior artists, and all film workers who often remain unseen behind the glamour.
+    AICWA Foundation is the social welfare arm of the All Indian Cine Workers Association (AICWA), established with a clear vision: to uplift and empower the real backbone of the Indian film industry – the workers, technicians, junior artists, and artists who bring cinema to life but often remain unseen and unheard.
   </p>
 
   {/* Bullet Points */}
@@ -185,20 +185,36 @@ const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4
     <div className="flex items-start gap-3">
       <span className="text-green-600 mt-1">✅</span>
       <p className="text-gray-700">
-        <strong>Technician Welfare:</strong> Programs tailored for lightmen, cameramen, and other technical crew to ensure job security and growth.
-      </p>
+         Charity Hospitals
+
+        </p>
     </div>
     <div className="flex items-start gap-3">
       <span className="text-green-600 mt-1">✅</span>
       <p className="text-gray-700">
-        <strong>Junior Artist Support:</strong> Financial aid, work safety advocacy, and recognition for aspiring and working junior artists.
-      </p>
+        Affordable Schools and Orphanages
+        </p>
     </div>
     <div className="flex items-start gap-3">
       <span className="text-green-600 mt-1">✅</span>
       <p className="text-gray-700">
-        <strong>Healthcare for Crew:</strong> Regular checkups, emergency medical assistance, and wellness drives for on-set crew.
-      </p>
+       
+		Acting and Film Training Institutes
+       </p>
+    </div>
+    <div className="flex items-start gap-3">
+      <span className="text-green-600 mt-1">✅</span>
+      <p className="text-gray-700">
+       Studios for artists and workers
+       </p>
+    </div>
+    <div className="flex items-start gap-3">
+      <span className="text-green-600 mt-1">✅</span>
+      <p className="text-gray-700">
+       Charity Hospitals
+	
+	Award Shows and Fashion Shows to recognize true talent and
+       </p>
     </div>
   </div>
 </div>
@@ -239,7 +255,7 @@ const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4
             <p className="text-base text-lg text-gray-100 leading-relaxed">
               <Typewriter
                 words={[
-                  `Behind the glamour of the Indian film industry lies the painful reality of thousands of workers who cannot educate their children, afford medical care for their families, or dream of owning a home. Their work is uncertain, their income unstable, and their future unsecured. Being part of an unorganised sector, they receive no PF, no retirement plan, and no guarantee of employment. Every year, many lose their lives on sets — due to fires, electric shocks, or negligence — and even then, some families are denied basic compensation. In old age, they face the greatest struggle, unable to fulfill even the simplest dreams for their children. AICWA Foundation was established to bring justice, dignity, and lasting support to these unsung heroes of our industry. We exist so that no cine worker ever feels helpless or forgotten again.`
+                  `AICWA Foundation is the social welfare arm of the All Indian Cine Workers Association (AICWA), established with a clear vision: to uplift and empower the real backbone of the Indian film industry – the workers, technicians, junior artists, and artists who bring cinema to life but often remain unseen and unheard.`
                 ]}
                 typeSpeed={30}
                 cursor

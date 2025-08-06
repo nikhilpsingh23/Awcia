@@ -20,7 +20,7 @@ const EducationPage = () => {
               Education for Every Dream
             </h1>
             <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
-              Lighting Futures – From Film Sets to Global Classrooms.
+              Mazdoor Ke Bacchon Ka Sapna – Humari Zimmedari
             </p>
           </div>
 
@@ -40,33 +40,33 @@ const EducationPage = () => {
         <div className="h-10" />
 
         {/* Slogan & Introduction */}
-        <section className="py-16 bg-[#f2f2f2]">
-          <div className="container mx-auto px-4 md:px-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-                Lighting Futures – From Film Sets to Global Classrooms.
-              </h2>
-              <p className="text-lg text-gray-600">
-                The AICWA Foundation recognizes that behind the glitz and glamour of the Indian film industry lies a hardworking community of crew members whose children often struggle to access quality education. We aim to break this cycle and empower every child to dream bigger.
-              </p>
-              <p className="mt-4 text-gray-600">
-                From basic schooling to international university placements, we provide holistic support including tuition, scholarships, digital learning, and global mentorship for children of Indian film industry workers.
-              </p>
-            </div>
-          </div>
-        </section>
+<section className="py-16 bg-[#f2f2f2]">
+  <div className="container mx-auto px-4 md:px-10">
+    <div className="text-center max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+        Educational Empowerment for Cine Workers’ Families
+      </h2>
+      <p className="text-lg text-gray-600">
+        Thousands of workers, technicians, junior artists, and artists in the Indian film industry struggle to provide proper education to their children due to irregular income and long working hours. Many children are forced to abandon their dreams of becoming doctors, engineers, and professionals simply because their parents cannot afford school fees, books, uniforms, or higher education.
+      </p>
+      <p className="mt-4 text-gray-600">
+        We are committed to building free schools, colleges, and universities where these children can study without financial burden and fulfill the dreams their parents once saw for them. Every child deserves a future filled with opportunities — we will ensure they get it.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* Mission */}
-        <section className="py-12 bg-[#f2f2f2] text-center">
-          <div className="container mx-auto px-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-              Our Mission
-            </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              To create equitable access to education for the children of India’s film industry workers—from basic schooling to global higher education—empowering them to build a life beyond limitations.
-            </p>
-          </div>
-        </section>
+<section className="py-12 bg-[#f2f2f2] text-center">
+  <div className="container mx-auto px-6">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+      Our Mission
+    </h2>
+    <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+      To make quality education accessible and free for the children of film industry workers—enabling them to dream big, pursue professional careers, and break the cycle of poverty.
+    </p>
+  </div>
+</section>
 
         {/* Full-Width Image */}
         <section className="py-10 bg-[#f2f2f2] md:py-16">
@@ -85,56 +85,56 @@ const EducationPage = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                {
-                  title: "Foundational & School-Level Education",
-                  points: [
-                    "Free school admissions, books, uniforms, and materials",
-                    "After-school tuitions and remedial learning support",
-                    "Digital access through tablets and online classes",
-                    "Scholarships and financial sponsorships",
-                    "Parental engagement workshops",
-                  ],
-                },
-                {
-                  title: "Support for Higher Education in India",
-                  points: [
-                    "Career guidance and goal planning",
-                    "College admissions and form filling",
-                    "Help with scholarships and government schemes",
-                    "Vocational training for creative/technical skills",
-                  ],
-                },
-                {
-                  title: "Masters & Global Education Programs",
-                  points: [
-                    "Support for SOPs, CVs, and applications abroad",
-                    "Help for IELTS, GRE, and scholarship prep",
-                    "Mentorship from alumni studying abroad",
-                    "Pre-departure briefings & cultural orientation",
-                  ],
-                },
-                {
-                  title: "Mentorship & Counselling",
-                  points: [
-                    "1:1 mentorship programs from industry professionals",
-                    "Career talks and alumni sessions",
-                  ],
-                },
-                {
-                  title: "Digital Literacy & Access",
-                  points: [
-                    "Providing devices and internet access",
-                    "Training on basic digital tools and safe practices",
-                  ],
-                },
-                {
-                  title: "Outreach & Awareness",
-                  points: [
-                    "Spreading awareness of education schemes",
-                    "Workshops for students and families in low-income communities",
-                  ],
-                },
-              ].map((area, idx) => (
+  {
+    title: "Free Education from School to College",
+    points: [
+      "Primary to professional education at no cost",
+      "School and college fee waivers for all",
+      "Focus on continuous education without dropouts",
+    ],
+  },
+  {
+    title: "Medical, Engineering & Degree Colleges",
+    points: [
+      "Affordable colleges built for industry children",
+      "Special admissions for cine worker families",
+      "Access to professional career pathways",
+    ],
+  },
+  {
+    title: "Educational Kits & Essentials",
+    points: [
+      "Free books, bags, uniforms, and school supplies",
+      "Yearly distribution drives at studios and sets",
+      "Ensuring no child misses learning tools",
+    ],
+  },
+  {
+    title: "Scholarships for Higher Studies",
+    points: [
+      "Merit-based scholarships for India & abroad",
+      "Support for tuition, exams, and travel expenses",
+      "Special focus on international mentorship",
+    ],
+  },
+  {
+    title: "Day-Care & After-School Programs",
+    points: [
+      "Safe learning environments for kids of workers",
+      "Homework help, nutrition, and creative sessions",
+      "Extended support while parents are on set",
+    ],
+  },
+  {
+    title: "Hostels & Student Accommodation",
+    points: [
+      "Low-cost and safe housing for students in cities",
+      "Residential support for long-term academic focus",
+      "Facilities for boys and girls from remote areas",
+    ],
+  },
+]
+.map((area, idx) => (
                 <div
                   key={idx}
                   className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"

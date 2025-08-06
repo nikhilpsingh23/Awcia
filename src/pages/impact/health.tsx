@@ -21,8 +21,7 @@ const HealthPage = () => {
               Health
             </h1>
             <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
-              Join our mission to create positive change and make a lasting impact
-              in the lives of those who need it most.
+              Film Industry ke Mazdoor ki Zindagi Bachana Hamari Zimmedari Hai
             </p>
           </div>
 
@@ -42,41 +41,35 @@ const HealthPage = () => {
         <div className="h-10" />
 
         {/* Slogan & Introduction */}
-        <section className="py-16 bg-[#f2f2f2]">
-          <div className="container mx-auto px-4 md:px-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-                Healthy Workers, Stronger Cinema!
-              </h2>
-              <p className="text-lg text-gray-600">
-                The Health Department of AICWA Foundation is committed to the physical and
-                mental well-being of every film industry worker — from lightmen, spot boys,
-                and make-up artists to stuntmen, sound engineers, and backstage crew.
-              </p>
-              <p className="mt-4 text-gray-600">
-                Special attention is given to elderly workers who have spent decades
-                contributing to Indian cinema but now face severe health challenges without
-                proper treatment or financial support. These unsung heroes often slip
-                through the cracks of the healthcare system. We aim to give them the care
-                they deserve.
-              </p>
-            </div>
-          </div>
-        </section>
+<section className="py-16 bg-[#f2f2f2]">
+  <div className="container mx-auto px-4 md:px-10">
+    <div className="text-center max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+        Health Initiatives for Film Industry Workers
+      </h2>
+      <p className="text-lg text-gray-600">
+        Across the Indian film industry, countless workers, technicians, junior artists, and artists are forced to neglect their medical needs due to lack of money and support. Long working hours, unsafe shooting environments, and lack of healthcare access lead to tragic health outcomes — simply because no one stands up for them.
+      </p>
+      <p className="mt-4 text-gray-600">
+        AICWA Foundation is committed to changing this. From life-saving surgeries and free medicines to annual health checkups and on-set ambulances — we are building a complete healthcare safety net for every worker and their families.
+      </p>
+    </div>
+  </div>
+</section>
+
 
          {/* Mission */}
-        <section className="py-12 bg-[#f2f2f2] text-center">
-          <div className="container mx-auto px-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-              Our Mission
-            </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              To create a healthcare safety net for every film worker — whether they are
-              young spot boys or retired technicians — so no one is left behind when it
-              comes to health and dignity.
-            </p>
-          </div>
-        </section>
+<section className="py-12 bg-[#f2f2f2] text-center">
+  <div className="container mx-auto px-6">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+      Our Mission
+    </h2>
+    <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+      To ensure no cine worker suffers or dies due to lack of medical help — by offering free treatment, financial aid, healthcare access, and emergency support at every stage of their life.
+    </p>
+  </div>
+</section>
+
 
 
         {/* Full-Width Image */}
@@ -91,59 +84,62 @@ const HealthPage = () => {
         {/* Key Focus Areas */}
         <section className="py-16 bg-[#f2f2f2]">
   <div className="container mx-auto px-4 md:px-10">
-    <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-12">
+    <h2 className="text-2xl md:text-3xl tect-center font-semibold text-[#303C69] mb-12">
       Our Key Focus Areas
     </h2>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
-        {
-          title: "Elderly and Retired Film Workers Care",
-          points: [
-            "Free medical treatment support for retired and aging cine workers",
-            "Home visit health checks for those who are immobile or in critical conditions",
-            "Tie-ups with charitable hospitals and diagnostic centers",
-            "Help in accessing government health schemes and senior citizen benefits",
-          ],
-        },
-        {
-          title: "Free Health Camps",
-          points: [
-            "Regular health check-up camps at film sets, studios, and worker settlements",
-            "General health screening, eye checkups, dental camps, and BP/sugar tests",
-            "Preventive healthcare education",
-          ],
-        },
-        {
-          title: "Emergency Medical Assistance",
-          points: [
-            "Quick-response support for cine workers facing sudden medical emergencies",
-            "Ambulance tie-ups and 24x7 helpline (proposed)",
-            "Financial aid for surgeries, medications, and hospitalizations in critical cases",
-          ],
-        },
-        {
-          title: "Mental Health & Counselling",
-          points: [
-            "Psychological counseling and therapy for stress, depression, and substance abuse",
-            "Awareness sessions to break the stigma around mental health in the industry",
-          ],
-        },
-        {
-          title: "Addiction Recovery Support",
-          points: [
-            "De-addiction programs for alcohol and drug dependence",
-            "Post-recovery employment support and wellness monitoring",
-          ],
-        },
-        {
-          title: "Workshops & Awareness Programs",
-          points: [
-            "Yoga, meditation, and fitness workshops for active workers",
-            "Nutritional guidance and health literacy for long-term wellness",
-          ],
-        },
-      ].map((area, idx) => (
+  {
+    title: "Emergency Medical Aid",
+    points: [
+      "Financial help for urgent surgeries and treatments",
+      "Support for hospitalizations in critical medical conditions",
+      "Relief for families during sudden health emergencies",
+    ],
+  },
+  {
+    title: "Free Medicines & Daily Healthcare",
+    points: [
+      "Essential medicines for workers earning limited wages",
+      "Free distribution of chronic illness medications",
+      "Healthcare kits for monthly support",
+    ],
+  },
+  {
+    title: "Charity Hospitals for Film Workers",
+    points: [
+      "Hospitals built for workers and their families",
+      "Free or subsidized treatment for all common diseases",
+      "Specialist care and diagnostics for chronic conditions",
+    ],
+  },
+  {
+    title: "On-Set Ambulances & First Aid",
+    points: [
+      "Ambulance units stationed at sets and studios",
+      "Emergency medical staff during shoots",
+      "Basic first-aid response kits at all major locations",
+    ],
+  },
+  {
+    title: "Annual Health Camps & Check-ups",
+    points: [
+      "Free health check-up drives every year",
+      "Full body screening and preventive care",
+      "Family coverage for all registered workers",
+    ],
+  },
+  {
+    title: "Medical Insurance & Awareness",
+    points: [
+      "Insurance enrollment help for all film workers",
+      "Awareness sessions about health schemes",
+      "Guidance for claims, benefits, and renewals",
+    ],
+  },
+]
+.map((area, idx) => (
         <div
           key={idx}
           className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"

@@ -20,7 +20,7 @@ const RuralPage = () => {
               Rural Transformation Mission
             </h1>
             <p className="text-[16px] md:text-2xl max-w-3xl mx-auto">
-              Empowering Rural India—One Village, One Family at a Time.
+              Transforming Rural India — Bringing Hope to Every Home
             </p>
           </div>
 
@@ -37,120 +37,157 @@ const RuralPage = () => {
         <div className="h-10" />
 
         {/* Introduction */}
-        <section className="py-16 bg-[#f2f2f2]">
-          <div className="container mx-auto px-4 md:px-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-                Empowering Rural India—One Village, One Family at a Time.
-              </h2>
-              <p className="text-lg text-gray-600">
-                The AICWA Foundation believes true national growth lies in the upliftment of India’s rural heartland. Many film workers come from rural communities that continue to face challenges like poor infrastructure, unemployment, and lack of basic education or healthcare.
-              </p>
-              <p className="mt-4 text-gray-600">
-                Our Rural Transformation initiative connects these underserved communities with essential services, skill training, self-help programs, and sustainable development models to enable long-term change.
-              </p>
-            </div>
-          </div>
-        </section>
+<section className="py-16 bg-[#f2f2f2]">
+  <div className="container mx-auto px-4 md:px-10">
+    <div className="text-center max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+        Rural Transformation – Building Dreams, Changing Lives
+      </h2>
+      <p className="text-lg text-gray-600">
+        In countless villages across India, families still sleep hungry, children drop out of school due to lack of fees, and elders live without access to healthcare. Mud huts collapse in monsoons, girls are married off early, and families carry loved ones on bikes because ambulances are unaffordable.
+      </p>
+      <p className="mt-4 text-gray-600">
+        We are committed to changing this harsh reality by building proper homes, ensuring clean water, providing healthcare, quality education, and skill-based employment — creating a future where every rural family lives with dignity and self-reliance.
+      </p>
+    </div>
+  </div>
+</section>
 
-        {/* Mission */}
-        <section className="py-12 bg-[#f2f2f2] text-center">
-          <div className="container mx-auto px-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
-              Our Mission
-            </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              To revitalize rural communities by providing access to clean water, education, healthcare, livelihood opportunities, and self-reliant development — turning villages into empowered, sustainable ecosystems.
-            </p>
-          </div>
-        </section>
+{/* Mission */}
+<section className="py-12 bg-[#f2f2f2] text-center">
+  <div className="container mx-auto px-6">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] mb-4">
+      Our Mission
+    </h2>
+    <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+      To uplift rural families by providing basic necessities, permanent housing, free education, healthcare, skill training, clean water, and digital access — turning neglected villages into empowered communities.
+    </p>
+  </div>
+</section>
 
-        {/* Full-Width Image */}
-        <section className="py-10 bg-[#f2f2f2] md:py-16">
-          <img
-            src="/images/rural1.jpeg"
-            alt="Rural Support"
-            className="w-full h-auto object-cover"
-          />
-        </section>
+{/* Full-Width Image */}
+<section className="py-10 bg-[#f2f2f2] md:py-16">
+  <img
+    src="/images/rural1.jpeg"
+    alt="Rural Support"
+    className="w-full h-auto object-cover"
+  />
+</section>
 
-        {/* Key Focus Areas */}
-        <section className="py-16 bg-[#f2f2f2]">
-          <div className="container mx-auto px-4 md:px-10">
-            <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#303C69] mb-12">
-              Our Key Focus Areas
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Rural Health & Sanitation",
-                  points: [
-                    "Mobile clinics and health check-up camps in remote villages",
-                    "Support for maternal and child health",
-                    "Hygiene awareness drives and toilet construction support",
-                  ],
-                },
-                {
-                  title: "Skill Training & Employment",
-                  points: [
-                    "Vocational training for youth and women in rural areas",
-                    "Self-employment programs in crafts, tailoring, and agri-processing",
-                    "Support for rural entrepreneurship and micro-enterprises",
-                  ],
-                },
-                {
-                  title: "Clean Water & Infrastructure",
-                  points: [
-                    "Installation of handpumps, water filters, and sanitation units",
-                    "Village-level solar lighting and renewable energy solutions",
-                    "Repairing rural roads and connectivity networks",
-                  ],
-                },
-                {
-                  title: "Rural Education Access",
-                  points: [
-                    "School kits and digital classrooms for rural schools",
-                    "Evening learning centers for underprivileged students",
-                    "Adult literacy programs for farmers and laborers",
-                  ],
-                },
-                {
-                  title: "Women-Led Self-Help Groups",
-                  points: [
-                    "Formation of SHGs for savings and income generation",
-                    "Training in bookkeeping, banking, and group enterprise",
-                    "Support for women-led rural cooperatives",
-                  ],
-                },
-                {
-                  title: "Sustainable Farming & Environment",
-                  points: [
-                    "Training in organic farming and soil care",
-                    "Tree plantation drives and water conservation",
-                    "Support for climate-resilient agriculture practices",
-                  ],
-                },
-              ].map((area, idx) => (
-                <div
-                  key={idx}
-                  className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"
-                >
-                  <div className="absolute inset-0 bg-[#303C69] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
-                  <div className="relative z-10">
-                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 mb-4">
-                      {area.title}
-                    </h3>
-                    <ul className="list-disc list-inside space-y-2 text-gray-600 group-hover:text-white transition-colors duration-300">
-                      {area.points.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+{/* Key Focus Areas */}
+<section className="py-16 bg-[#f2f2f2]">
+  <div className="container mx-auto px-4 md:px-10">
+    <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#303C69] mb-12">
+      Our Key Focus Areas
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Clothing & Basic Necessities Distribution",
+          points: [
+            "Providing clothes, footwear, ration kits, and hygiene supplies to rural families",
+          ],
+        },
+        {
+          title: "Affordable Housing Support",
+          points: [
+            "Financial aid for building permanent homes to replace unsafe mud houses",
+          ],
+        },
+        {
+          title: "Access to Healthcare & Medical Aid",
+          points: [
+            "Free health camps, ambulance services, and critical treatment assistance",
+          ],
+        },
+        {
+          title: "Rural Education Empowerment",
+          points: [
+            "Free school to college education, with books, cycles, tablets, and uniforms",
+          ],
+        },
+        {
+          title: "Marriage Support for Underprivileged Families",
+          points: [
+            "Helping families conduct safe, dignified marriages for daughters in need",
+          ],
+        },
+        {
+          title: "Employment & Skill Development Programs",
+          points: [
+            "Vocational training and entrepreneurship support to create local livelihoods",
+          ],
+        },
+        {
+          title: "Agricultural Support for Farmers",
+          points: [
+            "Providing seeds, tools, fertilizers, and tractor aid to reduce debt burden",
+          ],
+        },
+        {
+          title: "Village Infrastructure Development",
+          points: [
+            "Installing water pumps, solar lights, toilets, and building rural roads",
+          ],
+        },
+        {
+          title: "Support for Shops & Small Businesses",
+          points: [
+            "Helping locals set up kirana shops and micro-businesses for self-reliance",
+          ],
+        },
+        {
+          title: "Ambulance & Emergency Services",
+          points: [
+            "Providing village-level ambulance access for urgent medical needs",
+          ],
+        },
+        {
+          title: "Nutrition & Food Security Initiatives",
+          points: [
+            "Distribution of ration kits and cooked meals to fight rural hunger",
+          ],
+        },
+        {
+          title: "Support for Abandoned Elders & Destitute",
+          points: [
+            "Creating safe shelters for elderly and destitute people left behind",
+          ],
+        },
+        {
+          title: "Village-level Digital Empowerment",
+          points: [
+            "Providing internet access, digital literacy, and recharge support",
+          ],
+        },
+        {
+          title: "Youth Development & Future Building",
+          points: [
+            "Scholarships and mentorship for rural children to become professionals",
+          ],
+        },
+      ].map((area, idx) => (
+        <div
+          key={idx}
+          className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"
+        >
+          <div className="absolute inset-0 bg-[#303C69] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
+          <div className="relative z-10">
+            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 mb-4">
+              {area.title}
+            </h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 group-hover:text-white transition-colors duration-300">
+              {area.points.map((point, i) => (
+                <li key={i}>{point}</li>
               ))}
-            </div>
+            </ul>
           </div>
-        </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
         {/* Donate Section */}
         <section
