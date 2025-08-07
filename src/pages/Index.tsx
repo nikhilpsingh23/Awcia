@@ -103,7 +103,6 @@ const Index = () => {
     "./images/1-rural.jpeg",
     
     "./images/2.HEIC",
-    "./images/3.HEIC",
      
     "./images/5.jpg"
   ];
@@ -295,7 +294,7 @@ const Index = () => {
       {/* Card 2 */}
       <div className="group bg-white rounded-3xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
         <img
-          src="/images/mariage.JPG"
+          src="./images/3.HEIC"
           alt="Child Education Sponsorship"
           className="w-full h-48 object-cover"
         />

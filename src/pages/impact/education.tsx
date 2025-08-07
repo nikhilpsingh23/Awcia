@@ -77,84 +77,128 @@ const EducationPage = () => {
           />
         </section>
 
-        {/* Key Focus Areas */}
-        <section className="py-16 bg-[#f2f2f2]">
-          <div className="container mx-auto px-4 md:px-10">
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] text-center mb-12">
-              Our Key Focus Areas
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-  {
-    title: "Free Education from School to College",
-    points: [
-      "Primary to professional education at no cost",
-      "School and college fee waivers for all",
-      "Focus on continuous education without dropouts",
-    ],
-  },
-  {
-    title: "Medical, Engineering & Degree Colleges",
-    points: [
-      "Affordable colleges built for industry children",
-      "Special admissions for cine worker families",
-      "Access to professional career pathways",
-    ],
-  },
-  {
-    title: "Educational Kits & Essentials",
-    points: [
-      "Free books, bags, uniforms, and school supplies",
-      "Yearly distribution drives at studios and sets",
-      "Ensuring no child misses learning tools",
-    ],
-  },
-  {
-    title: "Scholarships for Higher Studies",
-    points: [
-      "Merit-based scholarships for India & abroad",
-      "Support for tuition, exams, and travel expenses",
-      "Special focus on international mentorship",
-    ],
-  },
-  {
-    title: "Day-Care & After-School Programs",
-    points: [
-      "Safe learning environments for kids of workers",
-      "Homework help, nutrition, and creative sessions",
-      "Extended support while parents are on set",
-    ],
-  },
-  {
-    title: "Hostels & Student Accommodation",
-    points: [
-      "Low-cost and safe housing for students in cities",
-      "Residential support for long-term academic focus",
-      "Facilities for boys and girls from remote areas",
-    ],
-  },
-]
-.map((area, idx) => (
-                <div
-                  key={idx}
-                  className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"
-                >
-                  <div className="absolute inset-0 bg-[#303C69] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
-                  <div className="relative z-10">
-                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 mb-4">
-                      {area.title}
-                    </h3>
-                    <ul className="list-disc list-inside space-y-2 text-gray-600 group-hover:text-white transition-colors duration-300">
-                      {area.points.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+{/* Key Focus Areas */}
+<section className="py-16 bg-[#f2f2f2]">
+  <div className="container mx-auto px-4 md:px-10">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] text-center mb-12">
+      Our Key Focus Areas
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "🎓 Free Education from School to College",
+          points: [
+            "Completely free education from primary to degree programs",
+            "Support to prevent dropouts due to financial hardship",
+            "Open access to academic and professional growth",
+          ],
+        },
+        {
+          title: "🏥 Medical, Engineering & Professional Degree Colleges",
+          points: [
+            "Build affordable colleges for industry children",
+            "Special admissions for film workers’ families",
+            "Enable dreams of becoming doctors, engineers, and professionals",
+          ],
+        },
+        {
+          title: "📚 Educational Kits – Books, Bags, Uniforms & Essentials",
+          points: [
+            "Free school supplies for underprivileged children",
+            "Annual distribution of complete educational kits",
+            "Ensure no child is deprived of learning tools",
+          ],
+        },
+        {
+          title: "🎓 Scholarships for Higher Education (India & Abroad)",
+          points: [
+            "Merit-based scholarships and sponsorships",
+            "Support for tuition, exam, and travel expenses",
+            "Opportunities for global academic exposure",
+          ],
+        },
+        {
+          title: "🏫 Day-Care & After-School Learning Programs",
+          points: [
+            "Safe and engaging spaces for kids while parents work",
+            "Homework support and nutritious meals",
+            "Creative and cognitive development activities",
+          ],
+        },
+        {
+          title: "🏡 Hostels & Student Accommodation",
+          points: [
+            "Affordable, secure hostels in major cities",
+            "Residential support for long-term study",
+            "Separate facilities for boys and girls from remote areas",
+          ],
+        },
+        {
+          title: "🎯 Skill Development & Vocational Training Centers",
+          points: [
+            "Training in industry-relevant practical skills",
+            "Career alternatives beyond traditional academics",
+            "Job-ready programs to ensure employment opportunities",
+          ],
+        },
+        {
+          title: "👨‍👩‍👧‍👦 Fulfilling Dreams of Workers’ Children",
+          points: [
+            "Uplifting families through educational empowerment",
+            "Helping children achieve what their parents dreamed of",
+            "No dream left unfulfilled due to poverty",
+          ],
+        },
+        {
+          title: "🌟 Talent Discovery & Mentorship Programs",
+          points: [
+            "Identify talented children early and nurture them",
+            "Provide platforms and exposure for growth",
+            "Match children with mentors and opportunities",
+          ],
+        },
+        {
+          title: "💡 Securing a Bright Future for Every Family",
+          points: [
+            "Provide full-cycle academic and career support",
+            "Ensure families feel confident about their children’s future",
+            "Build foundations for a dignified, educated generation",
+          ],
+        },
+        {
+          title: "🧭 Career Guidance & Mentorship Support",
+          points: [
+            "Workshops, counselling, and one-on-one mentorship",
+            "Help students make informed career decisions",
+            "Bridge the gap between education and employment",
+          ],
+        },
+      ].map((area, idx) => (
+        <div
+          key={idx}
+          className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"
+        >
+          {/* Background slide overlay */}
+          <div className="absolute inset-0 bg-[#303C69] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
+
+          {/* Content */}
+          <div className="relative z-10">
+            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 mb-4">
+              {area.title}
+            </h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 group-hover:text-white transition-colors duration-300">
+              {area.points.map((point, i) => (
+                <li key={i}>{point}</li>
               ))}
-            </div>
+            </ul>
           </div>
-        </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
         {/* Donate Section with Background */}
         <section

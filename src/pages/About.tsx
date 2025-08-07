@@ -119,7 +119,7 @@ const About = () => {
 
 ];
 
-const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4.JPG","/images/blog1-5.jpg","/images/blog1-6.JPG"];
+const row1Images = ["/images/blog1-5.jpg","/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4.JPG","/images/blog1-6.JPG"];
   const row2Images = ["/images/blog2.jpg", "/images/blog2-2.jpg", "/images/blog2-3.jpg", "/images/blog2.jpg", "/images/blog2-2.jpg"];
   const row3Images = ["/images/blog3.JPG", "/images/blog3-2.JPG", "/images/blog3-3.JPG","/images/blog3-4.JPG","/images/blog3-5.JPG"]; 
 
@@ -211,9 +211,7 @@ const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4
     <div className="flex items-start gap-3">
       <span className="text-green-600 mt-1">✅</span>
       <p className="text-gray-700">
-       Charity Hospitals
-	
-	Award Shows and Fashion Shows to recognize true talent and
+	Award Shows and Fashion Shows to recognize true talent and raise funds for social welfare
        </p>
     </div>
   </div>
@@ -255,7 +253,7 @@ const row1Images = ["/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4
             <p className="text-base text-lg text-gray-100 leading-relaxed">
               <Typewriter
                 words={[
-                  `AICWA Foundation is the social welfare arm of the All Indian Cine Workers Association (AICWA), established with a clear vision: to uplift and empower the real backbone of the Indian film industry – the workers, technicians, junior artists, and artists who bring cinema to life but often remain unseen and unheard.`
+                  `The AICWA Foundation is committed to uplifting the lives of every cine worker in India by addressing the systemic challenges faced behind the scenes. We work tirelessly to ensure no individual is left vulnerable or unsupported—regardless of their role in the industry. Our mission is to provide access to education for workers’ children, quality healthcare, safe housing, and social and financial protection. Through on-ground welfare programs, policy advocacy, and industry collaboration, we aim to build a safer, more secure, and more dignified future for all film workers—empowering them with the respect, recognition, and resources they deserve.`
                 ]}
                 typeSpeed={30}
                 cursor

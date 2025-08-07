@@ -89,53 +89,65 @@ const ArtPage = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
         {
-          title: "Theatre Construction in Every District",
+          title: "🎭 Theatre Construction in Every District",
           points: [
-            "Building theatres across India with affordable ticket pricing to promote regional films and increase employment for artists & technicians."
+            "Building theatres across India with affordable ticket pricing to promote regional films and increase employment for artists & technicians.",
           ],
         },
         {
-          title: "Film City Development in Every State",
+          title: "🎬 Film City Development in Every State",
           points: [
-            "Establishing state-wise Film Cities to centralize shooting locations for movies, serials, ads, web series, and documentaries — generating large-scale employment."
+            "Establishing state-wise Film Cities to centralize shooting locations for movies, serials, ads, web series, and documentaries — generating large-scale employment.",
           ],
         },
         {
-          title: "Financial Support for Local & Folk Artists",
+          title: "💰 Financial Support for Local & Folk Artists",
           points: [
-            "Providing grants, residencies, and training to traditional artists, street performers, folk musicians, and craftsmen for sustainable livelihoods."
+            "Providing grants, residencies, and training to traditional artists, street performers, folk musicians, and craftsmen for sustainable livelihoods.",
           ],
         },
         {
-          title: "Preservation of Endangered Art Forms",
+          title: "📜 Preservation of Endangered Art Forms",
           points: [
-            "Documenting, archiving, and digitally preserving India’s fading languages, rituals, and art forms for future generations."
+            "Documenting, archiving, and digitally preserving India’s fading languages, rituals, and art forms for future generations.",
           ],
         },
         {
-          title: "Employment through Cultural Events & Festivals",
+          title: "🎉 Employment through Cultural Events & Festivals",
           points: [
-            "Organizing exhibitions, art fairs, folk craft melas, and inter-state cultural festivals to create continuous performance opportunities."
+            "Organizing exhibitions, art fairs, folk craft melas, and inter-state cultural festivals to create continuous performance opportunities.",
           ],
         },
         {
-          title: "Global Platforms for Traditional Voices",
+          title: "🌍 Global Platforms for Traditional Voices",
           points: [
-            "Partnering with OTT platforms, YouTube channels, and streaming services to showcase India’s folk & classical art globally."
+            "Partnering with OTT platforms, YouTube channels, and streaming services to showcase India’s folk & classical art globally.",
           ],
         },
         {
-          title: "Supporting Theatre Artists & Street Performers",
+          title: "🕺 Supporting Theatre Artists & Street Performers",
           points: [
-            "Ensuring dignified platforms, stage shows, and consistent income opportunities for theatre artists, street dancers, and road-side performers."
+            "Ensuring dignified platforms, stage shows, and consistent income opportunities for theatre artists, street dancers, and road-side performers.",
           ],
         },
         {
-          title: "Heritage Education for Students",
+          title: "🏛️ Heritage Education for Students",
           points: [
-            "Conducting workshops, heritage walks, and museum visits to introduce children to India’s cultural roots and traditional arts."
+            "Conducting workshops, heritage walks, and museum visits to introduce children to India’s cultural roots and traditional arts.",
           ],
-        }
+        },
+        {
+          title: "🏫 Collaboration with Schools & Institutions",
+          points: [
+            "Introducing folk music, storytelling, and craftsmanship into school curriculums to preserve and promote India’s artistic heritage.",
+          ],
+        },
+        {
+          title: "🏆 Crafting Recognition Forums & Awards",
+          points: [
+            "Creating awards, honors, and recognition platforms to celebrate the contribution of traditional artists, artisans, and regional filmmakers.",
+          ],
+        },
       ].map((area, idx) => (
         <div
           key={idx}
@@ -157,6 +169,7 @@ const ArtPage = () => {
     </div>
   </div>
 </section>
+
 
 
         {/* Donate Section with Background */}

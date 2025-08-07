@@ -62,84 +62,93 @@ const WomenPage = () => {
           </div>
         </section>
 
-        {/* Key Focus Areas */}
-        <section className="py-16 bg-[#f2f2f2]">
-          <div className="container mx-auto px-4 md:px-10">
-            <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] text-center mb-12">
-              Our Key Focus Areas
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Legal & Financial Aid",
-                  points: [
-                    "Legal support for cases of exploitation, harassment, or false FIRs.",
-                    "Free legal counseling and case filing assistance for women in the industry.",
-                    "Financial aid for women facing non-payment of salaries and dues.",
-                    "Micro-grants for women-led creative projects and self-employment."
-                  ],
-                },
-                {
-                  title: "Women’s Safety & Workplace Protection",
-                  points: [
-                    "24x7 helpline support for immediate assistance.",
-                    "Deployment of safety officers and grievance redressal mechanisms on shooting sets.",
-                    "Gender-sensitivity training for production houses and teams.",
-                    "Strict monitoring of POSH (Prevention of Sexual Harassment) compliance on sets."
-                  ],
-                },
-                {
-                  title: "Vocational & Skill Development",
-                  points: [
-                    "Free courses in makeup, hair styling, costume design, choreography, editing, and direction.",
-                    "Career re-integration support for women returning after maternity or career gaps.",
-                    "Digital literacy and entrepreneurship workshops to enhance employability."
-                  ],
-                },
-                {
-                  title: "Mental Health & Emotional Support",
-                  points: [
-                    "Counseling sessions to deal with workplace stress, harassment trauma, and confidence-building.",
-                    "Support groups and emotional well-being programs for female artists and workers."
-                  ],
-                },
-                {
-                  title: "Community Building & Leadership Mentorship",
-                  points: [
-                    "Creating women’s support circles within production teams.",
-                    "Mentorship from senior women in cinema and television.",
-                    "Encouraging women-led storytelling and creative leadership in the industry."
-                  ],
-                },
-                {
-                  title: "Marriage & Family Support",
-                  points: [
-                    "Financial assistance for marriage expenses of women workers and their daughters.",
-                    "Support programs for women balancing family responsibilities with careers.",
-                    "Safe hostels and accommodation facilities for women migrating from rural areas for work."
-                  ],
-                },
-              ].map((area, idx) => (
-                <div
-                  key={idx}
-                  className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"
-                >
-                  <div className="absolute inset-0 bg-[#303C69] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
-                  <div className="relative z-10">
-                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 mb-4">
-                      {area.title}
-                    </h3>
-                    <ul className="list-disc list-inside space-y-2 text-gray-600 group-hover:text-white transition-colors duration-300">
-                      {area.points.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+        {/* Women's Welfare Key Focus Areas */}
+<section className="py-16 bg-[#f2f2f2]">
+  <div className="container mx-auto px-4 md:px-10">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#303C69] text-center mb-12">
+      Women's Welfare – Key Focus Areas
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "👩‍⚖️ Legal & Financial Aid",
+          points: [
+            "Legal support for cases of exploitation, harassment, or false FIRs.",
+            "Free legal counseling and case filing assistance for women in the industry.",
+            "Financial aid for women facing non-payment of salaries and dues.",
+            "Micro-grants for women-led creative projects and self-employment."
+          ],
+        },
+        {
+          title: "🛡️ Women’s Safety & Workplace Protection",
+          points: [
+            "24x7 helpline support for immediate assistance.",
+            "Deployment of safety officers and grievance redressal mechanisms on shooting sets.",
+            "Gender-sensitivity training for production houses and teams.",
+            "Strict monitoring of POSH (Prevention of Sexual Harassment) compliance on sets."
+          ],
+        },
+        {
+          title: "🎓 Vocational & Skill Development",
+          points: [
+            "Free courses in makeup, hair styling, costume design, choreography, editing, and direction.",
+            "Career re-integration support for women returning after maternity or career gaps.",
+            "Digital literacy and entrepreneurship workshops to enhance employability."
+          ],
+        },
+        {
+          title: "🧠 Mental Health & Emotional Support",
+          points: [
+            "Counseling sessions to deal with workplace stress, harassment trauma, and confidence-building.",
+            "Support groups and emotional well-being programs for female artists and workers."
+          ],
+        },
+        {
+          title: "🤝 Community Building & Leadership Mentorship",
+          points: [
+            "Creating women’s support circles within production teams.",
+            "Mentorship from senior women in cinema and television.",
+            "Encouraging women-led storytelling and creative leadership in the industry."
+          ],
+        },
+        {
+          title: "👪 Marriage & Family Support",
+          points: [
+            "Financial assistance for marriage expenses of women workers and their daughters.",
+            "Support programs for women balancing family responsibilities with careers.",
+            "Safe hostels and accommodation facilities for women migrating from rural areas for work."
+          ],
+        },
+        {
+          title: "🚀 Career Growth & Equal Opportunity",
+          points: [
+            "Advocacy for fair wages and equal work opportunities for women.",
+            "Scholarships and sponsorships for young women aspiring to join the film industry.",
+            "Workshops to eliminate gender discrimination and build a merit-based industry."
+          ],
+        },
+      ].map((area, idx) => (
+        <div
+          key={idx}
+          className="relative overflow-hidden group rounded-lg shadow-md p-6 bg-white transition-all duration-300"
+        >
+          <div className="absolute inset-0 bg-[#303C69] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
+          <div className="relative z-10">
+            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-white transition-colors duration-300 mb-4">
+              {area.title}
+            </h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 group-hover:text-white transition-colors duration-300">
+              {area.points.map((point, i) => (
+                <li key={i}>{point}</li>
               ))}
-            </div>
+            </ul>
           </div>
-        </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
 
         {/* Donate Section */}

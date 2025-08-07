@@ -1,28 +1,46 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import React, { useRef} from 'react';
+import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 
+interface VolunteerFormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  occupation: string;
+  message: string;
+}
 const Volunteer = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    occupation: '',
-    interests: '',
-    experience: '',
-    availability: '',
-    message: ''
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<VolunteerFormData>();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+  const form = useRef<HTMLFormElement>(null);
+  const [successMsg, setSuccessMsg] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(formData);
-    // Add form submission logic (API call or DB save)
+  const onSubmit = (data: VolunteerFormData) => {
+    if (!form.current) return;
+
+    emailjs
+      .sendForm('service_1o08bbe', 'template_kvwrseh', form.current, {
+        publicKey: '-FaKhFdpuB_YVn_Jp',
+      })
+      .then(
+        () => {
+          setSuccessMsg(true);
+          reset();
+          setTimeout(() => setSuccessMsg(false), 4000);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
   };
 
   return (
@@ -146,86 +164,82 @@ const Volunteer = () => {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-2xl p-8 space-y-6 border border-white/20">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Full Name */}
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-white">Full Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Enter your full name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-white/20 text-white placeholder-white/70 border border-white/30 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
-                    required
-                  />
-                </div>
+            {successMsg && (
+            <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-6 text-center">
+              <strong className="font-bold">Success!</strong>
+              <span className="block sm:inline ml-2">
+                Your application has been submitted.
+              </span>
+            </div>
+          )}
 
-                {/* Email */}
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-white">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="you@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-white/20 text-white placeholder-white/70 border border-white/30 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
-                    required
-                  />
-                </div>
-
-                {/* Phone */}
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-white">Phone Number</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Your phone number"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-white/20 text-white placeholder-white/70 border border-white/30 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
-                    required
-                  />
-                </div>
-
-                {/* Occupation */}
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-white">Occupation</label>
-                  <input
-                    type="text"
-                    name="occupation"
-                    placeholder="What do you do?"
-                    value={formData.occupation}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-white/20 text-white placeholder-white/70 border border-white/30 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Message */}
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-white">Message</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  placeholder="Tell us why you want to volunteer with us..."
-                  className="w-full px-4 py-2 bg-white/20 text-white placeholder-white/70 border border-white/30 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"
+          <form ref={form} onSubmit={handleSubmit(onSubmit)} className="max-w-2xl mx-auto bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-2xl p-8 space-y-6 border border-white/20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block mb-2 text-white font-medium">First Name</label>
+                <input
+                  type="text"
+                  {...register('firstName', { required: true })}
+                  className="w-full px-4 py-2 bg-white/30 rounded"
+                  placeholder='First Name'
                 />
+                {errors.firstName && <p className="text-red-500 text-sm mt-1">First name is required.</p>}
               </div>
 
-              {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-yellow-400 text-[#303C69] py-3 px-6 rounded-lg font-bold hover:bg-yellow-500 shadow-lg transition duration-300 transform hover:scale-105"
-              >
-                Submit Application
-              </button>
-            </form>
+              <div>
+                <label className="block mb-2 text-white font-medium">Last Name</label>
+                <input
+                  type="text"
+                  {...register('lastName', { required: true })}
+                  className="w-full px-4 py-2 bg-white/30 rounded"
+                  placeholder='Last Name'
+                />
+                {errors.lastName && <p className="text-red-500 text-sm mt-1">Last name is required.</p>}
+              </div>
+
+              <div>
+                <label className="block mb-2 text-white font-medium">Email</label>
+                <input
+                  type="email"
+                  {...register('email', { required: true })}
+                  className="w-full px-4 py-2 bg-white/30 rounded"
+                  placeholder='Email'
+                />
+                {errors.email && <p className="text-red-500 text-sm mt-1">Email is required.</p>}
+              </div>
+
+              <div>
+                <label className="block mb-2 text-white font-medium">Phone</label>
+                <input
+                  type="tel"
+                  {...register('phone', { required: true })}
+                  className="w-full px-4 py-2 bg-white/30 rounded"
+                  placeholder='Phone Number'
+                />
+                {errors.phone && <p className="text-red-500 text-sm mt-1">Phone number is required.</p>}
+              </div>
+
+              
+            </div>
+
+            <div className="mt-6">
+              <label className="block mb-2 text-white font-medium">Message</label>
+              <textarea
+                rows={5}
+                {...register('message', { required: true })}
+                className="w-full px-4 py-2  bg-white/30 rounded"
+                placeholder='Write a message...'
+              />
+              {errors.message && <p className="text-red-500 text-sm mt-1">Message is required.</p>}
+            </div>
+
+            <button
+              type="submit"
+              className="mt-6 bg-[#303C69] hover:bg-[#1f2b4d] text-white px-6 py-2 rounded"
+            >
+              Submit Application
+            </button>
+          </form>
           </div>
         </section>
       </main>

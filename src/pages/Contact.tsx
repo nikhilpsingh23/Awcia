@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef ,useState} from 'react';
 
 interface ContactFormData {
   firstName: string;
@@ -13,17 +13,18 @@ interface ContactFormData {
 }
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<ContactFormData>();
+ const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactFormData>();
+
+  const form = useRef<HTMLFormElement>(null);
+  const [successMsg, setSuccessMsg] = useState(false);
 
   const onSubmit = (data: ContactFormData) => {
-    console.log(data);
-    reset();
-  };
-
-    const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
+    if (!form.current) return;
 
     emailjs
       .sendForm('service_1o08bbe', 'template_kvwrseh', form.current, {
@@ -32,10 +33,13 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          setSuccessMsg(true);
+          reset(); // Clear form
+          setTimeout(() => setSuccessMsg(false), 4000); // Hide message
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
+        }
       );
   };
 
@@ -84,52 +88,77 @@ const Contact = () => {
         <div className="space-y-10">
           {/* Form - Full Width */}
           <div className="bg-gray-200 p-6 rounded-md shadow-sm">
-            <form ref={form} onSubmit={sendEmail} className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Success Message */}
+          {successMsg && (
+            <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-6 text-center">
+              <strong className="font-bold">Success!</strong>
+              <span className="block sm:inline ml-2">
+                Your message has been sent.
+              </span>
+            </div>
+          )}
+
+          {/* Contact Form */}
+          <form ref={form} onSubmit={handleSubmit(onSubmit)} className="bg-white p-8 rounded-lg shadow-md">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block mb-2 font-medium">First Name</label>
                 <input
-                  {...register("firstName", { required: "First name is required" })}
-                  placeholder="First Name"
-                  name="first_name"
-                  className="w-full p-3 border border-gray-300 rounded-md"
+                  type="text"
+                  {...register('firstName', { required: true })}
+                  className="w-full px-4 py-2 border rounded"
                 />
-                <input
-                  {...register("lastName", { required: "Last name is required" })}
-                  placeholder="Last Name"
-                  name="last_name"
-                  className="w-full p-3 border border-gray-300 rounded-md"
-                />
+                {errors.firstName && <p className="text-red-500 text-sm mt-1">First name is required.</p>}
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block mb-2 font-medium">Last Name</label>
                 <input
-                  {...register("email", { required: "Email is required" })}
-                  placeholder="Your Email"
-                  name="email"
-                  className="w-full p-3 border border-gray-300 rounded-md"
+                  type="text"
+                  {...register('lastName', { required: true })}
+                  className="w-full px-4 py-2 border rounded"
                 />
-                <input
-                  {...register("phone", { required: "Phone number is required" })}
-                  placeholder="Phone Number"
-                  name="phone"
-                  className="w-full p-3 border border-gray-300 rounded-md"
-                />
+                {errors.lastName && <p className="text-red-500 text-sm mt-1">Last name is required.</p>}
               </div>
 
+              <div>
+                <label className="block mb-2 font-medium">Email</label>
+                <input
+                  type="email"
+                  {...register('email', { required: true })}
+                  className="w-full px-4 py-2 border rounded"
+                />
+                {errors.email && <p className="text-red-500 text-sm mt-1">Email is required.</p>}
+              </div>
+
+              <div>
+                <label className="block mb-2 font-medium">Phone</label>
+                <input
+                  type="tel"
+                  {...register('phone', { required: true })}
+                  className="w-full px-4 py-2 border rounded"
+                />
+                {errors.phone && <p className="text-red-500 text-sm mt-1">Phone number is required.</p>}
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <label className="block mb-2 font-medium">Message</label>
               <textarea
-                {...register("message", { required: "Message is required" })}
-                placeholder="Message"
-                name="message"
                 rows={5}
-                className="w-full p-3 border border-gray-300 rounded-md"
+                {...register('message', { required: true })}
+                className="w-full px-4 py-2 border rounded"
               />
+              {errors.message && <p className="text-red-500 text-sm mt-1">Message is required.</p>}
+            </div>
 
-              <button
-                type="submit"
-                className="bg-yellow-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-[#13493a] transition"
-              >
-                Send Message
-              </button>
-            </form>
+            <button
+              type="submit"
+              className="mt-6 bg-[#303C69] hover:bg-[#1f2b4d] text-white px-6 py-2 rounded"
+            >
+              Send Message
+            </button>
+          </form>
           </div>
 
           {/* Contact Info Row */}
