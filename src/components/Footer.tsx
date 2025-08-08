@@ -83,7 +83,7 @@ We don’t just support workers. We honour their legacy
                 <strong>Contact No:</strong> 7700999457
               </p>
               <p>
-                <strong>Email:</strong> info@aicwafoundation.org
+                <strong>Email:</strong> info@aicwa.in
               </p>
             </div>
           </div>

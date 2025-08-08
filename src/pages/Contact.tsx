@@ -183,7 +183,7 @@ const Contact = () => {
   {/* Email */}
   <div>
     <h4 className="font-semibold text-lg mb-2"> Email Us</h4>
-    <p className="text-sm underline">info@aicwafoundation.org</p>
+    <p className="text-sm underline">info@aicwa.in</p>
   </div>
 </div>
 
