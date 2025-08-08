@@ -120,7 +120,7 @@ const About = () => {
 ];
 
 const row1Images = ["/images/blog1-5.jpg","/images/blog1.JPG", "/images/blog1-3.JPG", "/images/blog1-4.JPG","/images/blog1-6.JPG"];
-  const row2Images = ["/images/blog2.jpg", "/images/blog2-2.jpg", "/images/blog2-3.jpg", "/images/blog2.jpg", "/images/blog2-2.jpg"];
+  const row2Images = ["/images/blog2.jpg", "/images/blog2-2.jpg", "/images/blog2-3.jpg", "/images/blog2-4.jpg", "/images/blog2-5.jpg"];
   const row3Images = ["/images/blog3.JPG", "/images/blog3-2.JPG", "/images/blog3-3.JPG","/images/blog3-4.JPG","/images/blog3-5.JPG"]; 
 
   return (
