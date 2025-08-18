@@ -167,7 +167,6 @@ const Contact = () => {
   <div>
     <h4 className="font-semibold text-lg mb-2">Headquarter</h4>
     <p className="text-sm leading-relaxed">
-      AICWA Foundation <br />
       5, Sunheights Building,<br />
       Near Shyamlal Sohanlal Gupta Chowk,<br />
       JVLR, Powai, Mumbai - 400076

@@ -1,7 +1,7 @@
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '+919820982111'; 
+  const phoneNumber = '+919820982115'; 
   const message = 'Hello! I would like to know more about AICWA Foundation.'; 
 
   const handleClick = () => {
